@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           options: {
             baseUrl: "assets/js",
             mainConfigFile: "assets/js/config.js",
-            out: "assets/js/main.min.js"
+            out: "assets/js/main.min.js",
             paths: {
               jquery: 'lib/jquery-1.10.2.min',
             },
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
           ],
           tasks: ['jshint', 'requirejs'], 
         }
-      },
+      }
       // concat: {
       //   options: {
       //     separator: ';',
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
       //     dest: 'assets/<%= pkg.name %>.js'
       //   },
       // }
-      );
+      });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jshint');
