@@ -4,27 +4,42 @@
 // page so we only include the ones that we need)
 requirejs.config(
 	{
-		baseUrl: 'js/',
+		baseUrl: 'assets/js/',
 		waitSeconds: 5,
-		urlArgs:"",
+		urlArgs:'',
 		paths: {
 			'jquery': 'lib/jquery',
 			'signals': 'lib/signals',
+			'underscore': 'libs/underscore-min',
+			'backbone': 'libs/backbone-min',
 		},
 		shim: {
-			// 'prettyphoto': { deps: [ 'jquery' ] }
+			underscore: { exports: '_'},
+	        backbone: {
+	            deps: ['underscore', 'jquery'],
+	            exports: 'backbone'
+	        }
 		}
 	}
 );
 
 require(
 	[
-		'lib/signals',
-		'lib/jquery'
+		'signals'
+		,'jquery'
+		,'app'
+		,'underscore'
+		,'backbone'
+		,'layout'
+
 	],
 	function(
-		Signal,
-		$
+		Signal
+		,$
+		,app
+		,underscore
+		,backbone
+		,layout
 	)
 	{
 		$( document ).ready( init );
@@ -38,23 +53,11 @@ require(
 			var shared = {
 				signals: {
 					'open'             : new Signal(),
+					'hover'             : new Signal(),
+					'click'             : new Signal(),
 				}
 			};
-
-			
-			// carousel.init(shared);
-			// Modal.init(shared);
-			// tracking.init(shared);
-	  //   	videojs.options.flash.swf = "scripts/lib/video-js.swf";
-			// var videosrc = $('#currentVideo').attr('data-src');
-			// var currentVideo = videojs("currentVideo", {"width":420 , "height":420, "controls":false});
-			// contentSwapper.init(shared, currentVideo);
-			// videoModule.init(shared, currentVideo);
-			// videoControl.init(shared, currentVideo);
-			// currentVideo.src(videosrc);
-
-			// sk: initialize all main modules. add shared object.
-			// mycomponent.init( shared );
+		app.init(shared);	
 		}
 	}
 );

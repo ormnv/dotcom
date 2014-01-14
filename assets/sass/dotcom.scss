@@ -5,7 +5,6 @@
 	*/
 
 	@import "variables";
-
 	/*
 	  Modules.
 	*/
@@ -13,14 +12,14 @@
 	/*
 	  Layout.
 	*/
-	@import "description",
-	@import "github",
-	@import "instagram",
-	@import "linkedin",
-	@import "logo",
-	@import "name",
-	@import "soundcloud",
-	@import "twitter",
+	@import "description";
+	@import "github";
+	@import "instagram";
+	@import "linkedin";
+	@import "logo";
+	@import "name";
+	@import "soundcloud";
+	@import "twitter";
 	@import "layout";
 
 

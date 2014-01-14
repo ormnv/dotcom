@@ -1,4 +1,112 @@
-//Main site 
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+
+.outer {
+	outline: 1px solid red;
+  // page acts as a container for our grid.
+  @include container;
+
+
+  // header and footer are full-width by default.
+  header, footer { clear: both; }
+
+    @include at-breakpoint(30em 12) {
+    		outline: 1px solid blue;
+
+    // Establish our new 8-column container.
+    @include container;
+  }
+
+  // // nav spans 3 columns of total 12.
+  // nav { 
+  // 	@include span-columns(2,12); 
+  // 		outline: 1px solid green;
+
+  // }
+
+  .content {
+    // content spans the final (omega) 9 columns of 12.
+    @include span-columns(9 omega,12);
+	outline: 1px solid orange;
+
+    // main content spans 6 of those 9 columns.
+    #name { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #name { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #description { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #email { 
+      @include span-columns(6,9); 
+        outline: 1px solid purple;
+
+    }
+    #github { 
+    	@include span-columns(2 omega,12); 
+    		outline: 1px solid purple;
+
+    }
+    #instagram { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #linkedin { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #logo { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #soundcloud { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #twitter { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    #year { 
+    	@include span-columns(6,9); 
+    		outline: 1px solid purple;
+
+    }
+    // secondary content spans the final 3 (omega) of 9 columns.
+    .secondary {
+    		outline: 1px solid cyan;
+
+     @include span-columns(3 omega,9); 
+ 	}
+  }
+}
+
+
+
 html {
 	//height: 100%;
 	box-sizing:border-box;
@@ -7,8 +115,8 @@ html {
 body.dotcom{
 	width:100%;
 	position:relative;
-	background-color:black;
+	background-color:white;
 	overflow-x:hidden;
-	font-size:15px;
-	min-width:68em;
+	// font-size:15px;
+	// min-width:68em;
 }

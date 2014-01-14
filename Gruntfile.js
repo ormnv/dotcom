@@ -5,9 +5,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
       jshint: {
         // define the files to lint
-        files: ['gruntfile.js', 'src/**/*.js'],
+        files: ['gruntfile.js', 'assets/js/*.js', '!assets/js/main.min.js'],
         // configure JSHint (documented at http://www.jshint.com/docs/)
         options: {
+          "laxcomma": true,
+          "smarttabs":  true,
             // more options here if you want to override JSHint defaults
           globals: {
             jQuery: true,
@@ -20,14 +22,9 @@ module.exports = function(grunt) {
         compile: {
           options: {
             baseUrl: "assets/js",
-            mainConfigFile: "assets/js/config.js",
+            mainConfigFile: "assets/js/index.js",
+            name: 'app',
             out: "assets/js/main.min.js",
-            paths: {
-              jquery: 'lib/jquery-1.10.2.min',
-            },
-            shim: {
-            },
-            preserveLicenseComments: false,
             optimize: 'uglify2'
             }
         }
@@ -46,23 +43,23 @@ module.exports = function(grunt) {
             cssDir: 'assets/css',
             environment: 'production',
             relativeAssets: true,
-            specify: 'assets/sass/main.scss'
+            specify: 'assets/sass/dotcom.scss'
           }
         }
       },
       watch: {
-        sass: {
+        scss: {
           files: [
             'assets/sass/*.scss',
-            'assets/sass/*.sass',
+            'assets/sass/*.sass'
           ],
           tasks: ['compass']
         },
         js: {
           files: [
-            '<%= jshint.all %>'
+            '<%= jshint.files %>'
           ],
-          tasks: ['jshint', 'requirejs'], 
+          tasks: ['jshint', 'requirejs'] 
         }
       }
       // concat: {
@@ -86,7 +83,7 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'requirejs', 'watch', 'cssmin', 'compass']);
+  grunt.registerTask('default', ['jshint', 'requirejs', 'watch', 'compass']);
 
 
 };
