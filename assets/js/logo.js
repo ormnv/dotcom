@@ -1,5 +1,5 @@
 define([
-    'jquery'
+    'lib/jquery'
     ], function(){
         var Logo = (function()
         {

@@ -1,5 +1,5 @@
 define([
-    'jquery'
+    'lib/jquery'
     ], function(){
         var Instagram = (function()
         {

@@ -19,13 +19,21 @@ module.exports = function(grunt) {
         }
       },
       requirejs: {
+        // layout: {
+        //   options: {
+        //     name: 'layout',
+        //     baseUrl: "assets/js",
+        //     mainConfigFile: 'assets/js/layout.js',
+        //     out: '../assets/js/layout.min.js'
+        //   }
+        // }
         compile: {
           options: {
             baseUrl: "assets/js",
             mainConfigFile: "assets/js/index.js",
             name: 'app',
             out: "assets/js/main.min.js",
-            optimize: 'uglify2'
+            optimize: 'none'
             }
         }
       },
@@ -43,6 +51,7 @@ module.exports = function(grunt) {
             cssDir: 'assets/css',
             environment: 'production',
             relativeAssets: true,
+            outputStyle: 'expanded',
             specify: 'assets/sass/dotcom.scss'
           }
         }

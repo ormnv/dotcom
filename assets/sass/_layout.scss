@@ -2,6 +2,7 @@
 // Imports
 
 @import "base";
+@import "vendor/hover";
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
@@ -9,6 +10,20 @@
 .container {
   @include container;
   @include susy-grid-background;
+}
+
+html {
+  //height: 100%;
+  box-sizing:border-box;
+}
+
+body.dotcom{
+  width:100%;
+  position:relative;
+  background-color:white;
+  overflow-x:hidden;
+  // font-size:15px;
+  // min-width:68em;
 }
 
 
@@ -21,12 +36,12 @@
   // header and footer are full-width by default.
   header, footer { clear: both; }
 
-    @include at-breakpoint(30em 12) {
-    		outline: 1px solid blue;
+  //   @include at-breakpoint(30em 12) {
+  //   		outline: 1px solid blue;
 
-    // Establish our new 8-column container.
-    @include container;
-  }
+  //   // Establish our new 8-column container.
+  //   @include container;
+  // }
 
   // // nav spans 3 columns of total 12.
   // nav { 
@@ -37,43 +52,63 @@
 
   .content {
     // content spans the final (omega) 9 columns of 12.
-    @include span-columns(9 omega,12);
+    // @include span-columns(9 omega,12);
 	outline: 1px solid orange;
 
     // main content spans 6 of those 9 columns.
     #name { 
-    	@include span-columns(6,9); 
+    	@include span-columns(1,9); 
     		outline: 1px solid purple;
 
     }
     #name { 
-    	@include span-columns(6,9); 
+    	@include span-columns(2,9); 
     		outline: 1px solid purple;
 
     }
     #description { 
-    	@include span-columns(6,9); 
+    	@include span-columns(3,9); 
     		outline: 1px solid purple;
+      h1{
+          outline: 1px solid red;
+      }
 
     }
     #email { 
       @include span-columns(6,9); 
         outline: 1px solid purple;
+      h1{
+          outline: 1px solid red;
+      }
 
     }
     #github { 
     	@include span-columns(2 omega,12); 
-    		outline: 1px solid purple;
+    		outline: 1px solid purple;      
+      h1{
+          outline: 1px solid red;
+      }
 
     }
     #instagram { 
     	@include span-columns(6,9); 
     		outline: 1px solid purple;
+      h1{
+          outline: 1px solid red;
+      }
 
     }
     #linkedin { 
-    	@include span-columns(6,9); 
+    	@include span-columns(6 omega,9); 
     		outline: 1px solid purple;
+          //         -webkit-transform: scale(2,1);
+          // -moz-transform: scale(2,1);
+          // -ms-transform: scale(2,1);
+          // -o-transform: scale(2,1);
+        h1{
+          outline: 1px solid red;
+
+        }
 
     }
     #logo { 
@@ -82,13 +117,24 @@
 
     }
     #soundcloud { 
-    	@include span-columns(6,9); 
+    	@include span-columns(2,8); 
     		outline: 1px solid purple;
-
+        a:hover{
+          //pulse effect 
+        }
+        h1{
+          outline: 1px solid red;
+          transform:rotate(90deg);
+          -ms-transform:rotate(90deg); // IE 9
+          -webkit-transform:rotate(90deg); /* Safari and Chrome */
+        }
     }
     #twitter { 
-    	@include span-columns(6,9); 
+    	@include span-columns(2,9); 
     		outline: 1px solid purple;
+        h1{
+          outline: 1px solid red;
+        }
 
     }
     #year { 
@@ -107,16 +153,3 @@
 
 
 
-html {
-	//height: 100%;
-	box-sizing:border-box;
-}
-
-body.dotcom{
-	width:100%;
-	position:relative;
-	background-color:white;
-	overflow-x:hidden;
-	// font-size:15px;
-	// min-width:68em;
-}

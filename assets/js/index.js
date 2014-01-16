@@ -8,17 +8,17 @@ requirejs.config(
 		waitSeconds: 5,
 		urlArgs:'',
 		paths: {
-			'jquery': 'lib/jquery',
-			'signals': 'lib/signals',
-			'underscore': 'libs/underscore-min',
-			'backbone': 'libs/backbone-min',
+			'jquery': 'lib/jquery-1.10.2.min',
+			'signals': 'lib/signals'//,
+			// 'underscore': 'lib/underscore-min',
+			// 'backbone': 'lib/backbone-min'
 		},
 		shim: {
-			underscore: { exports: '_'},
-	        backbone: {
-	            deps: ['underscore', 'jquery'],
-	            exports: 'backbone'
-	        }
+			// underscore: { exports: '_'},
+	  //       backbone: {
+	  //           deps: ['underscore', 'jquery'],
+	  //           exports: 'backbone'
+	  //       }
 		}
 	}
 );
@@ -28,8 +28,8 @@ require(
 		'signals'
 		,'jquery'
 		,'app'
-		,'underscore'
-		,'backbone'
+		// ,'underscore'
+		// ,'backbone'
 		,'layout'
 
 	],
@@ -37,8 +37,8 @@ require(
 		Signal
 		,$
 		,app
-		,underscore
-		,backbone
+		// ,underscore
+		// ,backbone
 		,layout
 	)
 	{
@@ -49,15 +49,18 @@ require(
 			// sk: shared object that all modules can access
 			// the signals are used for communication between
 			// all modules
-
 			var shared = {
 				signals: {
-					'open'             : new Signal(),
-					'hover'             : new Signal(),
-					'click'             : new Signal(),
+					'openContact'       : new Signal(),
+					'closeContact'       : new Signal(),
+					'hoverStart'       : new Signal(),
+					'hoverStop'        : new Signal(),
+					'click'             : new Signal()
 				}
 			};
-		app.init(shared);	
+		// app.init(shared);
+		layout.init(shared);
+	
 		}
 	}
 );
