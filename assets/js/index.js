@@ -30,7 +30,8 @@ require(
 		,'app'
 		// ,'underscore'
 		// ,'backbone'
-		,'layout'
+		,'hover'
+		// ,'layout'
 
 	],
 	function(
@@ -39,6 +40,7 @@ require(
 		,app
 		// ,underscore
 		// ,backbone
+		,hover
 		,layout
 	)
 	{
@@ -58,8 +60,8 @@ require(
 					'click'             : new Signal()
 				}
 			};
-		// app.init(shared);
-		layout.init(shared);
+		app.init(shared);
+		hover.init(shared);
 	
 		}
 	}

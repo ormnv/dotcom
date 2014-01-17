@@ -29,12 +29,16 @@ define([
 
         this.shared = shared;
 
-        $( ".section" ).hover(
+        $(".section").hover(
           function() {
             var current = $( this ).attr("id");
             shared.signals.hoverStart.dispatch(current);
-            console.log("in hover");
-            console.log(current);
+        });
+
+        $(".section").mouseout(
+          function() {
+            var current = $( this ).attr("id");
+            shared.signals.hoverStop.dispatch(current);
         });
             // , function() {
             // $( this ).find( "span:last" ).remove();

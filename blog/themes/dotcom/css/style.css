@@ -1,0 +1,463 @@
+/* NOTE: Do not edit style.css directly. Edit the .scss instead! */
+@font-face {
+  font-family: 'FontomasCustomRegular';
+  src: url("../fonts/search-webfont.eot");
+  src: url("../fonts/search-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/search-webfont.woff") format("woff"), url("../fonts/search-webfont.ttf") format("truetype"), url("../fonts/search-webfont.svg#FontomasCustomRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 5, ../sass/reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 14, ../sass/reset.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 19, ../sass/reset.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 22, ../sass/reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 26, ../sass/reset.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+/* line 31, ../sass/reset.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #2b2b2b;
+}
+
+/* line 35, ../sass/reset.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 155, ../sass/mixes.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 160, ../sass/mixes.scss */
+::selection {
+  background: #fe57a1;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 2, ../sass/global.scss */
+body {
+  background: #efefef;
+}
+
+/* line 8, ../sass/global.scss */
+a {
+  color: #1961e6;
+}
+/* line 11, ../sass/global.scss */
+a:visited {
+  color: #8fa3c6;
+}
+/* line 14, ../sass/global.scss */
+a:hover {
+  color: #132949;
+}
+/* line 17, ../sass/global.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 24, ../sass/global.scss */
+a,
+a:visited,
+a:hover,
+a:focus {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+/* line 31, ../sass/global.scss */
+abbr[title] {
+  border-bottom: 1px dotted #2b2b2b;
+}
+
+/* line 34, ../sass/global.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 37, ../sass/global.scss */
+blockquote, q {
+  margin: 1em;
+}
+
+/* line 40, ../sass/global.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 43, ../sass/global.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #2b2b2b;
+  margin: 1 em 0;
+}
+
+/* line 50, ../sass/global.scss */
+ins {
+  background: white;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+/* line 55, ../sass/global.scss */
+mark {
+  background: yellow;
+  color: #2b2b2b;
+  font-style: italic;
+}
+
+/* line 61, ../sass/global.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 65, ../sass/global.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 70, ../sass/global.scss */
+q {
+  quotes: none;
+}
+
+/* line 73, ../sass/global.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 77, ../sass/global.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 81, ../sass/global.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 87, ../sass/global.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 90, ../sass/global.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 96, ../sass/global.scss */
+ul, ol {
+  margin: 1em;
+  padding: 0 0 0 20px;
+}
+
+/* line 100, ../sass/global.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 103, ../sass/global.scss */
+dd {
+  margin: 0 0 0 20px;
+}
+
+/* line 106, ../sass/global.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 114, ../sass/global.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 119, ../sass/global.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 132, ../sass/global.scss */
+fieldset {
+  border: 0;
+}
+
+/* line 135, ../sass/global.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 138, ../sass/global.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  white-space: normal;
+}
+
+/* line 143, ../sass/global.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 148, ../sass/global.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 153, ../sass/global.scss */
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 159, ../sass/global.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 163, ../sass/global.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 168, ../sass/global.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/* line 172, ../sass/global.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 177, ../sass/global.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 180, ../sass/global.scss */
+button {
+  padding: 8px 16px;
+}
+
+/* line 183, ../sass/global.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 189, ../sass/global.scss */
+input:invalid, textarea:invalid {
+  background-color: #333333;
+}
+
+/* line 193, ../sass/global.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 197, ../sass/global.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 2, ../sass/main.scss */
+form#search {
+  background: #dfdfdf;
+  padding: 18px 0;
+}
+/* line 6, ../sass/main.scss */
+form#search input {
+  padding: 8px 15px;
+  width: 100%;
+  color: #2b2b2b;
+  border: none;
+  outline: none;
+}
+
+/* line 17, ../sass/main.scss */
+#main, #main ul, #main ul li {
+  display: inline-block;
+}
+/* line 20, ../sass/main.scss */
+#main ul, #main ul li ul {
+  font-size: 0;
+}
+/* line 27, ../sass/main.scss */
+#main ul li a {
+  font-size: 13px;
+}
+
+/* line 34, ../sass/main.scss */
+span#s {
+  display: inline-block;
+  position: relative;
+  text-indent: -99999px;
+  width: 25px;
+  height: 22px;
+  cursor: pointer;
+}
+/* line 42, ../sass/main.scss */
+span#s:before {
+  content: "s";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 22px;
+  font-family: "FontomasCustomRegular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  text-indent: 0;
+  text-align: center;
+}
+/* line 58, ../sass/main.scss */
+span#s.close:before {
+  content: "x";
+}
+
+/* line 65, ../sass/main.scss */
+ul.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 70, ../sass/main.scss */
+ul.items a {
+  text-decoration: none;
+}
+/* line 73, ../sass/main.scss */
+ul.items a time {
+  font-size: 12px;
+}
+/* line 76, ../sass/main.scss */
+ul.items a h2 {
+  max-width: 80%;
+}
+/* line 79, ../sass/main.scss */
+ul.items a time, ul.items a h2 {
+  display: inline-block;
+}
+
+/* line 89, ../sass/main.scss */
+#bottom ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+}
+/* line 95, ../sass/main.scss */
+#bottom ul li {
+  display: inline-block;
+}
+/* line 98, ../sass/main.scss */
+#bottom ul li a {
+  font-size: 13px;
+}
+/* line 103, ../sass/main.scss */
+#bottom #attribution {
+  display: block;
+  width: 24px;
+  height: 22px;
+  text-indent: -9999px;
+  background: url(../images/attribution.gif);
+}
+
+/* line 3, ../sass/helper.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 7, ../sass/helper.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 10, ../sass/helper.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 13, ../sass/helper.scss */
+.hidden {
+  display: none;
+}
+
+/* line 16, ../sass/helper.scss */
+.hide {
+  position: absolute;
+  left: -999em;
+  top: -999em;
+}

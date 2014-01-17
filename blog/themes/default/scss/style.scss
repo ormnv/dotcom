@@ -1,0 +1,10 @@
+/* NOTE: Do not edit style.css directly. Edit the .scss instead! */
+
+// Imported styles
+@import "mixes"; // Contains all the variables, mixins and MORE!
+@import "reset"; // Contains a sad excuse for a reset
+@import "global"; // Contains all the initial settings and default styling
+@import "main"; // Main styles go here
+//Add any other sections here: Widgets, Modules, Patterns, etc.
+@import "helper"
+// Print styles. Needed? If so, should they be super condensed?

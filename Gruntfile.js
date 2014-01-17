@@ -54,6 +54,16 @@ module.exports = function(grunt) {
             outputStyle: 'expanded',
             specify: 'assets/sass/dotcom.scss'
           }
+        },
+        blog: {
+          options: {
+            sassDir: 'blog/themes/dotcom/sass',
+            cssDir: 'blog/themes/dotcom/css',
+            environment: 'production',
+            relativeAssets: true,
+            outputStyle: 'expanded',
+            specify: 'blog/themes/dotcom/sass/style.scss'
+          }
         }
       },
       watch: {
