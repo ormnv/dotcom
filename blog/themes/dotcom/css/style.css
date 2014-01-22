@@ -434,6 +434,417 @@ ul.items a time, ul.items a h2 {
   background: url(../images/attribution.gif);
 }
 
+/* line 115, ../sass/main.scss */
+h1 {
+  padding: 80px 0 40px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #505762;
+}
+
+/* line 122, ../sass/main.scss */
+.search h1 {
+  padding: 60px 0;
+}
+
+/* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
+/* line 127, ../sass/main.scss */
+.slidey {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #f3f5f8;
+  border-bottom: 1px solid #e5e8ed;
+}
+
+/* line 134, ../sass/main.scss */
+.js-enabled .slidey {
+  -webkit-transition: margin-top .2s;
+  -moz-transition: margin-top .2s;
+  transition: margin-top .2s;
+}
+
+/* line 139, ../sass/main.scss */
+.slidey b, .slidey label {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* line 147, ../sass/main.scss */
+.slidey form, .slidey aside {
+  float: left;
+  width: 50%;
+}
+
+/* line 151, ../sass/main.scss */
+.slidey form input {
+  padding: 20px;
+  width: 75%;
+}
+
+/* line 155, ../sass/main.scss */
+.slidey li {
+  list-style: none;
+}
+
+/* line 158, ../sass/main.scss */
+.slidey a {
+  display: block;
+  text-decoration: none;
+  color: #717985;
+}
+
+/* line 164, ../sass/main.scss */
+.slidey a:hover {
+  color: #414b59;
+}
+
+/* line 167, ../sass/main.scss */
+.slidey li span {
+  float: right;
+  opacity: .6;
+}
+
+/* line 172, ../sass/main.scss */
+#top {
+  overflow: hidden;
+  padding: 20px 35px;
+  background: #fff;
+  border-bottom: 1px solid rgba(22, 36, 54, 0.1);
+}
+
+/* line 179, ../sass/main.scss */
+#top a {
+  float: left;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #8895a7;
+}
+
+/* line 188, ../sass/main.scss */
+#top #logo:hover, #top ul a:hover, #top ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
+  color: #4171b1;
+}
+
+/* line 191, ../sass/main.scss */
+#top ul {
+  list-style: none;
+  float: right;
+}
+
+/* line 195, ../sass/main.scss */
+#top ul li {
+  float: left;
+  padding-left: 40px;
+}
+
+/* line 199, ../sass/main.scss */
+#top ul a {
+  display: inline-block;
+  color: #555f6d;
+}
+
+/* line 203, ../sass/main.scss */
+#top ul img {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  opacity: .4;
+}
+
+/* line 215, ../sass/main.scss */
+#top ul a:hover img {
+  opacity: .7;
+}
+
+/* line 218, ../sass/main.scss */
+#top ul a.active img {
+  opacity: 1;
+}
+
+/**
+ *   Index page listing, category listing, search page results
+ */
+/* line 225, ../sass/main.scss */
+.items {
+  list-style: none;
+}
+
+/* line 228, ../sass/main.scss */
+.items > li {
+  padding: 70px 0 60px;
+  color: #97aec9;
+  background: #3c4552;
+}
+
+/* line 234, ../sass/main.scss */
+.posts .items > li:first-child {
+  background: #fff !important;
+  padding: 110px 0;
+}
+
+/* line 238, ../sass/main.scss */
+.items li h1 a, .posts .items > li:first-child h2 a {
+  color: #3d4551;
+}
+
+/* line 241, ../sass/main.scss */
+.items h1 {
+  padding: 0 0 8px;
+}
+
+/* line 244, ../sass/main.scss */
+.items h1 a {
+  text-decoration: none;
+}
+
+/* line 247, ../sass/main.scss */
+.items h2 {
+  font-size: 32px;
+  line-height: 41px;
+}
+
+/* line 251, ../sass/main.scss */
+.items h2 a {
+  display: block;
+  padding-bottom: 12px;
+  color: #fff;
+  color: rgba(176, 200, 236, 0.8);
+  text-decoration: none;
+}
+
+/* line 260, ../sass/main.scss */
+.items h2 a:hover {
+  color: #fff;
+}
+
+/* line 263, ../sass/main.scss */
+.items .content {
+  padding: 10px 0 0;
+}
+
+/* line 266, ../sass/main.scss */
+.items .content p {
+  padding-bottom: 15px;
+}
+
+/**
+ *   Pagination
+ */
+/* line 273, ../sass/main.scss */
+.pagination {
+  overflow: hidden;
+  padding: 30px 0;
+  margin-bottom: 50px;
+  border-top: 1px solid rgba(22, 36, 54, 0.1);
+  border-bottom: 1px solid rgba(22, 36, 54, 0.1);
+}
+
+/* line 281, ../sass/main.scss */
+.pagination:empty {
+  display: none;
+}
+
+/* line 284, ../sass/main.scss */
+.pagination a {
+  float: left;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6f7b8b;
+}
+
+/* line 293, ../sass/main.scss */
+.pagination a:hover {
+  color: #3c4857;
+}
+
+/* line 296, ../sass/main.scss */
+.pagination a.next {
+  float: right;
+}
+
+/**
+ *   Give some extra space to single-page wrappers
+ */
+/* line 303, ../sass/main.scss */
+.content.wrap {
+  padding-bottom: 50px;
+}
+
+/* line 306, ../sass/main.scss */
+.content.wrap ul, .content.wrap ol, .items li ul {
+  padding: 20px 30px;
+}
+
+/* line 309, ../sass/main.scss */
+.content.wrap ul ul, .content.wrap ol ol, .items li ul ul {
+  padding: 0 20px;
+}
+
+/**
+ *   Footnotes and straplines
+ */
+/* line 316, ../sass/main.scss */
+.footnote, .commentlist time, .items footer {
+  display: block;
+  padding: 5px 0 15px;
+  color: #98a2b1;
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* line 326, ../sass/main.scss */
+.footnote {
+  padding: 20px 0 40px;
+}
+
+/**
+ *   Comment form
+ */
+/* line 333, ../sass/main.scss */
+ul.commentlist {
+  margin-bottom: 40px;
+  list-style: none;
+  border-top: 1px solid rgba(22, 36, 54, 0.1);
+}
+
+/* line 339, ../sass/main.scss */
+ul.commentlist .wrap {
+  position: relative;
+}
+
+/* line 342, ../sass/main.scss */
+ul.commentlist li {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(22, 36, 54, 0.1);
+}
+
+/* line 346, ../sass/main.scss */
+ul.commentlist time {
+  font-size: 13px;
+}
+
+/* line 349, ../sass/main.scss */
+ul.commentlist h2 {
+  font-size: 25px;
+  line-height: 33px;
+}
+
+/* line 353, ../sass/main.scss */
+ul.commentlist .counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  font-weight: 300;
+  color: #cdd2da;
+}
+
+/* line 363, ../sass/main.scss */
+#comment {
+  overflow: hidden;
+}
+
+/* line 366, ../sass/main.scss */
+#comment label[for] {
+  display: none;
+}
+
+/* line 369, ../sass/main.scss */
+#comment p {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 10px;
+  text-indent: 0;
+}
+
+/* line 377, ../sass/main.scss */
+#comment p + p {
+  margin-right: 0;
+}
+
+/* line 380, ../sass/main.scss */
+#comment p.textarea {
+  float: none;
+  width: 100%;
+}
+
+/* line 384, ../sass/main.scss */
+#comment input, #comment textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: normal;
+  border: 1px solid rgba(22, 36, 54, 0.2);
+  border-radius: 4px;
+}
+
+/* line 394, ../sass/main.scss */
+#comment input:focus, #comment textarea:focus {
+  outline: none;
+  background: #f7f9fc;
+}
+
+/* line 398, ../sass/main.scss */
+#comment textarea {
+  min-height: 150px;
+  max-height: 800px;
+  resize: vertical;
+}
+
+/* line 403, ../sass/main.scss */
+#comment button {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #4e82ce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* line 417, ../sass/main.scss */
+#comment button:hover {
+  background: #3c6eb7;
+}
+
+/**
+ *   Footer
+ */
+/* line 424, ../sass/main.scss */
+#bottom {
+  padding: 30px 0 40px;
+}
+
+/* line 427, ../sass/main.scss */
+#bottom ul {
+  float: right;
+  list-style: none;
+}
+
+/* line 431, ../sass/main.scss */
+#bottom li {
+  float: left;
+  padding-left: 35px;
+  font-size: 14px;
+}
+
+/* line 437, ../sass/main.scss */
+#bottom a {
+  text-decoration: none;
+}
+
 /* line 3, ../sass/helper.scss */
 .clearfix:before, .clearfix:after {
   content: "";

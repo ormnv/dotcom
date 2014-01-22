@@ -1,5 +1,5 @@
-Theme name:    Default
-Description:   This is the default, shiny theme for Anchor CMS.
-Author name:   Visual Idiot
-Author site:   http://visualidiot.com
-License:       http://licence.visualidiot.com
+Theme name:    Dotcom
+Description:   Olga's theme.
+Author name:   Olga Romanova
+Author site:   http://technotropes.info
+License:       none

@@ -2,7 +2,7 @@
 // Imports
 
 @import "base";
-@import "vendor/hover";
+@import "vendor/hover/hover";
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
@@ -28,128 +28,351 @@ body.dotcom{
 
 
 .outer {
-	outline: 1px solid red;
   // page acts as a container for our grid.
-  @include container;
+  //960 px square 
+    @include container;
 
 
   // header and footer are full-width by default.
   header, footer { clear: both; }
 
-  //   @include at-breakpoint(30em 12) {
-  //   		outline: 1px solid blue;
+   //mobile 
+    @include container;
+    max-width:40em;
+    height:60em;
+    // outline: 0.625em solid black;
 
-  //   // Establish our new 8-column container.
-  //   @include container;
-  // }
+    
 
-  // // nav spans 3 columns of total 12.
-  // nav { 
-  // 	@include span-columns(2,12); 
-  // 		outline: 1px solid green;
 
-  // }
 
-  .content {
-    // content spans the final (omega) 9 columns of 12.
-    // @include span-columns(9 omega,12);
-	outline: 1px solid orange;
+    #top{
+      height:30%;
+      outline: 5px solid blue;
+      @include span-columns(8 omega,8); 
 
-    // main content spans 6 of those 9 columns.
-    #name { 
-    	@include span-columns(1,9); 
-    		outline: 1px solid purple;
+       #name { 
+        @include span-columns(8 omega,8); 
+          outline: 1px solid purple;
+          #olga{
+              @include span-columns(8 omega,8); 
 
-    }
-    #name { 
-    	@include span-columns(2,9); 
-    		outline: 1px solid purple;
-
-    }
-    #description { 
-    	@include span-columns(3,9); 
-    		outline: 1px solid purple;
-      h1{
-          outline: 1px solid red;
+          }
+          #romanova{
+              @include span-columns(8 omega,8); 
+          }
+          margin-bottom: 2em;
       }
-
     }
-    #email { 
-      @include span-columns(6,9); 
-        outline: 1px solid purple;
-      h1{
-          outline: 1px solid red;
+
+    .content {
+    height:60%;
+    @include span-columns(8 omega,8); 
+
+      // content spans the final (omega) 9 columns of 8.
+      // @include span-columns(9 omega,8);
+    outline: 5px solid pink;
+      // main content spans 6 of those 9 columns.
+      .section{
+        height:100%;
+        a{
+          // margin-left:-5em;
+        }
+            .section-container{
+                @include vertical();
+                position:relative;
+                top:50%;
       }
-
-    }
-    #github { 
-    	@include span-columns(2 omega,12); 
-    		outline: 1px solid purple;      
-      h1{
-          outline: 1px solid red;
       }
+     
+      #github { 
+        @include span-columns(2,8); 
+          outline: 1px solid purple;
+        a{
 
-    }
-    #instagram { 
-    	@include span-columns(6,9); 
-    		outline: 1px solid purple;
-      h1{
-          outline: 1px solid red;
-      }
-
-    }
-    #linkedin { 
-    	@include span-columns(6 omega,9); 
-    		outline: 1px solid purple;
-          //         -webkit-transform: scale(2,1);
-          // -moz-transform: scale(2,1);
-          // -ms-transform: scale(2,1);
-          // -o-transform: scale(2,1);
+        }      
         h1{
           outline: 1px solid red;
-
+          font-size:1em;
         }
 
-    }
-    #logo { 
-    	@include span-columns(6,9); 
-    		outline: 1px solid purple;
+      }
+      #twitter { 
+        @include span-columns(2,8); 
+          outline: 1px solid purple;
+          a{
+          }
+          h1{
+            outline: 1px solid red;
+          }
 
-    }
-    #soundcloud { 
-    	@include span-columns(2,8); 
-    		outline: 1px solid purple;
-        a:hover{
-          //pulse effect 
+      }
+      #soundcloud { 
+        @include span-columns(1,8); 
+          outline: 1px solid purple;
+
+          a{
+            //pulse effect 
+          }
+          h1{ 
+            outline: 1px solid red;
+          }
+      }
+      #linkedin { 
+        @include span-columns(2,8); 
+
+          outline: 1px solid purple;
+          a{
+            //pulse effect 
+          }
+          h1{
+            outline: 1px solid red;
+
+          }
+
+      }
+      #year { 
+        @include span-columns(2,8); 
+          outline: 1px solid purple;
+
+      }
+      .desc-blog{
+          #description { 
+            // @include span-columns(3 omega,8); 
+              outline: 1px solid purple;
+            h1{
+                outline: 1px solid red;
+            }
+
+          }
+          #blog { 
+            // @include span-columns(3 omega, 8); 
+              outline: 1px solid purple;
+            h1{
+                outline: 1px solid red;
+            }
         }
+
+      }
+      #email { 
+        @include span-columns(8,8); 
+          outline: 1px solid purple;
         h1{
-          outline: 1px solid red;
-          transform:rotate(90deg);
-          -ms-transform:rotate(90deg); // IE 9
-          -webkit-transform:rotate(90deg); /* Safari and Chrome */
+            outline: 1px solid red;
         }
+
+      }
+      
+      // #instagram { 
+      //  // @include span-columns(6,9); 
+      //    outline: 1px solid purple;
+      //   h1{
+      //       outline: 1px solid red;
+      //   }
+
+      // }
+      // #logo { 
+      //  // @include span-columns(6,9); 
+      //    outline: 1px solid purple;
+
+      // }
+      // // secondary content spans the final 3 (omega) of 9 columns.
+      // .secondary {
+      //    outline: 1px solid cyan;
+
+      //  // @include span-columns(3 omega,9); 
+      // }
+    } //content
+
+    
+
+    //desktop
+  @include at-breakpoint($break) {
+    @include container;
+  
+    outline: 0.625em solid black;
+    max-width:60em;
+    height:60em;
+
+
+
+
+
+
+    #top{
+      height:30%;
+      outline: 5px solid blue;
+      @include span-columns(16 omega,16); 
+
+       #name { 
+        @include span-columns(16 omega,16); 
+          outline: 1px solid purple;
+          #olga{
+              @include span-columns(16 omega,16); 
+
+          }
+          #romanova{
+              @include span-columns(16 omega,16); 
+          }
+          margin-bottom: 2em;
+      }
     }
-    #twitter { 
-    	@include span-columns(2,9); 
-    		outline: 1px solid purple;
+
+    .content {
+      height:60%;
+      position: relative;
+      // height: 100%;
+      width: 100%;
+      display:block;
+      @include span-columns(16 omega,16); 
+
+        // content spans the final (omega) 9 columns of 16.
+        // @include span-columns(9 omega,16);
+      outline: 5px solid orange;
+        // main content spans 6 of those 9 columns.
+      .section{
+        height:100%;
+        // position:absolute;
+        a{
+          z-index: 10;         
+        }
+            .section-container{
+                @include vertical();
+                position:relative;
+                top:50%;
+            }
+      }
+
+      .row{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display:block;
+      }
+     
+      .two{
+      // width: columns(8,16);
+
+        #github { 
+          @include span-columns(3,16); 
+            // @include span-columns(3,8); 
+
+            outline: 1px solid purple;
+          a{
+
+          }      
+          h1{
+            outline: 1px solid red;
+            font-size:1em;
+          }
+
+        }
+        #twitter { 
+          @include span-columns(3,16);          
+          // @include span-columns(3,8);
+            outline: 1px solid purple;
+            a{
+            }
+            h1{
+              outline: 1px solid red;
+            }
+
+        }
+        #soundcloud { 
+          @include span-columns(2,16); 
+            outline: 1px solid purple;
+
+            a{
+              //pulse effect 
+            }
+            h1{ 
+              outline: 1px solid red;
+            }
+        }
+      } //two
+      .three{
+        // @include span-columns(4,16);
+        left:columns(8,16)+gutter(12)/2; 
+
+        #linkedin { 
+          @include span-columns(3,16); 
+
+            outline: 1px solid purple;
+            a{
+              //pulse effect 
+            }
+            h1{
+              outline: 1px solid red;
+
+            }
+
+        }
+        #year { 
+          @include span-columns(2,16); 
+            outline: 1px solid purple;
+
+        }
+      }
+      .one{
+        .desc-blog{
+          @include span-columns(3 omega,16); 
+
+          #description {
+            // @include span-columns(4 omega,4); 
+   
+          		outline: 1px solid purple;
+            // h1{
+            //     outline: 1px solid red;
+            // }
+
+          }
+          #blog { 
+            // @include span-columns(4 omega, 4);
+              //from section container
+              outline: 1px solid purple;
+            h1{
+                outline: 1px solid red;
+            }
+
+          }
+        }
+      }
+      #email { 
+        @include span-columns(16,16); 
+          outline: 1px solid purple;
         h1{
-          outline: 1px solid red;
+            outline: 1px solid red;
         }
 
-    }
-    #year { 
-    	@include span-columns(6,9); 
-    		outline: 1px solid purple;
+      }
+      // #instagram { 
+      // 	// @include span-columns(6,9); 
+      // 		outline: 1px solid purple;
+      //   h1{
+      //       outline: 1px solid red;
+      //   }
 
-    }
-    // secondary content spans the final 3 (omega) of 9 columns.
-    .secondary {
-    		outline: 1px solid cyan;
+      // }
+      // #logo { 
+      // 	// @include span-columns(6,9); 
+      // 		outline: 1px solid purple;
 
-     @include span-columns(3 omega,9); 
- 	}
-  }
-}
+      // }
+      // // secondary content spans the final 3 (omega) of 9 columns.
+      // .secondary {
+      // 		outline: 1px solid cyan;
+
+      //  // @include span-columns(3 omega,9); 
+   	  // }
+    } //content
+
+
+
+   } //break
+
+  
+
+ } //outer
 
 
 
