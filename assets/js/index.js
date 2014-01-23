@@ -28,6 +28,7 @@ require(
 		'signals'
 		,'jquery'
 		,'app'
+		,'validate'
 		// ,'underscore'
 		// ,'backbone'
 		,'hover'
@@ -38,6 +39,7 @@ require(
 		Signal
 		,$
 		,app
+		,validate
 		// ,underscore
 		// ,backbone
 		,hover
@@ -57,12 +59,13 @@ require(
 					'closeContact'       : new Signal(),
 					'hoverStart'       : new Signal(),
 					'hoverStop'        : new Signal(),
+					'validateForm'        : new Signal(),
 					'click'             : new Signal()
 				}
 			};
 		app.init(shared);
 		hover.init(shared);
-	
+		validate.init(shared);
 		}
 	}
 );

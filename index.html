@@ -1,70 +1,75 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml"  xmlns:fb="http://ogp.me/ns/fb#" lang="en" itemscope itemtype="http://schema.org/Product">
 <head>
-  <meta charset="utf-8" />
+	<meta charset="utf-8" />
 
-  <title>Dotcom</title>
-  <meta name="viewport" content="width=1000" />
+	<title>Dotcom</title>
+	<meta name="viewport" content="width=1000" />
 
-  <link rel=" icon" href="images/favicon/favicon.ico" />
-  <link rel="stylesheet" href="assets/css/dotcom.css" />
-  <link rel="stylesheet" href="assets/css/hover.css" />
+	<link rel=" icon" href="images/favicon/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/dotcom.css" />
+	<link rel="stylesheet" href="assets/css/hover.css" />
 
-  <script data-main="assets/js/index" src="assets/js/lib/require.js"></script>
+	<script data-main="assets/js/index" src="assets/js/lib/require.js"></script>
 
-  
+
 </head>
 <body class="dotcom">
 
 	<div class = "outer">
-			<div id="top">
-				<div id="name">
-					<div id="olga"><h1>Olga</h1></div>
-					<div id="romanova"><h1>Romanova</h1></div>
-				</div>
-			</div>
-	<div class ="content">
-		<div class="row two">
-			<div id="github" class="section">
-					<div class="section-container">
-						<a class="pulse-shrink" href="http://github.com/ormnv" target="_blank"><h1>GITHUB</h1></a>
-					</div>
-				</div>
-				<div id="twitter" class="section">
-					<div class="section-container">
-						<a class="pulse-shrink" href="http://twitter.com/technotropes" target="_blank"><h1>TWITTER</h1></a>
-					</div>
-				</div>
-				<div id="soundcloud" class="section">
-					<div class="section-container">
-						<a class ="pulse-shrink" href="http://soundcloud.com/technotropes" target="_blank"><h1>SOUNDCLOUD</h1></a>
-					</div>
-				</div>
-		</div> <!-- row two -->
-		<div class="row three">
-			<div id="linkedin" class="section">
-				<div class="section-container">	
-					<a class="pulse-shrink" href="http://linkedin.com/in/olgaromanova" target="_blank"><h1>LinkedIn</h1></a>
-				</div>
-			</div>
-			<div id="year" class="section">
-				<div class="section-container">
-					<h1>2014</h1>
-				</div>
-			</div>
-			</div> <!-- row three -->
-		<div class="one">
-			<div class="desc-blog">
-				<div id="description" class="section">
-						<p>Coder in Brooklyn, NY | Master's student in Computer Science at NYU, class of 2015 | Background in economics, research and analysis | Runner | Dance music nerd | Dresses accordingly 
-						</p>
-				</div>
-				<div id="blog" class="section">
-					<a href="/blog" class="pulse-shrink" target="_blank"><h1>blog</h1></a>
-				</div>
+		<div id="top">
+			<div id="name">
+				<div id="olga"><h1>Olga</h1></div>
+				<div id="romanova"><h1>Romanova</h1></div>
 			</div>
 		</div>
+		<div class ="content">
+			<div class="one">
+				<div class="desc-blog">
+					<div id="description" class="section">
+						<p>Coder in Brooklyn, NY | Master's student in Computer Science at NYU, class of 2015 | Background in economics, research and analysis | Runner | Dance music nerd | Dresses accordingly 
+						</p>
+					</div>
+					<div id="blog" class="section">
+						<a href="/blog" class="pulse-shrink" target="_blank"><h1>blog</h1></a>
+					</div>
+<!-- 				<div id="instagram" class="section">
+					<a href="http://instagram.com/technotropes" class="pulse-shrink" target="_blank"><h1>instagram</h1></a>
+				</div> -->
+			</div>
+		</div>
+
+<!-- 		<div class="row two">
+-->			<div id="github" class="section">
+			<div class="section-container">
+				<a class="pulse-shrink" href="http://github.com/ormnv" target="_blank"><h1>GITHUB</h1></a>
 </div>
+</div>
+<div id="twitter" class="section">
+	<div class="section-container">
+		<a class="pulse-shrink" href="http://twitter.com/technotropes" target="_blank"><h1>TWITTER</h1></a>
+	</div>
+</div>
+<div id="soundcloud" class="section">
+	<div class="section-container">
+		<a class ="pulse-shrink" href="http://soundcloud.com/technotropes" target="_blank"><h1>SOUNDCLOUD</h1></a>
+	</div>
+</div>
+<!-- 		</div> row two
+ --><!-- 		<div class="row three">
+-->			<div id="linkedin" class="section">
+<div class="section-container">	
+	<a class="pulse-shrink" href="http://linkedin.com/in/olgaromanova" target="_blank"><h1>LinkedIn</h1></a>
+</div>
+</div>
+<div id="year" class="section">
+	<div class="section-container">
+		<h1>2014</h1>
+	</div>
+</div>
+<!-- 			</div> row three
+-->
+<!-- </div> -->
 <!-- 
 	<div id="blog" class="section">
 		<a href="http://instagram.com/technotropes" target="_blank"><h1>INSTAGRAM</h1></a>
@@ -75,17 +80,34 @@
 	</div> -->
 
 
+</div><!-- content -->
 
 
 
 
 
 <!-- 	<a class ="button pulse section">pulse pulse</a>
- -->
-			<div id="email" class="section">
-			<h1>romanova dot olga dot a at gmail dot com</h1>
-		</div>
-	</div><!-- content -->
+-->
+<div id="email" class="section">
+	<h1>romanova dot olga dot a at gmail dot com</h1>
+</div>
+<div id="contact">
+	<form id="contact-form" action="assets/php/email.php" method="post">
+	<label>
+		<span>Name</span>
+		<input placeholder="Placeholder" type="name" >
+	</label>
+	<label>
+		<span>Email</span>
+		<input placeholder="Placeholder" type="email" >
+	</label>
+	<label>
+		<span>Message</span>
+		<input placeholder="Get in touch." type="text" >
+	</label>
+	<input name="submit" type="submit" value="send">
+</form>
+</div>
 
 </div><!-- outer --> 
 

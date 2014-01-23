@@ -28,6 +28,12 @@ define([
             shared.signals.hoverStop.dispatch(current);
         });
 
+        // $("#contact-submit").click(
+        //   function() {
+        //         console.log("send clicked");
+        //         shared.signals.validateForm.dispatch();
+        // });
+
         }
 
         return {

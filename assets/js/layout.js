@@ -40,6 +40,11 @@ define([
             var current = $( this ).attr("id");
             shared.signals.hoverStop.dispatch(current);
         });
+        $("#contact-submit").click(
+          function() {
+            // var form = $( this ).attr("id");
+            shared.signals.validateForm.dispatch();
+        });
             // , function() {
             // $( this ).find( "span:last" ).remove();
             // }

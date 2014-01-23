@@ -1314,10 +1314,12 @@ body.dotcom {
   position: relative;
   background-color: white;
   overflow-x: hidden;
+  margin: 0px;
 }
 
-/* line 30, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
 .outer {
+  outline: 5px solid black;
   *zoom: 1;
   max-width: 31em;
   _width: 31em;
@@ -1325,23 +1327,10 @@ body.dotcom {
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  *zoom: 1;
-  max-width: 31em;
-  _width: 31em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40em;
+  max-width: 50em;
   height: 60em;
 }
-/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.outer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 37, ../sass/_layout.scss */
+/* line 39, ../sass/_layout.scss */
 .outer header, .outer footer {
   clear: both;
 }
@@ -1351,7 +1340,7 @@ body.dotcom {
   display: table;
   clear: both;
 }
-/* line 49, ../sass/_layout.scss */
+/* line 48, ../sass/_layout.scss */
 .outer #top {
   height: 30%;
   outline: 5px solid blue;
@@ -1361,7 +1350,7 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 54, ../sass/_layout.scss */
+/* line 53, ../sass/_layout.scss */
 .outer #top #name {
   width: 100%;
   float: right;
@@ -1371,7 +1360,7 @@ body.dotcom {
   outline: 1px solid purple;
   margin-bottom: 2em;
 }
-/* line 57, ../sass/_layout.scss */
+/* line 56, ../sass/_layout.scss */
 .outer #top #name #olga {
   width: 100%;
   float: right;
@@ -1379,7 +1368,7 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 61, ../sass/_layout.scss */
+/* line 60, ../sass/_layout.scss */
 .outer #top #name #romanova {
   width: 100%;
   float: right;
@@ -1387,7 +1376,7 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 68, ../sass/_layout.scss */
+/* line 67, ../sass/_layout.scss */
 .outer .content {
   height: 60%;
   width: 100%;
@@ -1397,106 +1386,112 @@ body.dotcom {
   display: inline;
   outline: 5px solid pink;
 }
-/* line 76, ../sass/_layout.scss */
-.outer .content .section {
-  height: 100%;
-}
-/* line 81, ../sass/_layout.scss */
+/* line 80, ../sass/_layout.scss */
 .outer .content .section .section-container {
-  transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  /* Safari and Chrome */
   position: relative;
   top: 50%;
 }
-/* line 88, ../sass/_layout.scss */
+/* line 87, ../sass/_layout.scss */
 .outer .content #github {
-  width: 23.94366%;
+  width: 100%;
   float: left;
-  margin-right: 1.40845%;
+  margin-right: 2.85714%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 94, ../sass/_layout.scss */
+/* line 93, ../sass/_layout.scss */
 .outer .content #github h1 {
   outline: 1px solid red;
-  font-size: 1em;
 }
-/* line 100, ../sass/_layout.scss */
+/* line 99, ../sass/_layout.scss */
 .outer .content #twitter {
-  width: 23.94366%;
+  width: 100%;
   float: left;
-  margin-right: 1.40845%;
+  margin-right: 2.85714%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 105, ../sass/_layout.scss */
+/* line 104, ../sass/_layout.scss */
 .outer .content #twitter h1 {
   outline: 1px solid red;
 }
-/* line 110, ../sass/_layout.scss */
+/* line 109, ../sass/_layout.scss */
 .outer .content #soundcloud {
-  width: 11.26761%;
+  width: 100%;
   float: left;
-  margin-right: 1.40845%;
+  margin-right: 2.85714%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 117, ../sass/_layout.scss */
+/* line 116, ../sass/_layout.scss */
 .outer .content #soundcloud h1 {
   outline: 1px solid red;
 }
-/* line 121, ../sass/_layout.scss */
+/* line 120, ../sass/_layout.scss */
 .outer .content #linkedin {
-  width: 23.94366%;
+  width: 100%;
   float: left;
-  margin-right: 1.40845%;
+  margin-right: 2.85714%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 128, ../sass/_layout.scss */
+/* line 127, ../sass/_layout.scss */
 .outer .content #linkedin h1 {
   outline: 1px solid red;
 }
-/* line 134, ../sass/_layout.scss */
+/* line 133, ../sass/_layout.scss */
 .outer .content #year {
-  width: 23.94366%;
-  float: left;
-  margin-right: 1.40845%;
+  width: 48.57143%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 140, ../sass/_layout.scss */
-.outer .content .desc-blog #description {
-  outline: 1px solid purple;
+/* line 138, ../sass/_layout.scss */
+.outer .content .one {
+  width: 100%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline;
+  z-index: -10;
 }
-/* line 143, ../sass/_layout.scss */
-.outer .content .desc-blog #description h1 {
-  outline: 1px solid red;
+/* line 145, ../sass/_layout.scss */
+.outer .content .one .desc-blog #description {
+  outline: 1px solid purple;
 }
 /* line 148, ../sass/_layout.scss */
-.outer .content .desc-blog #blog {
-  outline: 1px solid purple;
-}
-/* line 151, ../sass/_layout.scss */
-.outer .content .desc-blog #blog h1 {
+.outer .content .one .desc-blog #description h1 {
   outline: 1px solid red;
 }
-/* line 157, ../sass/_layout.scss */
+/* line 153, ../sass/_layout.scss */
+.outer .content .one .desc-blog #blog {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%;
+  display: inline;
+  outline: 1px solid purple;
+  position: absolute;
+  bottom: 7em;
+}
+/* line 161, ../sass/_layout.scss */
+.outer .content .one .desc-blog #blog h1 {
+  outline: 1px solid red;
+}
+/* line 168, ../sass/_layout.scss */
 .outer .content #email {
   width: 100%;
   float: left;
-  margin-right: 1.40845%;
+  margin-right: 2.85714%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 160, ../sass/_layout.scss */
+/* line 171, ../sass/_layout.scss */
 .outer .content #email h1 {
   outline: 1px solid red;
 }
-@media (min-width: 40em) {
-  /* line 30, ../sass/_layout.scss */
+@media (min-width: 50em) {
+  /* line 31, ../sass/_layout.scss */
   .outer {
     max-width: 53.5em;
     padding-left: 0.5em;
@@ -1513,7 +1508,7 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 202, ../sass/_layout.scss */
+  /* line 213, ../sass/_layout.scss */
   .outer #top {
     height: 30%;
     outline: 5px solid blue;
@@ -1521,7 +1516,7 @@ body.dotcom {
     float: right;
     margin-right: 0;
   }
-  /* line 207, ../sass/_layout.scss */
+  /* line 218, ../sass/_layout.scss */
   .outer #top #name {
     width: 100%;
     float: right;
@@ -1529,19 +1524,19 @@ body.dotcom {
     outline: 1px solid purple;
     margin-bottom: 2em;
   }
-  /* line 210, ../sass/_layout.scss */
+  /* line 221, ../sass/_layout.scss */
   .outer #top #name #olga {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 214, ../sass/_layout.scss */
+  /* line 225, ../sass/_layout.scss */
   .outer #top #name #romanova {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 221, ../sass/_layout.scss */
+  /* line 232, ../sass/_layout.scss */
   .outer .content {
     height: 60%;
     position: relative;
@@ -1552,15 +1547,15 @@ body.dotcom {
     margin-right: 0;
     outline: 5px solid orange;
   }
-  /* line 233, ../sass/_layout.scss */
+  /* line 244, ../sass/_layout.scss */
   .outer .content .section {
     height: 100%;
   }
-  /* line 236, ../sass/_layout.scss */
+  /* line 247, ../sass/_layout.scss */
   .outer .content .section a {
     z-index: 10;
   }
-  /* line 239, ../sass/_layout.scss */
+  /* line 250, ../sass/_layout.scss */
   .outer .content .section .section-container {
     transform: rotate(270deg);
     -ms-transform: rotate(270deg);
@@ -1569,95 +1564,98 @@ body.dotcom {
     position: relative;
     top: 50%;
   }
-  /* line 246, ../sass/_layout.scss */
+  /* line 257, ../sass/_layout.scss */
   .outer .content .row {
     position: absolute;
     height: 100%;
     width: 100%;
     display: block;
   }
-  /* line 256, ../sass/_layout.scss */
-  .outer .content .two #github {
+  /* line 267, ../sass/_layout.scss */
+  .outer .content #github {
     width: 18.18182%;
     float: left;
     margin-right: 0.6993%;
     outline: 1px solid purple;
   }
-  /* line 264, ../sass/_layout.scss */
-  .outer .content .two #github h1 {
-    outline: 1px solid red;
-    font-size: 1em;
-  }
-  /* line 270, ../sass/_layout.scss */
-  .outer .content .two #twitter {
-    width: 18.18182%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 276, ../sass/_layout.scss */
-  .outer .content .two #twitter h1 {
+  /* line 275, ../sass/_layout.scss */
+  .outer .content #github h1 {
     outline: 1px solid red;
   }
   /* line 281, ../sass/_layout.scss */
-  .outer .content .two #soundcloud {
-    width: 11.88811%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 288, ../sass/_layout.scss */
-  .outer .content .two #soundcloud h1 {
-    outline: 1px solid red;
-  }
-  /* line 293, ../sass/_layout.scss */
-  .outer .content .three {
-    left: 50.11764%;
-  }
-  /* line 297, ../sass/_layout.scss */
-  .outer .content .three #linkedin {
+  .outer .content #twitter {
     width: 18.18182%;
     float: left;
     margin-right: 0.6993%;
     outline: 1px solid purple;
   }
-  /* line 304, ../sass/_layout.scss */
-  .outer .content .three #linkedin h1 {
+  /* line 287, ../sass/_layout.scss */
+  .outer .content #twitter h1 {
     outline: 1px solid red;
   }
-  /* line 310, ../sass/_layout.scss */
-  .outer .content .three #year {
+  /* line 292, ../sass/_layout.scss */
+  .outer .content #soundcloud {
     width: 11.88811%;
     float: left;
     margin-right: 0.6993%;
     outline: 1px solid purple;
   }
-  /* line 317, ../sass/_layout.scss */
-  .outer .content .one .desc-blog {
+  /* line 299, ../sass/_layout.scss */
+  .outer .content #soundcloud h1 {
+    outline: 1px solid red;
+  }
+  /* line 308, ../sass/_layout.scss */
+  .outer .content #linkedin {
+    width: 18.18182%;
+    float: left;
+    margin-right: 0.6993%;
+    outline: 1px solid purple;
+  }
+  /* line 315, ../sass/_layout.scss */
+  .outer .content #linkedin h1 {
+    outline: 1px solid red;
+  }
+  /* line 321, ../sass/_layout.scss */
+  .outer .content #year {
+    width: 11.88811%;
+    float: left;
+    margin-right: 0.6993%;
+    outline: 1px solid purple;
+  }
+  /* line 327, ../sass/_layout.scss */
+  .outer .content .one {
     width: 18.18182%;
     float: right;
     margin-right: 0;
   }
-  /* line 320, ../sass/_layout.scss */
+  /* line 332, ../sass/_layout.scss */
   .outer .content .one .desc-blog #description {
+    width: 100%;
+    float: right;
+    margin-right: 0;
     outline: 1px solid purple;
   }
-  /* line 329, ../sass/_layout.scss */
+  /* line 341, ../sass/_layout.scss */
   .outer .content .one .desc-blog #blog {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    position: relative;
+    bottom: 0em;
     outline: 1px solid purple;
   }
-  /* line 333, ../sass/_layout.scss */
+  /* line 348, ../sass/_layout.scss */
   .outer .content .one .desc-blog #blog h1 {
     outline: 1px solid red;
   }
-  /* line 340, ../sass/_layout.scss */
+  /* line 355, ../sass/_layout.scss */
   .outer .content #email {
     width: 100%;
     float: left;
     margin-right: 0.6993%;
     outline: 1px solid purple;
   }
-  /* line 343, ../sass/_layout.scss */
+  /* line 358, ../sass/_layout.scss */
   .outer .content #email h1 {
     outline: 1px solid red;
   }
