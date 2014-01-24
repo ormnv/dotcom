@@ -92,7 +92,7 @@
 	<h1>romanova dot olga dot a at gmail dot com</h1>
 </div>
 <div id="contact">
-	<form id="contact-form" action="assets/php/email.php" method="post">
+	<form id="contact-form" action="contact" method="post">
 	<label>
 		<span>Name</span>
 		<input placeholder="Placeholder" type="name" >
@@ -105,6 +105,23 @@
 		<span>Message</span>
 		<input placeholder="Get in touch." type="text" >
 	</label>
+	<?php
+
+    $digit_1 = mt_rand(1, 20);
+    $digit_2 = mt_rand(1, 20);
+
+    if(mt_rand(0, 1) === 1) {
+        $math = $digit_1 . ' + ' . $digit_2;
+        Session::put('contact-math-session', $digit_1 + $digit_2);
+    }
+    else {
+        $math = $digit_1 . ' - ' . $digit_2;
+        Session::put('contact-math-session', $digit_1 - $digit_2);
+    }
+
+    echo $math . ' = <input name="contact-math" type="text" value="" autocomplete="off">';
+
+?>
 	<input name="submit" type="submit" value="send">
 </form>
 </div>

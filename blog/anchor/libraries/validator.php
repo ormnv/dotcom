@@ -53,6 +53,10 @@ class Validator {
 		$this->methods['regex'] = function($str, $pattern) {
 			return preg_match($pattern, $str);
 		};
+		$this->methods['answer'] = function($str, $compare) {
+            return $str != '' and $str == $compare;
+        };
+
 	}
 
 	public function check($key) {

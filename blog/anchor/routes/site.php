@@ -259,3 +259,55 @@ Route::get('(:all)', function($uri) {
 
 	return new Template('page');
 });
+/**
+ * Contact page
+ */
+Route::post('contact', function() {
+
+    $input = Input::get(array('contact-subject', 'contact-name', 'contact-email', 'contact-message', 'contact-math'));
+
+    // Validator check...
+    $validator = new Validator($input);
+
+    $validator->check('contact-subject')
+        ->is_max(1, "Subject is required!");
+
+    $validator->check('contact-name')
+        ->is_max(2, "Name is required!");
+
+    $validator->check('contact-email')
+        ->is_email("Email is required!");
+
+    $validator->check('contact-message')
+        ->is_max(5, "Message is empty or too short!");
+
+    $validator->check('contact-math')
+        ->is_answer(Session::get('contact-math-session'), "Wrong math answer!!!");
+
+    if($errors = $validator->errors()) {
+        Input::flash();
+        Notify::error($errors);
+        return Response::redirect('contact#error');
+    }
+
+    $me = "romanova.olga.a@gmail.com"; // Your email address
+    $subject = $input['contact-subject'];
+    $message = $input['contact-message'];
+
+    $header  = "From: " . $input['contact-email'] . " \r\n";
+    $header .= "Reply-To: " . $input['contact-email'] . " \r\n";
+    $header .= "Return-Path: " . $input['contact-email'] . "\r\n";
+    $header .= "X-Mailer: PHP \r\n";
+
+    if(mail($me, $subject, $message, $header)) {
+        Notify::success("Email sent!");
+        return Response::redirect('contact#sent');
+    } else {
+        Notify::error("Failed to send email!");
+        return Response::redirect('contact#failed');
+    }
+
+});
+
+
+
