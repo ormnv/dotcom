@@ -18,6 +18,10 @@ define([
 
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
                 $('#twitter span.title').css('font-size',($('#content').height()*0.25)+'px');    
+                $('#soundcloud span.title').css('font-size',($('#content').height()*0.15)+'px');
+                $('#linkedin span.title #linked').css('font-size',($('#content').height()*0.22)+'px');    
+                $('#linkedin span.title #in').css('font-size',($('#content').height()*0.22)+'px');    
+
                 $('#email span.title').css('font-size',($('#email').width()*0.1)+'px');    
 
             }
@@ -29,7 +33,10 @@ define([
                 $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
                 $('#romanova span.title').css('font-size',($('#romanova').width()*0.145)+'px');    
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
-                $('#email span.title').css('font-size',($('#content').width()*0.1)+'px');    
+                $('#twitter span.title').css('font-size',($('#content').height()*0.25)+'px');    
+                $('#soundcloud span.title').css('font-size',($('#content').height()*0.15)+'px');    
+                $('#linkedin span.title #linked').css('font-size',($('#content').height()*0.22)+'px');    
+                $('#linkedin span.title #in').css('font-size',($('#content').height()*0.22)+'px');                 $('#email span.title').css('font-size',($('#content').width()*0.1)+'px');    
 
             }
 
