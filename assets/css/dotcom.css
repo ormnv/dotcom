@@ -1275,17 +1275,17 @@
 /* line 10, ../sass/_layout.scss */
 .container {
   *zoom: 1;
-  max-width: 31em;
-  _width: 31em;
+  max-width: 53.5em;
+  _width: 53.5em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(12.90323%, rgba(100, 100, 225, 0.25)), color-stop(12.90323%, rgba(0, 0, 0, 0)), color-stop(14.51613%, rgba(0, 0, 0, 0)), color-stop(14.51613%, rgba(100, 100, 225, 0.25)), color-stop(27.41935%, rgba(100, 100, 225, 0.25)), color-stop(27.41935%, rgba(0, 0, 0, 0)), color-stop(29.03226%, rgba(0, 0, 0, 0)), color-stop(29.03226%, rgba(100, 100, 225, 0.25)), color-stop(41.93548%, rgba(100, 100, 225, 0.25)), color-stop(41.93548%, rgba(0, 0, 0, 0)), color-stop(43.54839%, rgba(0, 0, 0, 0)), color-stop(43.54839%, rgba(100, 100, 225, 0.25)), color-stop(56.45161%, rgba(100, 100, 225, 0.25)), color-stop(56.45161%, rgba(0, 0, 0, 0)), color-stop(58.06452%, rgba(0, 0, 0, 0)), color-stop(58.06452%, rgba(100, 100, 225, 0.25)), color-stop(70.96774%, rgba(100, 100, 225, 0.25)), color-stop(70.96774%, rgba(0, 0, 0, 0)), color-stop(72.58065%, rgba(0, 0, 0, 0)), color-stop(72.58065%, rgba(100, 100, 225, 0.25)), color-stop(85.48387%, rgba(100, 100, 225, 0.25)), color-stop(85.48387%, rgba(0, 0, 0, 0)), color-stop(87.09677%, rgba(0, 0, 0, 0)), color-stop(87.09677%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(0, 0, 0, 0) 12.90323%, rgba(0, 0, 0, 0) 14.51613%, rgba(100, 100, 225, 0.25) 14.51613%, rgba(100, 100, 225, 0.25) 27.41935%, rgba(0, 0, 0, 0) 27.41935%, rgba(0, 0, 0, 0) 29.03226%, rgba(100, 100, 225, 0.25) 29.03226%, rgba(100, 100, 225, 0.25) 41.93548%, rgba(0, 0, 0, 0) 41.93548%, rgba(0, 0, 0, 0) 43.54839%, rgba(100, 100, 225, 0.25) 43.54839%, rgba(100, 100, 225, 0.25) 56.45161%, rgba(0, 0, 0, 0) 56.45161%, rgba(0, 0, 0, 0) 58.06452%, rgba(100, 100, 225, 0.25) 58.06452%, rgba(100, 100, 225, 0.25) 70.96774%, rgba(0, 0, 0, 0) 70.96774%, rgba(0, 0, 0, 0) 72.58065%, rgba(100, 100, 225, 0.25) 72.58065%, rgba(100, 100, 225, 0.25) 85.48387%, rgba(0, 0, 0, 0) 85.48387%, rgba(0, 0, 0, 0) 87.09677%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(0, 0, 0, 0) 12.90323%, rgba(0, 0, 0, 0) 14.51613%, rgba(100, 100, 225, 0.25) 14.51613%, rgba(100, 100, 225, 0.25) 27.41935%, rgba(0, 0, 0, 0) 27.41935%, rgba(0, 0, 0, 0) 29.03226%, rgba(100, 100, 225, 0.25) 29.03226%, rgba(100, 100, 225, 0.25) 41.93548%, rgba(0, 0, 0, 0) 41.93548%, rgba(0, 0, 0, 0) 43.54839%, rgba(100, 100, 225, 0.25) 43.54839%, rgba(100, 100, 225, 0.25) 56.45161%, rgba(0, 0, 0, 0) 56.45161%, rgba(0, 0, 0, 0) 58.06452%, rgba(100, 100, 225, 0.25) 58.06452%, rgba(100, 100, 225, 0.25) 70.96774%, rgba(0, 0, 0, 0) 70.96774%, rgba(0, 0, 0, 0) 72.58065%, rgba(100, 100, 225, 0.25) 72.58065%, rgba(100, 100, 225, 0.25) 85.48387%, rgba(0, 0, 0, 0) 85.48387%, rgba(0, 0, 0, 0) 87.09677%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(0, 0, 0, 0) 12.90323%, rgba(0, 0, 0, 0) 14.51613%, rgba(100, 100, 225, 0.25) 14.51613%, rgba(100, 100, 225, 0.25) 27.41935%, rgba(0, 0, 0, 0) 27.41935%, rgba(0, 0, 0, 0) 29.03226%, rgba(100, 100, 225, 0.25) 29.03226%, rgba(100, 100, 225, 0.25) 41.93548%, rgba(0, 0, 0, 0) 41.93548%, rgba(0, 0, 0, 0) 43.54839%, rgba(100, 100, 225, 0.25) 43.54839%, rgba(100, 100, 225, 0.25) 56.45161%, rgba(0, 0, 0, 0) 56.45161%, rgba(0, 0, 0, 0) 58.06452%, rgba(100, 100, 225, 0.25) 58.06452%, rgba(100, 100, 225, 0.25) 70.96774%, rgba(0, 0, 0, 0) 70.96774%, rgba(0, 0, 0, 0) 72.58065%, rgba(100, 100, 225, 0.25) 72.58065%, rgba(100, 100, 225, 0.25) 85.48387%, rgba(0, 0, 0, 0) 85.48387%, rgba(0, 0, 0, 0) 87.09677%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(0, 0, 0, 0) 12.90323%, rgba(0, 0, 0, 0) 14.51613%, rgba(100, 100, 225, 0.25) 14.51613%, rgba(100, 100, 225, 0.25) 27.41935%, rgba(0, 0, 0, 0) 27.41935%, rgba(0, 0, 0, 0) 29.03226%, rgba(100, 100, 225, 0.25) 29.03226%, rgba(100, 100, 225, 0.25) 41.93548%, rgba(0, 0, 0, 0) 41.93548%, rgba(0, 0, 0, 0) 43.54839%, rgba(100, 100, 225, 0.25) 43.54839%, rgba(100, 100, 225, 0.25) 56.45161%, rgba(0, 0, 0, 0) 56.45161%, rgba(0, 0, 0, 0) 58.06452%, rgba(100, 100, 225, 0.25) 58.06452%, rgba(100, 100, 225, 0.25) 70.96774%, rgba(0, 0, 0, 0) 70.96774%, rgba(0, 0, 0, 0) 72.58065%, rgba(100, 100, 225, 0.25) 72.58065%, rgba(100, 100, 225, 0.25) 85.48387%, rgba(0, 0, 0, 0) 85.48387%, rgba(0, 0, 0, 0) 87.09677%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(7.47664%, rgba(100, 100, 225, 0.25)), color-stop(7.47664%, rgba(0, 0, 0, 0)), color-stop(8.41121%, rgba(0, 0, 0, 0)), color-stop(8.41121%, rgba(100, 100, 225, 0.25)), color-stop(15.88785%, rgba(100, 100, 225, 0.25)), color-stop(15.88785%, rgba(0, 0, 0, 0)), color-stop(16.82243%, rgba(0, 0, 0, 0)), color-stop(16.82243%, rgba(100, 100, 225, 0.25)), color-stop(24.29907%, rgba(100, 100, 225, 0.25)), color-stop(24.29907%, rgba(0, 0, 0, 0)), color-stop(25.23364%, rgba(0, 0, 0, 0)), color-stop(25.23364%, rgba(100, 100, 225, 0.25)), color-stop(32.71028%, rgba(100, 100, 225, 0.25)), color-stop(32.71028%, rgba(0, 0, 0, 0)), color-stop(33.64486%, rgba(0, 0, 0, 0)), color-stop(33.64486%, rgba(100, 100, 225, 0.25)), color-stop(41.1215%, rgba(100, 100, 225, 0.25)), color-stop(41.1215%, rgba(0, 0, 0, 0)), color-stop(42.05607%, rgba(0, 0, 0, 0)), color-stop(42.05607%, rgba(100, 100, 225, 0.25)), color-stop(49.53271%, rgba(100, 100, 225, 0.25)), color-stop(49.53271%, rgba(0, 0, 0, 0)), color-stop(50.46729%, rgba(0, 0, 0, 0)), color-stop(50.46729%, rgba(100, 100, 225, 0.25)), color-stop(57.94393%, rgba(100, 100, 225, 0.25)), color-stop(57.94393%, rgba(0, 0, 0, 0)), color-stop(58.8785%, rgba(0, 0, 0, 0)), color-stop(58.8785%, rgba(100, 100, 225, 0.25)), color-stop(66.35514%, rgba(100, 100, 225, 0.25)), color-stop(66.35514%, rgba(0, 0, 0, 0)), color-stop(67.28972%, rgba(0, 0, 0, 0)), color-stop(67.28972%, rgba(100, 100, 225, 0.25)), color-stop(74.76636%, rgba(100, 100, 225, 0.25)), color-stop(74.76636%, rgba(0, 0, 0, 0)), color-stop(75.70093%, rgba(0, 0, 0, 0)), color-stop(75.70093%, rgba(100, 100, 225, 0.25)), color-stop(83.17757%, rgba(100, 100, 225, 0.25)), color-stop(83.17757%, rgba(0, 0, 0, 0)), color-stop(84.11215%, rgba(0, 0, 0, 0)), color-stop(84.11215%, rgba(100, 100, 225, 0.25)), color-stop(91.58879%, rgba(100, 100, 225, 0.25)), color-stop(91.58879%, rgba(0, 0, 0, 0)), color-stop(92.52336%, rgba(0, 0, 0, 0)), color-stop(92.52336%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
@@ -1318,30 +1318,52 @@ body.dotcom {
 }
 
 /* line 31, ../sass/_layout.scss */
+.box {
+  display: block;
+  position: relative;
+  width: 95%;
+  margin: 2em auto;
+}
+
+/* line 39, ../sass/_layout.scss */
+.box:before {
+  display: block;
+  padding-top: 100%;
+  content: "";
+}
+
+/* line 46, ../sass/_layout.scss */
 .outer {
-  outline: 5px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 56em;
+  max-width: 56em;
+  outline: 0.325em solid blue;
+}
+/* line 242, ../sass/_layout.scss */
+.outer .container {
   *zoom: 1;
-  max-width: 31em;
-  _width: 31em;
+  max-width: 53.5em;
+  _width: 53.5em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50em;
-  height: 60em;
-}
-/* line 39, ../sass/_layout.scss */
-.outer header, .outer footer {
-  clear: both;
+  outline: 0.625em solid black;
+  margin: auto;
+  height: 100%;
 }
 /* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.outer:after {
+.outer .container:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 48, ../sass/_layout.scss */
-.outer #top {
+/* line 259, ../sass/_layout.scss */
+.outer .container #top {
   height: 30%;
   outline: 5px solid blue;
   width: 100%;
@@ -1350,8 +1372,8 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 53, ../sass/_layout.scss */
-.outer #top #name {
+/* line 264, ../sass/_layout.scss */
+.outer .container #top #name {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1360,303 +1382,180 @@ body.dotcom {
   outline: 1px solid purple;
   margin-bottom: 2em;
 }
-/* line 56, ../sass/_layout.scss */
-.outer #top #name #olga {
+/* line 267, ../sass/_layout.scss */
+.outer .container #top #name #olga {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 100px;
 }
-/* line 60, ../sass/_layout.scss */
-.outer #top #name #romanova {
+/* line 274, ../sass/_layout.scss */
+.outer .container #top #name #romanova {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 75px;
+  text-transform: uppercase;
 }
-/* line 67, ../sass/_layout.scss */
-.outer .content {
+/* line 284, ../sass/_layout.scss */
+.outer .container #content {
   height: 60%;
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -0.5em;
-  display: inline;
-  outline: 5px solid pink;
-}
-/* line 80, ../sass/_layout.scss */
-.outer .content .section .section-container {
   position: relative;
-  top: 50%;
-}
-/* line 87, ../sass/_layout.scss */
-.outer .content #github {
   width: 100%;
+  display: block;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+  outline: 5px solid orange;
+}
+/* line 296, ../sass/_layout.scss */
+.outer .container #content .section {
+  height: 100%;
+}
+/* line 302, ../sass/_layout.scss */
+.outer .container #content .section .section-container {
+  height: 100%;
+}
+/* line 308, ../sass/_layout.scss */
+.outer .container #content .section .section-container a {
+  z-index: 10;
+  position: absolute;
+  bottom: 0em;
+  margin: 0 auto;
+}
+/* line 318, ../sass/_layout.scss */
+.outer .container #content .section .section-container a .title {
+  -webkit-transform: scale(1.25, 1);
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  /* Safari and Chrome */
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  text-transform: uppercase;
+}
+/* line 332, ../sass/_layout.scss */
+.outer .container #content .row {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+/* line 342, ../sass/_layout.scss */
+.outer .container #content #github {
+  width: 18.18182%;
   float: left;
-  margin-right: 2.85714%;
+  margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 93, ../sass/_layout.scss */
-.outer .content #github h1 {
+/* line 351, ../sass/_layout.scss */
+.outer .container #content #github .title {
+  font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30;
   outline: 1px solid red;
 }
-/* line 99, ../sass/_layout.scss */
-.outer .content #twitter {
-  width: 100%;
+/* line 358, ../sass/_layout.scss */
+.outer .container #content #twitter {
+  width: 18.18182%;
   float: left;
-  margin-right: 2.85714%;
+  margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 104, ../sass/_layout.scss */
-.outer .content #twitter h1 {
+/* line 364, ../sass/_layout.scss */
+.outer .container #content #twitter h1 {
   outline: 1px solid red;
 }
-/* line 109, ../sass/_layout.scss */
-.outer .content #soundcloud {
-  width: 100%;
+/* line 369, ../sass/_layout.scss */
+.outer .container #content #soundcloud {
+  width: 11.88811%;
   float: left;
-  margin-right: 2.85714%;
+  margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 116, ../sass/_layout.scss */
-.outer .content #soundcloud h1 {
+/* line 377, ../sass/_layout.scss */
+.outer .container #content #soundcloud h1 {
   outline: 1px solid red;
 }
-/* line 120, ../sass/_layout.scss */
-.outer .content #linkedin {
-  width: 100%;
+/* line 386, ../sass/_layout.scss */
+.outer .container #content #linkedin {
+  width: 18.18182%;
   float: left;
-  margin-right: 2.85714%;
+  margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 127, ../sass/_layout.scss */
-.outer .content #linkedin h1 {
+/* line 393, ../sass/_layout.scss */
+.outer .container #content #linkedin h1 {
   outline: 1px solid red;
 }
-/* line 133, ../sass/_layout.scss */
-.outer .content #year {
-  width: 48.57143%;
+/* line 399, ../sass/_layout.scss */
+.outer .container #content #year {
+  width: 11.88811%;
+  float: left;
+  margin-right: 0.6993%;
+  display: inline;
+  outline: 1px solid purple;
+}
+/* line 405, ../sass/_layout.scss */
+.outer .container #content .one {
+  width: 18.18182%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+}
+/* line 410, ../sass/_layout.scss */
+.outer .container #content .one .desc-blog #description {
+  width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 138, ../sass/_layout.scss */
-.outer .content .one {
+/* line 419, ../sass/_layout.scss */
+.outer .container #content .one .desc-blog #blog {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+  position: relative;
+  bottom: 0em;
+  outline: 1px solid purple;
+}
+/* line 426, ../sass/_layout.scss */
+.outer .container #content .one .desc-blog #blog h1 {
+  outline: 1px solid red;
+}
+/* line 433, ../sass/_layout.scss */
+.outer .container #content #email {
   width: 100%;
   float: left;
-  margin-right: 2.85714%;
-  display: inline;
-  z-index: -10;
-}
-/* line 145, ../sass/_layout.scss */
-.outer .content .one .desc-blog #description {
-  outline: 1px solid purple;
-}
-/* line 148, ../sass/_layout.scss */
-.outer .content .one .desc-blog #description h1 {
-  outline: 1px solid red;
-}
-/* line 153, ../sass/_layout.scss */
-.outer .content .one .desc-blog #blog {
-  width: 48.57143%;
-  float: left;
-  margin-right: 2.85714%;
-  display: inline;
-  outline: 1px solid purple;
-  position: absolute;
-  bottom: 7em;
-}
-/* line 161, ../sass/_layout.scss */
-.outer .content .one .desc-blog #blog h1 {
-  outline: 1px solid red;
-}
-/* line 168, ../sass/_layout.scss */
-.outer .content #email {
-  width: 100%;
-  float: left;
-  margin-right: 2.85714%;
+  margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 171, ../sass/_layout.scss */
-.outer .content #email h1 {
+/* line 436, ../sass/_layout.scss */
+.outer .container #content #email h1 {
   outline: 1px solid red;
-}
-@media (min-width: 50em) {
-  /* line 31, ../sass/_layout.scss */
-  .outer {
-    max-width: 53.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 0.625em solid black;
-    max-width: 60em;
-    height: 60em;
-  }
-  /* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .outer:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* line 213, ../sass/_layout.scss */
-  .outer #top {
-    height: 30%;
-    outline: 5px solid blue;
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 218, ../sass/_layout.scss */
-  .outer #top #name {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    outline: 1px solid purple;
-    margin-bottom: 2em;
-  }
-  /* line 221, ../sass/_layout.scss */
-  .outer #top #name #olga {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 225, ../sass/_layout.scss */
-  .outer #top #name #romanova {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 232, ../sass/_layout.scss */
-  .outer .content {
-    height: 60%;
-    position: relative;
-    width: 100%;
-    display: block;
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    outline: 5px solid orange;
-  }
-  /* line 244, ../sass/_layout.scss */
-  .outer .content .section {
-    height: 100%;
-  }
-  /* line 247, ../sass/_layout.scss */
-  .outer .content .section a {
-    z-index: 10;
-  }
-  /* line 250, ../sass/_layout.scss */
-  .outer .content .section .section-container {
-    transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    /* Safari and Chrome */
-    position: relative;
-    top: 50%;
-  }
-  /* line 257, ../sass/_layout.scss */
-  .outer .content .row {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: block;
-  }
-  /* line 267, ../sass/_layout.scss */
-  .outer .content #github {
-    width: 18.18182%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 275, ../sass/_layout.scss */
-  .outer .content #github h1 {
-    outline: 1px solid red;
-  }
-  /* line 281, ../sass/_layout.scss */
-  .outer .content #twitter {
-    width: 18.18182%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 287, ../sass/_layout.scss */
-  .outer .content #twitter h1 {
-    outline: 1px solid red;
-  }
-  /* line 292, ../sass/_layout.scss */
-  .outer .content #soundcloud {
-    width: 11.88811%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 299, ../sass/_layout.scss */
-  .outer .content #soundcloud h1 {
-    outline: 1px solid red;
-  }
-  /* line 308, ../sass/_layout.scss */
-  .outer .content #linkedin {
-    width: 18.18182%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 315, ../sass/_layout.scss */
-  .outer .content #linkedin h1 {
-    outline: 1px solid red;
-  }
-  /* line 321, ../sass/_layout.scss */
-  .outer .content #year {
-    width: 11.88811%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 327, ../sass/_layout.scss */
-  .outer .content .one {
-    width: 18.18182%;
-    float: right;
-    margin-right: 0;
-  }
-  /* line 332, ../sass/_layout.scss */
-  .outer .content .one .desc-blog #description {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    outline: 1px solid purple;
-  }
-  /* line 341, ../sass/_layout.scss */
-  .outer .content .one .desc-blog #blog {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    position: relative;
-    bottom: 0em;
-    outline: 1px solid purple;
-  }
-  /* line 348, ../sass/_layout.scss */
-  .outer .content .one .desc-blog #blog h1 {
-    outline: 1px solid red;
-  }
-  /* line 355, ../sass/_layout.scss */
-  .outer .content #email {
-    width: 100%;
-    float: left;
-    margin-right: 0.6993%;
-    outline: 1px solid purple;
-  }
-  /* line 358, ../sass/_layout.scss */
-  .outer .content #email h1 {
-    outline: 1px solid red;
-  }
 }

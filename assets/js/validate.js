@@ -37,22 +37,7 @@ define([
 					valid=false;
 					return false;
 					}
-				// if(valid===true){
-				// 	var data;
-				// 	data=
-				// 		{
-				// 			name: name_check,
-				// 			email: x,
-				// 			message: y,
-				// 		};
-				// 	console.log("data "+data);	
-				// 	$.post(
-				// 		"../php/contact.php",
-				// 		{ data: data },
-				// 		function( $data )
-		  //               {console.log("in function");if(data.success){console.log(":)");}else{console.log(":(");return false;}}
-				// 	);
-				// }
+
 			}
             return {
                 init: init

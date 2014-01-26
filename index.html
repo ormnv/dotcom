@@ -12,18 +12,23 @@
 
 	<script data-main="assets/js/index" src="assets/js/lib/require.js"></script>
 
-
 </head>
 <body class="dotcom">
 
+	<div class ="box">
 	<div class = "outer">
+		<div class="container">
 		<div id="top">
 			<div id="name">
-				<div id="olga"><h1>Olga</h1></div>
-				<div id="romanova"><h1>Romanova</h1></div>
+				<div id="olga">
+					<span class="title">Olga</span>
+				</div>
+				<div id="romanova">
+					<span class="title">Romanova</span>
+				</div>
 			</div>
 		</div>
-		<div class ="content">
+		<div id ="content">
 			<div class="one">
 				<div class="desc-blog">
 					<div id="description" class="section">
@@ -40,36 +45,43 @@
 		</div>
 
 <!-- 		<div class="row two">
--->			<div id="github" class="section">
+-->			 
+		<div id="github" class="section">
 			<div class="section-container">
-				<a class="pulse-shrink" href="http://github.com/ormnv" target="_blank"><h1>GITHUB</h1></a>
-</div>
-</div>
-<div id="twitter" class="section">
-	<div class="section-container">
-		<a class="pulse-shrink" href="http://twitter.com/technotropes" target="_blank"><h1>TWITTER</h1></a>
-	</div>
-</div>
-<div id="soundcloud" class="section">
-	<div class="section-container">
-		<a class ="pulse-shrink" href="http://soundcloud.com/technotropes" target="_blank"><h1>SOUNDCLOUD</h1></a>
-	</div>
-</div>
-<!-- 		</div> row two
- --><!-- 		<div class="row three">
--->			<div id="linkedin" class="section">
-<div class="section-container">	
-	<a class="pulse-shrink" href="http://linkedin.com/in/olgaromanova" target="_blank"><h1>LinkedIn</h1></a>
-</div>
-</div>
-<div id="year" class="section">
-	<div class="section-container">
-		<h1>2014</h1>
-	</div>
-</div>
+				<a class="pulse-shrink" href="http://github.com/ormnv" target="_blank">
+					<span class="title">github</span>
+				</a>
+			</div>
+		</div>
+		<div id="twitter" class="section">
+			<div class="section-container">
+				<a class="pulse-shrink" href="http://twitter.com/technotropes" target="_blank">
+					<span class="title">twitter</span>
+				</a>
+			</div>
+		</div>
+		<div id="soundcloud" class="section">
+			<div class="section-container">
+				<a class ="pulse-shrink" href="http://soundcloud.com/technotropes" target="_blank"><span class="title">soundcloud</span>
+				</a>
+			</div>
+		</div>
+<!-- 				</div> row two
+		 		<div class="row three"> -->
+		<div id="linkedin" class="section">
+			<div class="section-container">	
+				<a class="pulse-shrink" href="http://linkedin.com/in/olgaromanova" target="_blank"><span class="title">LinkedIn</span>
+				</a>
+		</div>
+		</div>
+		<div id="year" class="section">
+			<div class="section-container">
+				<span class="title">2014</span>
+			</div>
+		</div> 
 <!-- 			</div> row three
--->
-<!-- </div> -->
+
+<!-- </div>
 <!-- 
 	<div id="blog" class="section">
 		<a href="http://instagram.com/technotropes" target="_blank"><h1>INSTAGRAM</h1></a>
@@ -88,46 +100,12 @@
 
 <!-- 	<a class ="button pulse section">pulse pulse</a>
 -->
-<div id="email" class="section">
-	<h1>romanova dot olga dot a at gmail dot com</h1>
-</div>
-<div id="contact">
-	<form id="contact-form" action="contact" method="post">
-	<label>
-		<span>Name</span>
-		<input placeholder="Placeholder" type="name" >
-	</label>
-	<label>
-		<span>Email</span>
-		<input placeholder="Placeholder" type="email" >
-	</label>
-	<label>
-		<span>Message</span>
-		<input placeholder="Get in touch." type="text" >
-	</label>
-	<?php
-
-    $digit_1 = mt_rand(1, 20);
-    $digit_2 = mt_rand(1, 20);
-
-    if(mt_rand(0, 1) === 1) {
-        $math = $digit_1 . ' + ' . $digit_2;
-        Session::put('contact-math-session', $digit_1 + $digit_2);
-    }
-    else {
-        $math = $digit_1 . ' - ' . $digit_2;
-        Session::put('contact-math-session', $digit_1 - $digit_2);
-    }
-
-    echo $math . ' = <input name="contact-math" type="text" value="" autocomplete="off">';
-
-?>
-	<input name="submit" type="submit" value="send">
-</form>
-</div>
-
+		<div id="email" class="section">
+			<a class="pulse-shrink" href="blog/contact" target="_blank"><h1>contact</h1></a>
+		</div>
+</div><!-- container -->
 </div><!-- outer --> 
-
+</div> <!-- box -->
 
 
 </body>

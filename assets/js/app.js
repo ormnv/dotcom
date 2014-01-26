@@ -7,6 +7,7 @@ define([
     // ,'soundcloud'
     'hover'
     ,'jquery'
+    ,'fittext'
     ,'signals'
     ], function (Layout, Hover) {
   var app = (function(){
@@ -16,6 +17,10 @@ define([
 
         this.shared = shared;
 
+        $( document ).ready(function(){
+            console.log("ready");
+            shared.signals.setSize.dispatch();
+        });
         $(".section").hover(
           function() {
             var current = $( this ).attr("id");
@@ -27,7 +32,11 @@ define([
             var current = $( this ).attr("id");
             shared.signals.hoverStop.dispatch(current);
         });
-
+        $(window).resize(function(){
+            shared.signals.resize.dispatch();
+        });
+        // $('#olga').fitText();
+        // $('#github-title').fitVert(0.9);
         // $("#contact-submit").click(
         //   function() {
         //         console.log("send clicked");

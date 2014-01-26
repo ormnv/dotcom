@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
       jshint: {
         // define the files to lint
-        files: ['gruntfile.js', 'assets/js/*.js', '!assets/js/main.min.js'],
+        files: ['gruntfile.js', 'assets/js/*.js', 'assets/js/lib/jquery.fittext.js','!assets/js/main.min.js'],
         // configure JSHint (documented at http://www.jshint.com/docs/)
         options: {
           "laxcomma": true,

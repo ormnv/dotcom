@@ -9,16 +9,17 @@ requirejs.config(
 		urlArgs:'',
 		paths: {
 			'jquery': 'lib/jquery-1.10.2.min',
-			'signals': 'lib/signals'//,
+			'signals': 'lib/signals',
+			'fittext' : 'lib/jquery.fittext'
 			// 'underscore': 'lib/underscore-min',
 			// 'backbone': 'lib/backbone-min'
 		},
 		shim: {
 			// underscore: { exports: '_'},
-	  //       backbone: {
-	  //           deps: ['underscore', 'jquery'],
+	        fittext: {
+	            deps: ['jquery'],
 	  //           exports: 'backbone'
-	  //       }
+	        }
 		}
 	}
 );
@@ -28,8 +29,9 @@ require(
 		'signals'
 		,'jquery'
 		,'app'
-		,'validate'
-		// ,'underscore'
+		// ,'validate'
+		,'fittext'
+		,'resize'
 		// ,'backbone'
 		,'hover'
 		// ,'layout'
@@ -39,9 +41,10 @@ require(
 		Signal
 		,$
 		,app
-		,validate
-		// ,underscore
+		// ,validate
+		,fitext
 		// ,backbone
+		,resize
 		,hover
 		,layout
 	)
@@ -59,13 +62,14 @@ require(
 					'closeContact'       : new Signal(),
 					'hoverStart'       : new Signal(),
 					'hoverStop'        : new Signal(),
-					'validateForm'        : new Signal(),
+					'setSize'        : new Signal(),
+					'resize'        : new Signal(),
 					'click'             : new Signal()
 				}
 			};
 		app.init(shared);
 		hover.init(shared);
-		validate.init(shared);
+		resize.init(shared);
 		}
 	}
 );
