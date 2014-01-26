@@ -245,7 +245,7 @@ max-width: 56em;
     // @include at-breakpoint($break) {
       @include container;
 
-      outline: 0.625em solid white;
+      border: 0.625em solid white;
       // width:60em;
       // height:60em;
       margin: auto;
@@ -288,7 +288,7 @@ max-width: 56em;
       // height: 100%;
       width: 100%;
       display:block;
-      padding:0em 0.5em 0em 0.5em;
+      padding:0em 1em 0em 0.5em;
       @include span-columns(16 omega,16); 
 
         // content spans the final (omega) 9 columns of 16.
@@ -328,10 +328,9 @@ max-width: 56em;
               @include vertical();
 
             }
-          }        
-
+          }
         }
-      }
+      }       
 
       .row{
         position: absolute;
@@ -352,10 +351,9 @@ max-width: 56em;
               @include scale(1.5,0.9);
 
               a{
-                margin:0em 0em -1em -.5em;
+                margin:0em 0em -1em 1em;
                 .title{
                   @include futura-ExtraBold(30);
-                  outline: 1px solid red;
               // font-size:1em;
             }
           }
@@ -372,13 +370,12 @@ max-width: 56em;
           @include scale(1.4,1);
 
           a{
-            margin:0em 0em 0.2em -1.75em;
+            margin:0em 0em 0.2em -.5em;
 
             .title{
               @include futura(30);
 
 
-              outline: 1px solid red;
             }
           }
         }
@@ -388,17 +385,17 @@ max-width: 56em;
 
         outline: 0.625em solid white;
         .section-container{
-          @include scale(1.3,0.8);
+          @include scale(1.4,0.8);
 
           a{
-            margin:0em 0em -2.8em .25em;
+            margin:0em 0em -2.8em 1em;
 
             .title{
               @include futura-ExtraBold(30px);
             }
           }
-          }
         }
+      }
      // } //two
       // .three{
       //   // @include span-columns(4,16);
@@ -408,82 +405,99 @@ max-width: 56em;
         @include span-columns(3,16); 
 
         outline: 0.625em solid white;
-         .section-container{
-          @include scale(1.5,0.85);
+        .section-container{
+          @include scale(1.4,0.85);
 
           a{
-            margin:0em 0em -2em -1.25em;
+            margin:0em 0em -2em .5em;
 
             .title 
             {
               #linked{
-              @include futura-Bold(30px);
-            }
+                @include futura-Bold(30px);
+              }
 
-            #in{
-              @include futura(30px);
+              #in{
+                @include futura(30px);
+              }
             }
-          }
-          }
           }
         }
-          
+      }
+
      // }
      .one{
       @include span-columns(5 omega,16); 
 
-      .desc-blog{
+      #desc-blog{
+
+        width:107%;
 
         #description {
-          @include span-columns(5 omega,5); 
+          @include span-columns(5 omega,5);
+          width:100%;
+
           p{
             @include futura-p(1em);
             margin:1em;
+            text-align:justify;
           }
+        }
+        #blog { 
+          @include span-columns(5 omega, 5);
+          border-top: 0.625em solid white;
           width:102%;
-            // h1{
-            //     outline: 1px solid red;
-            // }
-
-          }
-          #blog { 
-            @include span-columns(5 omega, 5);
-            border-top: 0.625em solid white;
-          width:102%;
+          .section-container-blog{
+            @include scale(1.4,1.3);
+            margin:0em 0em 0em 3.5em;
 
               //from section container
+
               position: relative;
               bottom:0em;
               a{
-              .title{
-                @include futura(30px);
+
+                text-decoration: none;
+                .title{
+                  // margin:.5em;
+
+                  @include futura(30px);
+                }
               }
             }
-
-            }
-           #year { 
-                      width:102%;
-
+          }
+          #year { 
+            padding:0em 0em 0em 0.5em;            
             @include span-columns(5 omega, 5); 
             border-top: 0.625em solid white;
-            border-bottom: 0.625em solid white;
-            .title{
-            @include futura-ExtraBold(30px);
-          }
+            .section-container-year{
+              @include scale(1.1,1.5);
+              margin:1em 0em 0em 1.5em;
 
-          }
+
+              .title{
+                // margin:.5em;
+
+                @include futura-ExtraBold(30px);
+              }
+            }
           }
         }
+      }
       } //content
       #email { 
+        height:8%;
+        left: -0.5em;
+        position: relative;
+        padding:0em 1em 0em 0em;
         @include span-columns(16,16); 
         .section-container-horiz{
           @include scale(2.1,0.6);
+          margin:-0.25em 0em 0em 18.75em;
 
           a{
             .title{
               @include futura(30);
-              margin:-0.25em 0em 0.25em -0.08em;
               position:absolute;
             }
           }
@@ -510,7 +524,7 @@ max-width: 56em;
    	  // }
 
   //  } //break
-  }
+}
  } //outer
 
 

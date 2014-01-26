@@ -28,7 +28,7 @@
  * Hover.css Copyright Ian Lunn 2014.
  */
 /* Default styles for the demo buttons */
-/* line 22, ../sass/vendor/hover/_hover.scss */
+/* line 22, ../sass/vendor/hover/hover.scss */
 .button {
   margin: .4em;
   padding: 1em;
@@ -40,7 +40,7 @@
 
 /* 2D TRANSITIONS */
 /* Grow */
-/* line 29, ../sass/vendor/hover/_hover.scss */
+/* line 29, ../sass/vendor/hover/hover.scss */
 .grow {
   display: inline-block;
   transition-duration: 0.3s;
@@ -55,7 +55,7 @@
 }
 
 /* Shrink */
-/* line 34, ../sass/vendor/hover/_hover.scss */
+/* line 34, ../sass/vendor/hover/hover.scss */
 .shrink {
   display: inline-block;
   transition-duration: 0.3s;
@@ -82,7 +82,7 @@
   }
 }
 
-/* line 39, ../sass/vendor/hover/_hover.scss */
+/* line 39, ../sass/vendor/hover/hover.scss */
 .pulse {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -105,7 +105,7 @@
   }
 }
 
-/* line 44, ../sass/vendor/hover/_hover.scss */
+/* line 44, ../sass/vendor/hover/hover.scss */
 .pulse-grow {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -129,7 +129,7 @@
   }
 }
 
-/* line 49, ../sass/vendor/hover/_hover.scss */
+/* line 49, ../sass/vendor/hover/hover.scss */
 .pulse-shrink {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -143,6 +143,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  background-color: white;
 }
 
 /* Push */
@@ -158,7 +159,7 @@
   }
 }
 
-/* line 54, ../sass/vendor/hover/_hover.scss */
+/* line 54, ../sass/vendor/hover/hover.scss */
 .push {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -186,7 +187,7 @@
   }
 }
 
-/* line 59, ../sass/vendor/hover/_hover.scss */
+/* line 59, ../sass/vendor/hover/hover.scss */
 .pop {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -202,7 +203,7 @@
 }
 
 /* Rotate */
-/* line 64, ../sass/vendor/hover/_hover.scss */
+/* line 64, ../sass/vendor/hover/hover.scss */
 .rotate {
   display: inline-block;
   transition-duration: 0.3s;
@@ -217,7 +218,7 @@
 }
 
 /* Grow Rotate */
-/* line 69, ../sass/vendor/hover/_hover.scss */
+/* line 69, ../sass/vendor/hover/hover.scss */
 .grow-rotate {
   display: inline-block;
   transition-duration: 0.3s;
@@ -232,7 +233,7 @@
 }
 
 /* Float */
-/* line 74, ../sass/vendor/hover/_hover.scss */
+/* line 74, ../sass/vendor/hover/hover.scss */
 .float {
   display: inline-block;
   transition-duration: 0.3s;
@@ -247,7 +248,7 @@
 }
 
 /* Sink */
-/* line 79, ../sass/vendor/hover/_hover.scss */
+/* line 79, ../sass/vendor/hover/hover.scss */
 .sink {
   display: inline-block;
   transition-duration: 0.3s;
@@ -274,7 +275,7 @@
   }
 }
 
-/* line 84, ../sass/vendor/hover/_hover.scss */
+/* line 84, ../sass/vendor/hover/hover.scss */
 .hover {
   display: inline-block;
   transition-duration: .5s;
@@ -307,7 +308,7 @@
   }
 }
 
-/* line 89, ../sass/vendor/hover/_hover.scss */
+/* line 89, ../sass/vendor/hover/hover.scss */
 .hang {
   display: inline-block;
   transition-duration: .5s;
@@ -328,7 +329,7 @@
 }
 
 /* Skew */
-/* line 94, ../sass/vendor/hover/_hover.scss */
+/* line 94, ../sass/vendor/hover/hover.scss */
 .skew {
   display: inline-block;
   transition-duration: 0.3s;
@@ -343,7 +344,7 @@
 }
 
 /* Skew Forward */
-/* line 99, ../sass/vendor/hover/_hover.scss */
+/* line 99, ../sass/vendor/hover/hover.scss */
 .skew-forward {
   display: inline-block;
   transition-duration: 0.3s;
@@ -391,7 +392,7 @@
   }
 }
 
-/* line 104, ../sass/vendor/hover/_hover.scss */
+/* line 104, ../sass/vendor/hover/hover.scss */
 .wobble-vertical {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -439,7 +440,7 @@
   }
 }
 
-/* line 109, ../sass/vendor/hover/_hover.scss */
+/* line 109, ../sass/vendor/hover/hover.scss */
 .wobble-horizontal {
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -487,7 +488,7 @@
   }
 }
 
-/* line 114, ../sass/vendor/hover/_hover.scss */
+/* line 114, ../sass/vendor/hover/hover.scss */
 .wobble-top {
   display: inline-block;
   transform-origin: 0 100%;
@@ -536,7 +537,7 @@
   }
 }
 
-/* line 119, ../sass/vendor/hover/_hover.scss */
+/* line 119, ../sass/vendor/hover/hover.scss */
 .wobble-bottom {
   display: inline-block;
   transform-origin: 100% 0;
@@ -554,7 +555,7 @@
 
 /* BORDER TRANSITIONS */
 /* Border Fade */
-/* line 126, ../sass/vendor/hover/_hover.scss */
+/* line 126, ../sass/vendor/hover/hover.scss */
 .border-fade {
   display: inline-block;
   transition-duration: 0.3s;
@@ -571,7 +572,7 @@
 }
 
 /* Hollow */
-/* line 131, ../sass/vendor/hover/_hover.scss */
+/* line 131, ../sass/vendor/hover/hover.scss */
 .hollow {
   display: inline-block;
   transition-duration: 0.3s;
@@ -587,7 +588,7 @@
 }
 
 /* Trim */
-/* line 136, ../sass/vendor/hover/_hover.scss */
+/* line 136, ../sass/vendor/hover/hover.scss */
 .trim {
   display: inline-block;
   position: relative;
@@ -614,7 +615,7 @@
 }
 
 /* Outline Outward */
-/* line 141, ../sass/vendor/hover/_hover.scss */
+/* line 141, ../sass/vendor/hover/hover.scss */
 .outline-outward {
   display: inline-block;
   position: relative;
@@ -643,7 +644,7 @@
 }
 
 /* Outline Inward */
-/* line 146, ../sass/vendor/hover/_hover.scss */
+/* line 146, ../sass/vendor/hover/hover.scss */
 .outline-inward {
   display: inline-block;
   position: relative;
@@ -674,7 +675,7 @@
 }
 
 /* Round Corners */
-/* line 151, ../sass/vendor/hover/_hover.scss */
+/* line 151, ../sass/vendor/hover/hover.scss */
 .round-corners {
   display: inline-block;
   transition-duration: 0.3s;
@@ -690,7 +691,7 @@
 
 /* SHADOW/GLOW TRANSITIONS */
 /* Glow */
-/* line 158, ../sass/vendor/hover/_hover.scss */
+/* line 158, ../sass/vendor/hover/hover.scss */
 .glow {
   display: inline-block;
   transition-duration: 0.3s;
@@ -705,7 +706,7 @@
 }
 
 /* Box Shadow Outset */
-/* line 163, ../sass/vendor/hover/_hover.scss */
+/* line 163, ../sass/vendor/hover/hover.scss */
 .box-shadow-outset {
   display: inline-block;
   transition-duration: 0.3s;
@@ -720,7 +721,7 @@
 }
 
 /* Box Shadow Inset */
-/* line 168, ../sass/vendor/hover/_hover.scss */
+/* line 168, ../sass/vendor/hover/hover.scss */
 .box-shadow-inset {
   display: inline-block;
   transition-duration: 0.3s;
@@ -737,7 +738,7 @@
 }
 
 /* Float Shadow */
-/* line 173, ../sass/vendor/hover/_hover.scss */
+/* line 173, ../sass/vendor/hover/hover.scss */
 .float-shadow {
   display: inline-block;
   position: relative;
@@ -808,7 +809,7 @@
   }
 }
 
-/* line 178, ../sass/vendor/hover/_hover.scss */
+/* line 178, ../sass/vendor/hover/hover.scss */
 .hover-shadow {
   display: inline-block;
   position: relative;
@@ -857,7 +858,7 @@
 }
 
 /* Shadow Radial */
-/* line 183, ../sass/vendor/hover/_hover.scss */
+/* line 183, ../sass/vendor/hover/hover.scss */
 .shadow-radial {
   display: inline-block;
   position: relative;
@@ -896,7 +897,7 @@
 
 /* SPEECH BUBBLES */
 /* Bubble Top */
-/* line 190, ../sass/vendor/hover/_hover.scss */
+/* line 190, ../sass/vendor/hover/hover.scss */
 .bubble-top {
   display: inline-block;
   position: relative;
@@ -923,7 +924,7 @@
 }
 
 /* Bubble Right */
-/* line 195, ../sass/vendor/hover/_hover.scss */
+/* line 195, ../sass/vendor/hover/hover.scss */
 .bubble-right {
   display: inline-block;
   position: relative;
@@ -951,7 +952,7 @@
 }
 
 /* Bubble Bottom */
-/* line 200, ../sass/vendor/hover/_hover.scss */
+/* line 200, ../sass/vendor/hover/hover.scss */
 .bubble-bottom {
   display: inline-block;
   position: relative;
@@ -979,7 +980,7 @@
 }
 
 /* Bubble Left */
-/* line 205, ../sass/vendor/hover/_hover.scss */
+/* line 205, ../sass/vendor/hover/hover.scss */
 .bubble-left {
   display: inline-block;
   position: relative;
@@ -1007,7 +1008,7 @@
 }
 
 /* Bubble Float Top */
-/* line 210, ../sass/vendor/hover/_hover.scss */
+/* line 210, ../sass/vendor/hover/hover.scss */
 .bubble-float-top {
   display: inline-block;
   position: relative;
@@ -1041,7 +1042,7 @@
 }
 
 /* Bubble Float Right */
-/* line 215, ../sass/vendor/hover/_hover.scss */
+/* line 215, ../sass/vendor/hover/hover.scss */
 .bubble-float-right {
   display: inline-block;
   position: relative;
@@ -1075,7 +1076,7 @@
 }
 
 /* Bubble Float Bottom */
-/* line 220, ../sass/vendor/hover/_hover.scss */
+/* line 220, ../sass/vendor/hover/hover.scss */
 .bubble-float-bottom {
   display: inline-block;
   position: relative;
@@ -1109,7 +1110,7 @@
 }
 
 /* Bubble Float Left */
-/* line 225, ../sass/vendor/hover/_hover.scss */
+/* line 225, ../sass/vendor/hover/hover.scss */
 .bubble-float-left {
   display: inline-block;
   position: relative;
@@ -1144,7 +1145,7 @@
 
 /* CURLS */
 /* Curl Top Left */
-/* line 232, ../sass/vendor/hover/_hover.scss */
+/* line 232, ../sass/vendor/hover/hover.scss */
 .curl-top-left {
   display: inline-block;
   position: relative;
@@ -1178,7 +1179,7 @@
 }
 
 /* Curl Top Right */
-/* line 237, ../sass/vendor/hover/_hover.scss */
+/* line 237, ../sass/vendor/hover/hover.scss */
 .curl-top-right {
   display: inline-block;
   position: relative;
@@ -1209,7 +1210,7 @@
 }
 
 /* Curl Bottom Right */
-/* line 242, ../sass/vendor/hover/_hover.scss */
+/* line 242, ../sass/vendor/hover/hover.scss */
 .curl-bottom-right {
   display: inline-block;
   position: relative;
@@ -1240,7 +1241,7 @@
 }
 
 /* Curl Bottom Left */
-/* line 247, ../sass/vendor/hover/_hover.scss */
+/* line 247, ../sass/vendor/hover/hover.scss */
 .curl-bottom-left {
   display: inline-block;
   position: relative;
@@ -1347,7 +1348,7 @@ body.dotcom {
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  outline: 0.625em solid white;
+  border: 0.625em solid white;
   margin: auto;
   height: 100%;
 }
@@ -1413,7 +1414,7 @@ body.dotcom {
   position: relative;
   width: 100%;
   display: block;
-  padding: 0em 0.5em 0em 0.5em;
+  padding: 0em 1em 0em 0.5em;
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1450,21 +1451,21 @@ body.dotcom {
   -webkit-transform: rotate(270deg);
   /* Safari and Chrome */
 }
-/* line 336, ../sass/_layout.scss */
+/* line 335, ../sass/_layout.scss */
 .outer .container #content .row {
   position: absolute;
   height: 100%;
   width: 100%;
   display: block;
 }
-/* line 346, ../sass/_layout.scss */
+/* line 345, ../sass/_layout.scss */
 .outer .container #content #github {
   width: 18.18182%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
 }
-/* line 351, ../sass/_layout.scss */
+/* line 350, ../sass/_layout.scss */
 .outer .container #content #github .section-container {
   transform: scale(1.5, 0.9);
   -ms-transform: scale(1.5, 0.9);
@@ -1472,19 +1473,18 @@ body.dotcom {
   -webkit-transform: scale(1.5, 0.9);
   /* Safari and Chrome */
 }
-/* line 354, ../sass/_layout.scss */
+/* line 353, ../sass/_layout.scss */
 .outer .container #content #github .section-container a {
-  margin: 0em 0em -1em -.5em;
+  margin: 0em 0em -1em 1em;
 }
-/* line 356, ../sass/_layout.scss */
+/* line 355, ../sass/_layout.scss */
 .outer .container #content #github .section-container a .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
   color: white;
   text-transform: uppercase;
-  outline: 1px solid red;
 }
-/* line 367, ../sass/_layout.scss */
+/* line 365, ../sass/_layout.scss */
 .outer .container #content #twitter {
   width: 18.18182%;
   float: left;
@@ -1492,7 +1492,7 @@ body.dotcom {
   display: inline;
   outline: 0.625em solid white;
 }
-/* line 371, ../sass/_layout.scss */
+/* line 369, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container {
   transform: scale(1.4, 1);
   -ms-transform: scale(1.4, 1);
@@ -1500,19 +1500,18 @@ body.dotcom {
   -webkit-transform: scale(1.4, 1);
   /* Safari and Chrome */
 }
-/* line 374, ../sass/_layout.scss */
+/* line 372, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container a {
-  margin: 0em 0em 0.2em -1.75em;
+  margin: 0em 0em 0.2em -.5em;
 }
-/* line 377, ../sass/_layout.scss */
+/* line 375, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
   color: white;
   text-transform: uppercase;
-  outline: 1px solid red;
 }
-/* line 386, ../sass/_layout.scss */
+/* line 383, ../sass/_layout.scss */
 .outer .container #content #soundcloud {
   width: 11.88811%;
   float: left;
@@ -1520,26 +1519,26 @@ body.dotcom {
   display: inline;
   outline: 0.625em solid white;
 }
-/* line 390, ../sass/_layout.scss */
+/* line 387, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container {
-  transform: scale(1.3, 0.8);
-  -ms-transform: scale(1.3, 0.8);
+  transform: scale(1.4, 0.8);
+  -ms-transform: scale(1.4, 0.8);
   /* IE 9 */
-  -webkit-transform: scale(1.3, 0.8);
+  -webkit-transform: scale(1.4, 0.8);
   /* Safari and Chrome */
 }
-/* line 393, ../sass/_layout.scss */
+/* line 390, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container a {
-  margin: 0em 0em -2.8em .25em;
+  margin: 0em 0em -2.8em 1em;
 }
-/* line 396, ../sass/_layout.scss */
+/* line 393, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container a .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 407, ../sass/_layout.scss */
+/* line 404, ../sass/_layout.scss */
 .outer .container #content #linkedin {
   width: 18.18182%;
   float: left;
@@ -1547,19 +1546,19 @@ body.dotcom {
   display: inline;
   outline: 0.625em solid white;
 }
-/* line 411, ../sass/_layout.scss */
+/* line 408, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container {
-  transform: scale(1.5, 0.85);
-  -ms-transform: scale(1.5, 0.85);
+  transform: scale(1.4, 0.85);
+  -ms-transform: scale(1.4, 0.85);
   /* IE 9 */
-  -webkit-transform: scale(1.5, 0.85);
+  -webkit-transform: scale(1.4, 0.85);
   /* Safari and Chrome */
 }
-/* line 414, ../sass/_layout.scss */
+/* line 411, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a {
-  margin: 0em 0em -2em -1.25em;
+  margin: 0em 0em -2em .5em;
 }
-/* line 419, ../sass/_layout.scss */
+/* line 416, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #linked {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
@@ -1567,14 +1566,14 @@ body.dotcom {
   color: white;
   text-transform: uppercase;
 }
-/* line 423, ../sass/_layout.scss */
+/* line 420, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #in {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 432, ../sass/_layout.scss */
+/* line 429, ../sass/_layout.scss */
 .outer .container #content .one {
   width: 30.76923%;
   float: right;
@@ -1582,24 +1581,29 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 437, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #description {
+/* line 432, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog {
+  width: 107%;
+}
+/* line 436, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #description {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
-  width: 102%;
+  width: 100%;
 }
-/* line 439, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #description p {
+/* line 440, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #description p {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 1em;
   color: white;
   margin: 1em;
+  text-align: justify;
 }
-/* line 449, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #blog {
+/* line 446, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #blog {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1607,55 +1611,80 @@ body.dotcom {
   display: inline;
   border-top: 0.625em solid white;
   width: 102%;
+}
+/* line 450, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #blog .section-container-blog {
+  transform: scale(1.4, 1.3);
+  -ms-transform: scale(1.4, 1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.4, 1.3);
+  /* Safari and Chrome */
+  margin: 0em 0em 0em 3.5em;
   position: relative;
   bottom: 0em;
 }
 /* line 458, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #blog a .title {
+.outer .container #content .one #desc-blog #blog .section-container-blog a {
+  text-decoration: none;
+}
+/* line 461, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #blog .section-container-blog a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 464, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #year {
-  width: 102%;
+/* line 469, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #year {
+  padding: 0em 0em 0em 0.5em;
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
   border-top: 0.625em solid white;
-  border-bottom: 0.625em solid white;
 }
-/* line 470, ../sass/_layout.scss */
-.outer .container #content .one .desc-blog #year .title {
+/* line 473, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #year .section-container-year {
+  transform: scale(1.1, 1.5);
+  -ms-transform: scale(1.1, 1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.5);
+  /* Safari and Chrome */
+  margin: 1em 0em 0em 1.5em;
+}
+/* line 478, ../sass/_layout.scss */
+.outer .container #content .one #desc-blog #year .section-container-year .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 478, ../sass/_layout.scss */
+/* line 488, ../sass/_layout.scss */
 .outer .container #email {
+  height: 8%;
+  left: -0.5em;
+  position: relative;
+  padding: 0em 1em 0em 0em;
   width: 100%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
 }
-/* line 480, ../sass/_layout.scss */
+/* line 494, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz {
   transform: scale(2.1, 0.6);
   -ms-transform: scale(2.1, 0.6);
   /* IE 9 */
   -webkit-transform: scale(2.1, 0.6);
   /* Safari and Chrome */
+  margin: -0.25em 0em 0em 18.75em;
 }
-/* line 484, ../sass/_layout.scss */
+/* line 499, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
   color: white;
   text-transform: uppercase;
-  margin: -0.25em 0em 0.25em -0.08em;
   position: absolute;
 }

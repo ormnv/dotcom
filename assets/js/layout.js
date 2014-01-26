@@ -32,6 +32,12 @@ define([
         $(".section").hover(
           function() {
             var current = $( this ).attr("id");
+            var elem = "#"+current;
+            var title ="#"+current+" .title";
+            console.log(elem+title);
+            $(elem).css('background-color', 'white');
+            $(title).css('color', 'black');   
+   
             shared.signals.hoverStart.dispatch(current);
         });
 

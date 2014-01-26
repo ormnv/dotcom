@@ -23,14 +23,43 @@ define([
         });
         $(".section").hover(
           function() {
-            var current = $( this ).attr("id");
+            var current = $( this ).attr("id");   
             shared.signals.hoverStart.dispatch(current);
         });
-
+        $(".section-container").hover(
+          function() {
+            var current = $(this).parent().attr('id');  
+            shared.signals.hoverStart.dispatch(current);
+        });
+        $(".section-container-blog").hover(
+          function() {
+            var current = $(this).parent().attr('id');  
+            shared.signals.hoverStart.dispatch(current);
+        });
+        $("a").hover(
+          function() {
+            var current = $(this).parent().parent().attr('id');  
+            shared.signals.hoverStart.dispatch(current);
+        });
         $(".section").mouseout(
           function() {
             var current = $( this ).attr("id");
             shared.signals.hoverStop.dispatch(current);
+        });
+        $(".section-container").mouseout(
+          function() {
+            var current = $(this).parent().attr('id');  
+            shared.signals.hoverStop.dispatch(current);
+        });
+        $(".section-container-blog").mouseout(
+          function() {
+            var current = $(this).parent().attr('id');
+            shared.signals.hoverStop.dispatch(current);
+        });
+        $("a").mouseout(
+          function() {
+            var current = $(this).parent().parent().attr('id');  
+            shared.signals.hoverStart.dispatch(current);
         });
         $(window).resize(function(){
             shared.signals.resize.dispatch();
