@@ -17,7 +17,9 @@ define([
                 console.log("in resize size is" + $('#github span.title').css('font-size') + " height is "+($('#content').height()*0.5));
 
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
- 
+                $('#twitter span.title').css('font-size',($('#content').height()*0.25)+'px');    
+                $('#email span.title').css('font-size',($('#email').width()*0.1)+'px');    
+
             }
 
             //on window resize
@@ -27,6 +29,7 @@ define([
                 $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
                 $('#romanova span.title').css('font-size',($('#romanova').width()*0.145)+'px');    
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
+                $('#email span.title').css('font-size',($('#content').width()*0.1)+'px');    
 
             }
 

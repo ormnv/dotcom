@@ -1281,12 +1281,6 @@
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(7.47664%, rgba(100, 100, 225, 0.25)), color-stop(7.47664%, rgba(0, 0, 0, 0)), color-stop(8.41121%, rgba(0, 0, 0, 0)), color-stop(8.41121%, rgba(100, 100, 225, 0.25)), color-stop(15.88785%, rgba(100, 100, 225, 0.25)), color-stop(15.88785%, rgba(0, 0, 0, 0)), color-stop(16.82243%, rgba(0, 0, 0, 0)), color-stop(16.82243%, rgba(100, 100, 225, 0.25)), color-stop(24.29907%, rgba(100, 100, 225, 0.25)), color-stop(24.29907%, rgba(0, 0, 0, 0)), color-stop(25.23364%, rgba(0, 0, 0, 0)), color-stop(25.23364%, rgba(100, 100, 225, 0.25)), color-stop(32.71028%, rgba(100, 100, 225, 0.25)), color-stop(32.71028%, rgba(0, 0, 0, 0)), color-stop(33.64486%, rgba(0, 0, 0, 0)), color-stop(33.64486%, rgba(100, 100, 225, 0.25)), color-stop(41.1215%, rgba(100, 100, 225, 0.25)), color-stop(41.1215%, rgba(0, 0, 0, 0)), color-stop(42.05607%, rgba(0, 0, 0, 0)), color-stop(42.05607%, rgba(100, 100, 225, 0.25)), color-stop(49.53271%, rgba(100, 100, 225, 0.25)), color-stop(49.53271%, rgba(0, 0, 0, 0)), color-stop(50.46729%, rgba(0, 0, 0, 0)), color-stop(50.46729%, rgba(100, 100, 225, 0.25)), color-stop(57.94393%, rgba(100, 100, 225, 0.25)), color-stop(57.94393%, rgba(0, 0, 0, 0)), color-stop(58.8785%, rgba(0, 0, 0, 0)), color-stop(58.8785%, rgba(100, 100, 225, 0.25)), color-stop(66.35514%, rgba(100, 100, 225, 0.25)), color-stop(66.35514%, rgba(0, 0, 0, 0)), color-stop(67.28972%, rgba(0, 0, 0, 0)), color-stop(67.28972%, rgba(100, 100, 225, 0.25)), color-stop(74.76636%, rgba(100, 100, 225, 0.25)), color-stop(74.76636%, rgba(0, 0, 0, 0)), color-stop(75.70093%, rgba(0, 0, 0, 0)), color-stop(75.70093%, rgba(100, 100, 225, 0.25)), color-stop(83.17757%, rgba(100, 100, 225, 0.25)), color-stop(83.17757%, rgba(0, 0, 0, 0)), color-stop(84.11215%, rgba(0, 0, 0, 0)), color-stop(84.11215%, rgba(100, 100, 225, 0.25)), color-stop(91.58879%, rgba(100, 100, 225, 0.25)), color-stop(91.58879%, rgba(0, 0, 0, 0)), color-stop(92.52336%, rgba(0, 0, 0, 0)), color-stop(92.52336%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 7.47664%, rgba(0, 0, 0, 0) 7.47664%, rgba(0, 0, 0, 0) 8.41121%, rgba(100, 100, 225, 0.25) 8.41121%, rgba(100, 100, 225, 0.25) 15.88785%, rgba(0, 0, 0, 0) 15.88785%, rgba(0, 0, 0, 0) 16.82243%, rgba(100, 100, 225, 0.25) 16.82243%, rgba(100, 100, 225, 0.25) 24.29907%, rgba(0, 0, 0, 0) 24.29907%, rgba(0, 0, 0, 0) 25.23364%, rgba(100, 100, 225, 0.25) 25.23364%, rgba(100, 100, 225, 0.25) 32.71028%, rgba(0, 0, 0, 0) 32.71028%, rgba(0, 0, 0, 0) 33.64486%, rgba(100, 100, 225, 0.25) 33.64486%, rgba(100, 100, 225, 0.25) 41.1215%, rgba(0, 0, 0, 0) 41.1215%, rgba(0, 0, 0, 0) 42.05607%, rgba(100, 100, 225, 0.25) 42.05607%, rgba(100, 100, 225, 0.25) 49.53271%, rgba(0, 0, 0, 0) 49.53271%, rgba(0, 0, 0, 0) 50.46729%, rgba(100, 100, 225, 0.25) 50.46729%, rgba(100, 100, 225, 0.25) 57.94393%, rgba(0, 0, 0, 0) 57.94393%, rgba(0, 0, 0, 0) 58.8785%, rgba(100, 100, 225, 0.25) 58.8785%, rgba(100, 100, 225, 0.25) 66.35514%, rgba(0, 0, 0, 0) 66.35514%, rgba(0, 0, 0, 0) 67.28972%, rgba(100, 100, 225, 0.25) 67.28972%, rgba(100, 100, 225, 0.25) 74.76636%, rgba(0, 0, 0, 0) 74.76636%, rgba(0, 0, 0, 0) 75.70093%, rgba(100, 100, 225, 0.25) 75.70093%, rgba(100, 100, 225, 0.25) 83.17757%, rgba(0, 0, 0, 0) 83.17757%, rgba(0, 0, 0, 0) 84.11215%, rgba(100, 100, 225, 0.25) 84.11215%, rgba(100, 100, 225, 0.25) 91.58879%, rgba(0, 0, 0, 0) 91.58879%, rgba(0, 0, 0, 0) 92.52336%, rgba(100, 100, 225, 0.25) 92.52336%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
   -ms-background-origin: content-box;
@@ -1315,9 +1309,11 @@ body.dotcom {
   background-color: white;
   overflow-x: hidden;
   margin: 0px;
+  background-color: black;
+  color: white;
 }
 
-/* line 31, ../sass/_layout.scss */
+/* line 33, ../sass/_layout.scss */
 .box {
   display: block;
   position: relative;
@@ -1325,14 +1321,14 @@ body.dotcom {
   margin: 2em auto;
 }
 
-/* line 39, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 .box:before {
   display: block;
   padding-top: 100%;
   content: "";
 }
 
-/* line 46, ../sass/_layout.scss */
+/* line 48, ../sass/_layout.scss */
 .outer {
   position: absolute;
   top: 0;
@@ -1341,9 +1337,8 @@ body.dotcom {
   right: 0;
   max-height: 56em;
   max-width: 56em;
-  outline: 0.325em solid blue;
 }
-/* line 242, ../sass/_layout.scss */
+/* line 244, ../sass/_layout.scss */
 .outer .container {
   *zoom: 1;
   max-width: 53.5em;
@@ -1352,7 +1347,7 @@ body.dotcom {
   padding-right: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  outline: 0.625em solid black;
+  outline: 0.625em solid white;
   margin: auto;
   height: 100%;
 }
@@ -1362,17 +1357,16 @@ body.dotcom {
   display: table;
   clear: both;
 }
-/* line 259, ../sass/_layout.scss */
+/* line 261, ../sass/_layout.scss */
 .outer .container #top {
-  height: 30%;
-  outline: 5px solid blue;
+  height: 35%;
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 264, ../sass/_layout.scss */
+/* line 266, ../sass/_layout.scss */
 .outer .container #top #name {
   width: 100%;
   float: right;
@@ -1382,21 +1376,23 @@ body.dotcom {
   outline: 1px solid purple;
   margin-bottom: 2em;
 }
-/* line 267, ../sass/_layout.scss */
+/* line 269, ../sass/_layout.scss */
 .outer .container #top #name #olga {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
-  display: block;
   text-transform: uppercase;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 100px;
+  color: white;
+  display: block;
+  margin: -.2em 0 -.25em 0;
 }
-/* line 274, ../sass/_layout.scss */
+/* line 276, ../sass/_layout.scss */
 .outer .container #top #name #romanova {
   width: 100%;
   float: right;
@@ -1407,115 +1403,148 @@ body.dotcom {
   font-style: italic;
   font-weight: bold;
   font-size: 75px;
+  color: white;
   text-transform: uppercase;
+  display: block;
+  margin: -.55em 0.1em -.25em 0;
 }
-/* line 284, ../sass/_layout.scss */
+/* line 288, ../sass/_layout.scss */
 .outer .container #content {
-  height: 60%;
+  height: 55%;
   position: relative;
   width: 100%;
   display: block;
+  padding: 0em 0.5em 0em 0.5em;
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
-  outline: 5px solid orange;
+  border-top: 0.625em solid white;
+  border-bottom: 0.625em solid white;
+  left: .5em;
 }
-/* line 296, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 .outer .container #content .section {
   height: 100%;
 }
-/* line 302, ../sass/_layout.scss */
+/* line 310, ../sass/_layout.scss */
 .outer .container #content .section .section-container {
   height: 100%;
 }
-/* line 308, ../sass/_layout.scss */
+/* line 315, ../sass/_layout.scss */
 .outer .container #content .section .section-container a {
   z-index: 10;
   position: absolute;
   bottom: 0em;
   margin: 0 auto;
 }
-/* line 318, ../sass/_layout.scss */
+/* line 325, ../sass/_layout.scss */
 .outer .container #content .section .section-container a .title {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
   -webkit-transform: scale(1.25, 1);
   transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   /* Safari and Chrome */
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
   text-transform: uppercase;
 }
-/* line 332, ../sass/_layout.scss */
+/* line 340, ../sass/_layout.scss */
 .outer .container #content .row {
   position: absolute;
   height: 100%;
   width: 100%;
   display: block;
 }
-/* line 342, ../sass/_layout.scss */
+/* line 350, ../sass/_layout.scss */
 .outer .container #content #github {
   width: 18.18182%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
-  outline: 1px solid purple;
 }
-/* line 351, ../sass/_layout.scss */
-.outer .container #content #github .title {
-  font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
-  font-size: 30;
-  outline: 1px solid red;
+/* line 355, ../sass/_layout.scss */
+.outer .container #content #github .section-container {
+  transform: scale(1.25, 0.9);
+  -ms-transform: scale(1.25, 0.9);
+  /* IE 9 */
+  -webkit-transform: scale(1.25, 0.9);
+  /* Safari and Chrome */
 }
 /* line 358, ../sass/_layout.scss */
+.outer .container #content #github .section-container a {
+  margin: 0em 0em -1em 0em;
+}
+/* line 360, ../sass/_layout.scss */
+.outer .container #content #github .section-container a .title {
+  font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30;
+  color: white;
+  outline: 1px solid red;
+}
+/* line 371, ../sass/_layout.scss */
 .outer .container #content #twitter {
   width: 18.18182%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
-  outline: 1px solid purple;
+  outline: 0.625em solid white;
 }
-/* line 364, ../sass/_layout.scss */
-.outer .container #content #twitter h1 {
+/* line 375, ../sass/_layout.scss */
+.outer .container #content #twitter .section-container {
+  transform: scale(1.25, 0.9);
+  -ms-transform: scale(1.25, 0.9);
+  /* IE 9 */
+  -webkit-transform: scale(1.25, 0.9);
+  /* Safari and Chrome */
+}
+/* line 378, ../sass/_layout.scss */
+.outer .container #content #twitter .section-container a {
+  margin: 0em 0em 0.2em -2em;
+}
+/* line 381, ../sass/_layout.scss */
+.outer .container #content #twitter .section-container a .title {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30;
+  color: white;
   outline: 1px solid red;
 }
-/* line 369, ../sass/_layout.scss */
+/* line 390, ../sass/_layout.scss */
 .outer .container #content #soundcloud {
   width: 11.88811%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
-  outline: 1px solid purple;
+  outline: 0.625em solid white;
 }
-/* line 377, ../sass/_layout.scss */
+/* line 398, ../sass/_layout.scss */
 .outer .container #content #soundcloud h1 {
   outline: 1px solid red;
 }
-/* line 386, ../sass/_layout.scss */
+/* line 407, ../sass/_layout.scss */
 .outer .container #content #linkedin {
   width: 18.18182%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
-  outline: 1px solid purple;
+  outline: 0.625em solid white;
 }
-/* line 393, ../sass/_layout.scss */
+/* line 414, ../sass/_layout.scss */
 .outer .container #content #linkedin h1 {
   outline: 1px solid red;
 }
-/* line 399, ../sass/_layout.scss */
+/* line 420, ../sass/_layout.scss */
 .outer .container #content #year {
   width: 11.88811%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
-  outline: 1px solid purple;
+  outline: 0.625em solid white;
 }
-/* line 405, ../sass/_layout.scss */
+/* line 426, ../sass/_layout.scss */
 .outer .container #content .one {
   width: 18.18182%;
   float: right;
@@ -1523,7 +1552,7 @@ body.dotcom {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 410, ../sass/_layout.scss */
+/* line 431, ../sass/_layout.scss */
 .outer .container #content .one .desc-blog #description {
   width: 100%;
   float: right;
@@ -1532,7 +1561,13 @@ body.dotcom {
   display: inline;
   outline: 1px solid purple;
 }
-/* line 419, ../sass/_layout.scss */
+/* line 435, ../sass/_layout.scss */
+.outer .container #content .one .desc-blog #description p {
+  font-family: "Courier New";
+  font-size: 12;
+  color: white;
+}
+/* line 443, ../sass/_layout.scss */
 .outer .container #content .one .desc-blog #blog {
   width: 100%;
   float: right;
@@ -1543,19 +1578,31 @@ body.dotcom {
   bottom: 0em;
   outline: 1px solid purple;
 }
-/* line 426, ../sass/_layout.scss */
+/* line 452, ../sass/_layout.scss */
 .outer .container #content .one .desc-blog #blog h1 {
   outline: 1px solid red;
 }
-/* line 433, ../sass/_layout.scss */
-.outer .container #content #email {
+/* line 460, ../sass/_layout.scss */
+.outer .container #email {
   width: 100%;
   float: left;
   margin-right: 0.6993%;
   display: inline;
   outline: 1px solid purple;
 }
-/* line 436, ../sass/_layout.scss */
-.outer .container #content #email h1 {
+/* line 463, ../sass/_layout.scss */
+.outer .container #email .section-container-horiz {
+  transform: scale(1.25, 0.9);
+  -ms-transform: scale(1.25, 0.9);
+  /* IE 9 */
+  -webkit-transform: scale(1.25, 0.9);
+  /* Safari and Chrome */
+}
+/* line 467, ../sass/_layout.scss */
+.outer .container #email .section-container-horiz a .title {
+  text-transform: uppercase;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30;
+  color: white;
   outline: 1px solid red;
 }

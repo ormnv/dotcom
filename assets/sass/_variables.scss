@@ -18,25 +18,32 @@
 
 @mixin scale($x, $y)
 {
-	transform:scale(x,y);
-	-ms-transform:scale(x,y); /* IE 9 */
-	-webkit-transform:scale(x,y); /* Safari and Chrome */
+	transform:scale($x,$y);
+	-ms-transform:scale($x,$y); /* IE 9 */
+	-webkit-transform:scale($x,$y); /* Safari and Chrome */
 }
 
 //typography 
 
 @mixin futura($px){
 	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-size:$px;
+	color:white;
+}
+
+@mixin futura-BoldItalic($px){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	font-size:$px;
+	color:white;
 }
-
 
 @mixin futura-extraBold($px){
 	font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
 	// font-weight: bold;
 	font-size:$px;
+	color:white;
 }
 
 @mixin extraBoldOblique($px){
@@ -45,4 +52,12 @@
 	font-style: italic;
 	font-weight: bold;
 	font-size:$px;
+	color:white;
 }
+
+@mixin courier($px){
+	font-family: "Courier New";
+	font-size:$px;
+	color:white;
+}
+
