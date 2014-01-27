@@ -18,8 +18,23 @@ define([
         this.shared = shared;
 
         $( document ).ready(function(){
-            console.log("ready");
-            shared.signals.setSize.dispatch();
+
+            //get viewport size
+            var width = $(window).width();
+            var widthEms = width/16;
+            console.log("ready width is " +widthEms );
+            //45-60em
+            if(widthEms>=45){
+                shared.signals.setSize60.dispatch();
+            }
+            //40-45em
+            if(widthEms>=40 && widthEms<45){
+                shared.signals.setSize45.dispatch();
+            }
+            //under 40em, mobile
+            if(widthEms<40){
+                shared.signals.setSize40.dispatch();
+            }
         });
         $(".section").hover(
           function() {
@@ -62,7 +77,22 @@ define([
             shared.signals.hoverStart.dispatch(current);
         });
         $(window).resize(function(){
-            shared.signals.resize.dispatch();
+            var width = $(window).width();
+            var widthEms = width/16;
+
+            console.log("ready width is " +widthEms);
+            //45-60em
+            if(widthEms>=45){
+                shared.signals.resize60.dispatch();
+            }
+            //40-45em
+            if(widthEms>=40 && widthEms<45){
+                shared.signals.resize45.dispatch();
+            }
+            //under 40em, mobile
+            if(widthEms<40){
+                shared.signals.resize40.dispatch();
+            }
         });
         // $('#olga').fitText();
         // $('#github-title').fitVert(0.9);

@@ -62,8 +62,12 @@ require(
 					'closeContact'       : new Signal(),
 					'hoverStart'       : new Signal(),
 					'hoverStop'        : new Signal(),
-					'setSize'        : new Signal(),
-					'resize'        : new Signal(),
+					'setSize60'        : new Signal(),
+					'setSize45'        : new Signal(),
+					'setSize40'        : new Signal(),
+					'resize60'        : new Signal(),
+					'resize45'        : new Signal(),
+					'resize40'        : new Signal(),
 					'click'             : new Signal()
 				}
 			};
