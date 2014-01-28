@@ -28,18 +28,27 @@ body.dotcom{
 
 
 .box{
-  display:block;
-  position:relative;
-  width:95%;
-  margin:2em auto;
+  height:100%;
+  width:100%;
+  outline:3px soild lavender;
+  //square for 40em+
+  @include at-breakpoint($break40) {
+    display:block;
+    position:relative;
+    width:95%;
+    margin:2em auto;
+  }
 }
 
 
 .box:before{
-  display:block;
-  padding-top:100%;
-  content: "";
 
+  //square for 40em+
+  @include at-breakpoint($break40) {
+    display:block;
+    padding-top:100%;
+    content: "";
+  }
 }
 
 .outer {
@@ -227,89 +236,106 @@ body.dotcom{
 //       // }
 //     } //content
 
-  position:  absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-height: 56em;
-  max-width: 56em;
-  margin:0 auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
+  //square for 40em+
+  @include at-breakpoint($break40){
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 60em;
+    max-width: 60em;
+    margin:0 auto;
+  }
 
   .container{  
     //mobile
-    // @include at-breakpoint($break) {
     @include container;
-    border: 0.625em solid orange;
+    border: 0.3em solid orange;
     margin: auto;
     height:100%;
 
     #top{
-      @include span-columns(16 omega,16); 
+      @include span-columns(3 omega,3); 
       height:35%;
 
-      #name { 
-        @include span-columns(16 omega,16); 
+      #name {
+        text-align:center; 
+        @include span-columns(3 omega,3); 
 
         #olga{
-          @include span-columns(16 omega,16); 
+          @include span-columns(3 omega,3); 
           @include futura-BoldItalic(100px);
+          // @include scale(1.1,1.3);
           display:block;
-          margin:-.2em 0 -.25em 0;
+          margin:-0em 0 -.25em 0;
+
         }
 
         #romanova{
-          @include span-columns(16 omega,16); 
+          @include span-columns(3 omega,3); 
           @include futura-BoldItalic(75px);
+          // @include scale(1.5,0.9);
           display:block;
-          margin:-.55em 0.1em -.25em 0;
         }
       }
     }
 
     #content {
-      @include span-columns(16 omega,16); 
+      @include span-columns(3 omega,3); 
       height:55%;
       width: 100%;
       position: relative;
       display:block;
-      padding:0em 1em 0em 0.5em;
-      border-top: 0.625em solid white;
-      border-bottom: 0.625em solid white;
-      left:.5em;
+      // padding:0em 1em 0em 0.5em;
+      border-top: 0.3em solid white;
+      border-bottom: 0.3em solid white;
+      // left:.5em;
 
       .section{
         height:100%;
+        // padding: 0em .5em 0em .5em;
+        // left: 1em;
+        position: relative;
+        text-align: center;
 
         .section-container{
           height: 100%;
+          margin-top:.25em;
 
           a{
             z-index: 10;         
-            position: absolute;
+            // position: relative;
             bottom: 0em;
             margin: 0 auto;
+            text-decoration: none;
+
 
             .title{
-               @include vertical();
                height:100%;
                width:100%;
                margin: 0 auto;
-               position: absolute;
+               // position: relative;
             }
           }
         }
       } //section      
 
       #github { 
-        @include span-columns(3,16); 
+        @include span-columns(4 omega,4); 
+        outline: 0.3em solid white;
 
         .section-container{
-          @include scale(1.5,0.9);
+          @include span-columns(4 omega,4); 
+          @include scale(1.15,1);
 
           a{
-            margin:0em 0em -1em 1em;
+            // margin:0em 0em -1em 1em;
 
             .title{
               @include futura-ExtraBold(30);
@@ -319,14 +345,14 @@ body.dotcom{
       }
 
       #twitter { 
-        @include span-columns(3,16);          
-        outline: 0.625em solid white;
+        @include span-columns(4 omega,4);          
+        outline: 0.3em solid white;
 
         .section-container{
-          @include scale(1.4,1);
+          @include scale(1,1.3);
 
           a{
-            margin:0em 0em 0.2em -.5em;
+            // margin:0em 0em 0em .5em;
 
             .title{
               @include futura(30);
@@ -336,14 +362,14 @@ body.dotcom{
       }
 
       #soundcloud { 
-        @include span-columns(2,16); 
-        outline: 0.625em solid white;
+        @include span-columns(4 omega,4); 
+        outline: 0.3em solid white;
 
         .section-container{
-          @include scale(1.4,0.8);
+          @include scale(1.25,.9);
 
           a{
-            margin:0em 0em -2.8em 1em;
+            // margin:0em 0em -2.8em 1em;
 
             .title{
               @include futura-ExtraBold(30px);
@@ -353,14 +379,14 @@ body.dotcom{
       }
 
       #linkedin { 
-        @include span-columns(3,16); 
-        outline: 0.625em solid white;
+        @include span-columns(4 omega,4); 
+        outline: 0.3em solid white;
 
         .section-container{
-          @include scale(1.4,0.85);
+          @include scale(1.25,1.3);
 
           a{
-            margin:0em 0em -2em .5em;
+            // margin:0em 0em -2em .5em;
 
             .title 
             {
@@ -378,14 +404,17 @@ body.dotcom{
       }
 
     .one{
-      @include span-columns(5 omega,16); 
+      @include span-columns(4 omega,4); 
 
       #desc-blog{
-        width:107%;
+        text-align: center;
 
-        #description {
-          @include span-columns(5 omega,5);
+        // width:107%;
+
+        #description{
+          @include span-columns(4 omega,4);
           width:100%;
+          text-decoration: none;
 
           p{
             @include futura-p(1em);
@@ -395,15 +424,15 @@ body.dotcom{
         }
 
         #blog { 
-          @include span-columns(5 omega, 5);
-          border-top: 0.625em solid white;
-          border-bottom: 0.625em solid white;
+          @include span-columns(4 omega, 4);
+          border-top: 0.3em solid white;
+          border-bottom: 0.3em solid white;
 
-          width:102%;
+          // width:102%;
 
           .section-container-blog{
-            @include scale(1.4,1.3);
-            margin:0em 0em 0em 3.5em;
+            @include scale(1.8,1.3);
+            // margin:0em 0em 0em 3.5em;
             position: relative;
             bottom:0em;
             
@@ -418,13 +447,15 @@ body.dotcom{
         }
 
         #year{ 
-            @include span-columns(5 omega, 5); 
+            @include span-columns(4 omega, 4); 
             // border-top: 0.625em solid white;
             // padding:0em 0em 0em 0.5em;            
+            text-align: center;
 
             .section-container-year{
-              @include scale(1.1,1.5);
-              margin:1em 0em 0em 1.5em;
+              @include scale(1.5,1.2);
+              margin-top: .5em;
+              // margin:1em 0em 0em 1.5em;
 
               .title{
                 @include futura-ExtraBold(30px);
@@ -436,27 +467,27 @@ body.dotcom{
     } //content
 
     #email { 
-      @include span-columns(16,16); 
+      @include span-columns(3 omega,3); 
       height:8%;
-      left: -0.5em;
+      // left: -0.5em;
       position: relative;
-      padding:0em 1em 0em 0em;
+      // padding:0em 1em 0em 0em;
+      text-align: center;
 
       .section-container-horiz{
-      @include scale(2.1,0.6);
+      @include scale(2,1.2);
       // margin:-0.25em 0em 0em 18.75em;
 
         a{
-
+          text-decoration: none;
           .title{
             @include futura(30);
-            position:absolute;
           }
         }
       }
     }
     
-   // } //break
+
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //tablet or 40em-45em
     //change outline size, margins for olga, github, twitter, sc, ln
@@ -477,15 +508,15 @@ body.dotcom{
         #olga{
           @include span-columns(16 omega,16); 
           @include futura-BoldItalic(100px);
+          @include scale(1,1);
           display:block;
-          //
           margin:-0.1em 0 -0.05em 0;
-          //
         }
 
         #romanova{
           @include span-columns(16 omega,16); 
           @include futura-BoldItalic(75px);
+          @include scale(1,1);
           display:block;
           margin:-.6em 0.1em -.25em 0;
         }
@@ -498,16 +529,24 @@ body.dotcom{
       width: 100%;
       position: relative;
       display:block;
-      padding:0em 1em 0em 0.5em;
+      // padding:0em 1em 0em 0.5em;
       border-top: 0.45em solid white;
       border-bottom: 0.45em solid white;
-      left:.5em;
+      // left:.5em;
 
       .section{
         height:100%;
+        padding: 0em 0em 0em 0em;
+        //resets for non mobile
+        left: 0em;
+        position: static;
+        text-align: left;
+
 
         .section-container{
           height: 100%;
+          margin-top:0em;
+
 
           a{
             z-index: 10;         
@@ -610,7 +649,7 @@ body.dotcom{
 
       #desc-blog{
         //
-        width:109%;
+        // width:109%;
         //
 
         #description {
@@ -628,13 +667,13 @@ body.dotcom{
           @include span-columns(5 omega, 5);
           border-top: 0.45em solid white;
           border-bottom: 0.45em solid white;
-
-          width:102%;
+          text-align: center;
+          // width:102%;
 
           .section-container-blog{
             @include scale(1.4,1.3);
             //
-            margin:0em 0em 0em 2.4em;
+            // margin:0em 0em 0em 2.4em;
             //
             position: relative;
             bottom:0em;
@@ -657,7 +696,7 @@ body.dotcom{
             .section-container-year{
               @include scale(1.1,1.5);
               //
-              margin:-.25em 0em 0em 1.25em;
+              // margin:-.25em 0em 0em 1.25em;
               //
 
               .title{
@@ -677,11 +716,12 @@ body.dotcom{
       left: -0.5em;
       position: relative;
       padding:0em 1em 0em 0em;
-      margin:-0.25em -1.25em 0em 0em;
+      margin:-0em -1em 0em 0em;
 
       .section-container-horiz{
       @include span-columns(16 omega,16); 
       @include scale(2.1,0.6);
+      margin:0em -0.25em 0em 0em;
 
         a{
           @include span-columns(16 omega,16); 
@@ -710,11 +750,11 @@ body.dotcom{
       #name { 
 
         #olga{
-          margin:-.2em 0 -.1em 0;
+          margin:-.1em 0 -.1em 0;
         }
 
         #romanova{
-          margin:-.55em 0.1em -.25em 0;
+          margin:-.6em 0.1em -.25em 0;
         }
       }
     }
@@ -722,7 +762,6 @@ body.dotcom{
     #content {
       border-top: 0.45em solid white;
       border-bottom: 0.45em solid white;
-      left:.5em;   
 
       #github { 
 
@@ -790,7 +829,7 @@ body.dotcom{
     .one{
 
       #desc-blog{
-        width:108%;
+        // width:108%;
 
         #description {
 
@@ -802,10 +841,10 @@ body.dotcom{
           border-top: 0.45em solid white;
           border-bottom: 0.45em solid white;
 
-          width:102%;
+          // width:102%;
 
           .section-container-blog{
-            margin:0em 0em 0em 2.5em;
+            // margin:0em 0em 0em 2.5em;
             position: relative;
             left:.25em;
             
@@ -820,7 +859,8 @@ body.dotcom{
         #year{ 
 
             .section-container-year{
-              margin:.5em 0em 0em 1.25em;
+              @include scale(1.1,1.2);
+              // margin:0em 0em 0em 1.25em;
 
               .title{
               }
@@ -835,13 +875,11 @@ body.dotcom{
       left: -0.5em;
       position: relative;
       padding:0em 1em 0em .5em;
-      margin:-0.25em -1.25em 0em 0em;
+      margin:-0em -1.25em 0em 0em;
 
       .section-container-horiz{
 
         a{
-
-
           .title{
           }
         }
@@ -852,139 +890,82 @@ body.dotcom{
 
 /////////////////////////////////////////////////////////////////////////////////
 
-  //50em to 60em
 @include at-breakpoint($break50) {
     @include container;
-    border: 0.625em solid white;
-    margin: auto;
-    height:100%;
+    border: 0.5em solid yellow;
 
     #top{
-      @include span-columns(16 omega,16); 
-      height:35%;
 
       #name { 
-        @include span-columns(16 omega,16); 
 
         #olga{
-          @include span-columns(16 omega,16); 
-          @include futura-BoldItalic(100px);
-          display:block;
-          margin:-.2em 0 -.25em 0;
+          margin:-.15em 0 -.1em 0;
         }
 
         #romanova{
-          @include span-columns(16 omega,16); 
-          @include futura-BoldItalic(75px);
-          display:block;
-          margin:-.55em 0.1em -.25em 0;
+          margin:-.7em 0.1em -.25em 0;
         }
       }
     }
 
     #content {
-      @include span-columns(16 omega,16); 
-      height:55%;
-      width: 100%;
-      position: relative;
-      display:block;
-      padding:0em 1em 0em 0.5em;
-      border-top: 0.625em solid white;
-      border-bottom: 0.625em solid white;
-      left:.5em;
-
-      .section{
-        height:100%;
-
-        .section-container{
-          height: 100%;
-
-          a{
-            z-index: 10;         
-            position: absolute;
-            bottom: 0em;
-            margin: 0 auto;
-
-            .title{
-               @include vertical();
-               height:100%;
-               width:100%;
-               margin: 0 auto;
-               position: absolute;
-            }
-          }
-        }
-      } //section      
+      // padding:0em 1em 0em 0.5em;
+      border-top: 0.5em solid white;
+      border-bottom: 0.5em solid white;
 
       #github { 
-        @include span-columns(3,16); 
 
         .section-container{
-          @include scale(1.5,0.9);
 
           a{
             margin:0em 0em -1em 1em;
 
             .title{
-              @include futura-ExtraBold(30);
             }
           }
         }      
       }
 
       #twitter { 
-        @include span-columns(3,16);          
-        outline: 0.625em solid white;
+        outline: 0.5em solid white;
 
         .section-container{
-          @include scale(1.4,1);
 
           a{
-            margin:0em 0em 0.2em -.5em;
 
             .title{
-              @include futura(30);
             }
           }
         }
       }
 
       #soundcloud { 
-        @include span-columns(2,16); 
-        outline: 0.625em solid white;
+        outline: 0.5em solid white;
 
         .section-container{
-          @include scale(1.4,0.8);
 
           a{
-            margin:0em 0em -2.8em 1em;
 
             .title{
-              @include futura-ExtraBold(30px);
             }
           }
         }
       }
 
       #linkedin { 
-        @include span-columns(3,16); 
-        outline: 0.625em solid white;
+        outline: 0.5em solid white;
 
         .section-container{
-          @include scale(1.4,0.85);
 
           a{
-            margin:0em 0em -2em .5em;
 
             .title 
             {
 
               #linked{
-                @include futura-Bold(30px);
               }
 
               #in{
-                @include futura(30px);
               }
             }
           }
@@ -992,56 +973,37 @@ body.dotcom{
       }
 
     .one{
-      @include span-columns(5 omega,16); 
 
       #desc-blog{
-        width:107%;
 
         #description {
-          @include span-columns(5 omega,5);
-          width:100%;
 
           p{
-            @include futura-p(1em);
-            margin:1em;
-            text-align:justify;
           }
         }
 
         #blog { 
-          @include span-columns(5 omega, 5);
-          border-top: 0.625em solid white;
-          border-bottom: 0.625em solid white;
+          border-top: 0.5em solid white;
+          border-bottom: 0.5em solid white;
 
-          width:102%;
 
           .section-container-blog{
-            @include scale(1.4,1.3);
-            margin:0em 0em 0em 3.5em;
-            position: relative;
-            bottom:0em;
+            // margin:0em 0em 0em 2.75em;
             
             a{
-              text-decoration: none;
             
               .title{
-                @include futura(30px);
               }
             }
           }
         }
 
         #year{ 
-            @include span-columns(5 omega, 5); 
-            // border-top: 0.625em solid white;
-            // padding:0em 0em 0em 0.5em;            
+          
 
             .section-container-year{
-              @include scale(1.1,1.5);
-              margin:-.25em 0em 0em 1.5em;
 
               .title{
-                @include futura-ExtraBold(30px);
               }
             }
           }
@@ -1050,24 +1012,163 @@ body.dotcom{
     } //content
 
     #email { 
-      @include span-columns(16 omega,16); 
+
+
+      .section-container-horiz{
+
+        a{
+
+          .title{
+
+          }
+        }
+      }
+    }
+    
+   } //break
+
+/////////////////////////////////////////////////////////////////////////////////
+  //50em to 60em
+@include at-breakpoint($break55) {
+    @include container;
+    border: 0.625em solid white;
+
+    #top{
+
+      #name { 
+
+        #olga{
+          margin:-.2em 0 -.25em 0;
+        }
+
+        #romanova{
+          margin:-.55em 0.1em -.25em 0;
+        }
+      }
+    }
+
+    #content {
+      // padding:0em 1em 0em 0.5em;
+      border-top: 0.625em solid white;
+      border-bottom: 0.625em solid white;
+
+      #github { 
+
+        .section-container{
+
+          a{
+            margin:0em 0em -1em 1em;
+
+            .title{
+            }
+          }
+        }      
+      }
+
+      #twitter { 
+        outline: 0.625em solid white;
+
+        .section-container{
+
+          a{
+            margin:0em 0em 0.2em -.5em;
+
+            .title{
+            }
+          }
+        }
+      }
+
+      #soundcloud { 
+        outline: 0.625em solid white;
+
+        .section-container{
+
+          a{
+            margin:0em 0em -2.8em 1em;
+
+            .title{
+            }
+          }
+        }
+      }
+
+      #linkedin { 
+        outline: 0.625em solid white;
+
+        .section-container{
+
+          a{
+            margin:0em 0em -2em .5em;
+
+            .title 
+            {
+
+              #linked{
+              }
+
+              #in{
+              }
+            }
+          }
+        }
+      }
+
+    .one{
+
+      #desc-blog{
+        // width:107%;
+
+        #description {
+          width:100%;
+
+          p{
+          }
+        }
+
+        #blog { 
+          border-top: 0.625em solid white;
+          border-bottom: 0.625em solid white;
+
+          // width:102%;
+
+          .section-container-blog{
+            // margin:0em 0em 0em 3em;
+
+            
+            a{
+            
+              .title{
+              }
+            }
+          }
+        }
+
+        #year{ 
+
+            .section-container-year{
+              // margin:0em 0em 0em 1.5em;
+
+              .title{
+              }
+            }
+          }
+        }
+      }
+    } //content
+
+    #email { 
       height:8%;
       left: -0.5em;
       position: relative;
       padding:0em 1em 0em 0em;
-      margin:-0.25em -1.25em 0em 0em;
+      margin:0em -1em 0em 0em;
 
       .section-container-horiz{
-      @include span-columns(16 omega,16); 
-      @include scale(2.1,0.6);
 
         a{
-          @include span-columns(16 omega,16); 
-          text-align: center;
 
           .title{
-            @include span-columns(16 omega,16); 
-            @include futura(30);
             display:block;
             position:absolute;
           }
