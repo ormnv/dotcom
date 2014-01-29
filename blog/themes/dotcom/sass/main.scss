@@ -28,10 +28,15 @@ form#search {
 			a {
 				font-size: 13px;
 			}
-			a:hover {
-				font-size: 13px;
-				background-color: white;
+			a.menu-item:hover {
+				// font-size: 13px;
+				background-color: black;
+				color:white;
 			}
+
+			// a#tray:hover{
+			// 	background-color:white;
+			// }
 		}
 	}
 }
@@ -133,11 +138,19 @@ h1 {
 
 	font-size: 40px;
 	line-height: 48px;
-	color: #505762;
+	color: black;
 }
 	.search h1 {
 		padding: 60px 0;
+		color:black;
 	}
+
+article{
+	p{
+		font-weight: normal;
+		text-transform: none;
+	}
+}	
 
 /* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
 .slidey {
@@ -209,7 +222,7 @@ h1 {
 			// color: #4171b1;
 			background-color: black;
 		}
-
+x
 
 		#top ul a:hover, #top ul .active .menu-item a, .posts .items li:first-child h2 a:hover, p a:hover {
 			@include futura-ExtraBold(13px, white);
@@ -225,8 +238,12 @@ h1 {
 			float: left;
 			padding-left: 40px;
 		}
-		#top ul li #tray a:hover{
+		#top ul li a.menu-item:hover{
+			background-color: black;
+		}
+		#top ul li a#tray:hover{
 			background-color: none;
+			color:white;
 		}
 		#top ul a {
 			display: inline-block;
@@ -261,8 +278,8 @@ h1 {
 	.items > li {
 		padding: 70px 0 60px;
 
-		color: #97aec9;
-		background: #3c4552;
+		color: white;
+		background: black;
 	}
 		.posts .items > li:first-child {
 			background: #fff !important;
@@ -274,20 +291,30 @@ h1 {
 			}
 	.items h1 {
 		padding: 0 0 8px;
+		font-size: 3.5em;
+		line-height: 90%;
 	}
 		.items h1 a {
 			text-decoration: none;
+			@include scale(1, 2);
+
+		}
+		.items h1 a:hover {
+			text-decoration: none;
+			background-color:black;
+			color:white;
 		}
 	.items h2 {
-		font-size: 32px;
-		line-height: 41px;
+		font-size: 3.5em;
+		line-height: 90%;
 	}
 		.items h2 a {
 			display: block;
-			padding-bottom: 12px;
-
-			color: #fff;
-			color: rgba(176,200,236,.8);
+			// padding-bottom: 12px;
+			@include scale(1, 2);
+			// color: #fff;
+			color: rgba(212, 212, 212, 0.8);
+			// color: rgba(216,212,242,.8);
 
 			text-decoration: none;
 		}
@@ -346,6 +373,31 @@ h1 {
 		.content.wrap ul ul, .content.wrap ol ol, .items li ul ul {
 			padding: 0 20px;
 		}
+
+.contact-outer{
+	padding:2em;
+
+	.contact{
+		padding:2em;
+
+		h2{
+			margin-left:.35em
+		}
+
+		p{
+			margin:.5em;
+		}
+
+		input{
+			text-transform: none;
+			font-weight: normal;
+		}
+		textarea{
+			text-transform: none;
+			font-weight: normal;
+		}
+	}
+}
 
 /**
  *   Footnotes and straplines

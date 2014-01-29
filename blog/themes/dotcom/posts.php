@@ -21,7 +21,7 @@
 				</article>
 			</li>
 			<?php $i = 0; while(posts()): ?>
-			<?php $bg = sprintf('background: hsl(215, 28%%, %d%%);', round(((++$i / posts_per_page()) * 20) + 20)); ?>
+			<?php $bg = sprintf('background: hsl(220, 100%%, %d%%);', round(((++$i / posts_per_page()) * 20) + 20)); ?>
 			<li style="<?php echo $bg; ?>">
 				<article class="wrap">
 					<h2>

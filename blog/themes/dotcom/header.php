@@ -70,8 +70,8 @@
 				<nav id="main" role="navigation">
 					<ul>
 						<?php while(menu_items()): ?>
-						<li class="menu-item" <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+						<li  <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+							<a class="menu-item" href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
 								<?php echo menu_name(); ?>
 							</a>
 						</li>
