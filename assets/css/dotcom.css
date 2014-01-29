@@ -9,40 +9,33 @@
   color: black;
 }
 
-/*
-  Modules.
-*/
-/*
-  Layout.
-*/
 /* line 1, ../sass/_ready.scss */
-#ready {
+#noscripts {
   z-index: 50;
-  display: none;
   height: 100%;
   width: 100%;
 }
-/* line 8, ../sass/_ready.scss */
-#ready #outer-container {
+/* line 6, ../sass/_ready.scss */
+#noscripts #outer-container {
   display: table;
   position: fixed;
   height: 100%;
   width: 100%;
+  background-color: black;
   z-index: 50;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
 }
-/* line 20, ../sass/_ready.scss */
-#ready #outer-container #message-container {
+/* line 18, ../sass/_ready.scss */
+#noscripts #outer-container #message-container {
   display: table-cell;
   vertical-align: middle;
   z-index: 50;
 }
-/* line 32, ../sass/_ready.scss */
-#ready #outer-container #message-container #messages {
+/* line 23, ../sass/_ready.scss */
+#noscripts #outer-container #message-container #messages {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 1.5em;
   color: white;
@@ -50,10 +43,19 @@
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-  background-color: blue;
+  background-color: black;
   z-index: 50;
   border: .3em dashed white;
   text-align: center;
+  display: block;
+}
+/* line 35, ../sass/_ready.scss */
+#noscripts #outer-container #message-container #messages #message-script {
+  padding: .5em;
+}
+/* line 38, ../sass/_ready.scss */
+#noscripts #outer-container #message-container #messages #message-firefox {
+  padding: .5em;
 }
 
 /*!
@@ -1355,14 +1357,22 @@ body.dotcom {
   color: white;
 }
 
-/* line 30, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
+#ready {
+  z-index: 50;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 36, ../sass/_layout.scss */
 .box {
   height: 100%;
   width: 100%;
   outline: 3px soild lavender;
 }
 @media (min-width: 40em) {
-  /* line 30, ../sass/_layout.scss */
+  /* line 36, ../sass/_layout.scss */
   .box {
     display: block;
     position: relative;
@@ -1372,7 +1382,7 @@ body.dotcom {
 }
 
 @media (min-width: 40em) {
-  /* line 44, ../sass/_layout.scss */
+  /* line 50, ../sass/_layout.scss */
   .box:before {
     display: block;
     padding-top: 100%;
@@ -1380,7 +1390,7 @@ body.dotcom {
   }
 }
 
-/* line 54, ../sass/_layout.scss */
+/* line 60, ../sass/_layout.scss */
 .outer {
   top: 0;
   left: 0;
@@ -1388,7 +1398,7 @@ body.dotcom {
   right: 0;
 }
 @media (min-width: 40em) {
-  /* line 54, ../sass/_layout.scss */
+  /* line 60, ../sass/_layout.scss */
   .outer {
     position: absolute;
     top: 0;
@@ -1400,7 +1410,7 @@ body.dotcom {
     margin: 0 auto;
   }
 }
-/* line 72, ../sass/_layout.scss */
+/* line 78, ../sass/_layout.scss */
 .outer .container {
   *zoom: 1;
   max-width: 45.36em;
@@ -1419,7 +1429,7 @@ body.dotcom {
   display: table;
   clear: both;
 }
-/* line 79, ../sass/_layout.scss */
+/* line 85, ../sass/_layout.scss */
 .outer .container #top {
   width: 100%;
   float: right;
@@ -1428,7 +1438,7 @@ body.dotcom {
   display: inline;
   height: 35%;
 }
-/* line 83, ../sass/_layout.scss */
+/* line 89, ../sass/_layout.scss */
 .outer .container #top #name {
   text-align: center;
   width: 100%;
@@ -1437,7 +1447,7 @@ body.dotcom {
   *margin-left: -0.53em;
   display: inline;
 }
-/* line 87, ../sass/_layout.scss */
+/* line 93, ../sass/_layout.scss */
 .outer .container #top #name #olga {
   width: 100%;
   float: right;
@@ -1451,9 +1461,9 @@ body.dotcom {
   color: white;
   text-transform: uppercase;
   display: block;
-  margin: -0em 0 -.25em 0;
+  margin: -0.05em 0em 0em 0em;
 }
-/* line 96, ../sass/_layout.scss */
+/* line 103, ../sass/_layout.scss */
 .outer .container #top #name #romanova {
   width: 100%;
   float: right;
@@ -1468,7 +1478,7 @@ body.dotcom {
   text-transform: uppercase;
   display: block;
 }
-/* line 105, ../sass/_layout.scss */
+/* line 112, ../sass/_layout.scss */
 .outer .container #content {
   width: 100%;
   float: right;
@@ -1482,31 +1492,31 @@ body.dotcom {
   border-top: 0.3em solid white;
   border-bottom: 0.3em solid white;
 }
-/* line 116, ../sass/_layout.scss */
+/* line 123, ../sass/_layout.scss */
 .outer .container #content .section {
   height: 100%;
   position: relative;
   text-align: center;
 }
-/* line 123, ../sass/_layout.scss */
+/* line 130, ../sass/_layout.scss */
 .outer .container #content .section .section-container {
   height: 100%;
   margin-top: .25em;
 }
-/* line 127, ../sass/_layout.scss */
+/* line 134, ../sass/_layout.scss */
 .outer .container #content .section .section-container a {
   z-index: 10;
   bottom: 0em;
   margin: 0 auto;
   text-decoration: none;
 }
-/* line 135, ../sass/_layout.scss */
+/* line 142, ../sass/_layout.scss */
 .outer .container #content .section .section-container a .title {
   height: 100%;
   width: 100%;
   margin: 0 auto;
 }
-/* line 145, ../sass/_layout.scss */
+/* line 152, ../sass/_layout.scss */
 .outer .container #content #github {
   width: 100%;
   float: right;
@@ -1515,7 +1525,7 @@ body.dotcom {
   display: inline;
   box-shadow: 0px 0px 0px 0.3em #FFF;
 }
-/* line 149, ../sass/_layout.scss */
+/* line 156, ../sass/_layout.scss */
 .outer .container #content #github .section-container {
   width: 100%;
   float: right;
@@ -1528,23 +1538,22 @@ body.dotcom {
   -webkit-transform: scale(1.15, 1);
   /* Safari and Chrome */
 }
-/* line 156, ../sass/_layout.scss */
+/* line 163, ../sass/_layout.scss */
 .outer .container #content #github .section-container a .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
   color: white;
   text-transform: uppercase;
 }
-/* line 163, ../sass/_layout.scss */
+/* line 170, ../sass/_layout.scss */
 .outer .container #content #twitter {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.53em;
   display: inline;
-  box-shadow: 0px 0px 0px 0.3em #FFF;
 }
-/* line 167, ../sass/_layout.scss */
+/* line 173, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container {
   transform: scale(1, 1.3);
   -ms-transform: scale(1, 1.3);
@@ -1552,14 +1561,14 @@ body.dotcom {
   -webkit-transform: scale(1, 1.3);
   /* Safari and Chrome */
 }
-/* line 173, ../sass/_layout.scss */
+/* line 179, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
   color: white;
   text-transform: uppercase;
 }
-/* line 180, ../sass/_layout.scss */
+/* line 186, ../sass/_layout.scss */
 .outer .container #content #soundcloud {
   width: 100%;
   float: right;
@@ -1568,7 +1577,7 @@ body.dotcom {
   display: inline;
   box-shadow: 0px 0px 0px 0.3em #FFF;
 }
-/* line 184, ../sass/_layout.scss */
+/* line 190, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container {
   transform: scale(1.25, 0.9);
   -ms-transform: scale(1.25, 0.9);
@@ -1576,14 +1585,14 @@ body.dotcom {
   -webkit-transform: scale(1.25, 0.9);
   /* Safari and Chrome */
 }
-/* line 190, ../sass/_layout.scss */
+/* line 196, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container a .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 197, ../sass/_layout.scss */
+/* line 203, ../sass/_layout.scss */
 .outer .container #content #linkedin {
   width: 100%;
   float: right;
@@ -1591,7 +1600,7 @@ body.dotcom {
   *margin-left: -0.53em;
   display: inline;
 }
-/* line 200, ../sass/_layout.scss */
+/* line 206, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container {
   transform: scale(1.25, 1.3);
   -ms-transform: scale(1.25, 1.3);
@@ -1599,7 +1608,7 @@ body.dotcom {
   -webkit-transform: scale(1.25, 1.3);
   /* Safari and Chrome */
 }
-/* line 209, ../sass/_layout.scss */
+/* line 215, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #linked {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
@@ -1607,14 +1616,14 @@ body.dotcom {
   color: white;
   text-transform: uppercase;
 }
-/* line 213, ../sass/_layout.scss */
+/* line 219, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #in {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 221, ../sass/_layout.scss */
+/* line 227, ../sass/_layout.scss */
 .outer .container #content .one {
   width: 100%;
   float: right;
@@ -1622,11 +1631,11 @@ body.dotcom {
   *margin-left: -0.53em;
   display: inline;
 }
-/* line 224, ../sass/_layout.scss */
+/* line 230, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog {
   text-align: center;
 }
-/* line 229, ../sass/_layout.scss */
+/* line 235, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #description {
   width: 100%;
   float: right;
@@ -1636,7 +1645,7 @@ body.dotcom {
   width: 100%;
   text-decoration: none;
 }
-/* line 234, ../sass/_layout.scss */
+/* line 240, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #description p {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 1em;
@@ -1644,7 +1653,7 @@ body.dotcom {
   margin: 1em;
   text-align: justify;
 }
-/* line 241, ../sass/_layout.scss */
+/* line 247, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog {
   width: 100%;
   float: right;
@@ -1654,7 +1663,7 @@ body.dotcom {
   border-top: 0.3em solid white;
   border-bottom: 0.3em solid white;
 }
-/* line 248, ../sass/_layout.scss */
+/* line 254, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog .section-container-blog {
   transform: scale(1.8, 1.3);
   -ms-transform: scale(1.8, 1.3);
@@ -1664,18 +1673,18 @@ body.dotcom {
   position: relative;
   bottom: 0em;
 }
-/* line 254, ../sass/_layout.scss */
+/* line 260, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog .section-container-blog a {
   text-decoration: none;
 }
-/* line 257, ../sass/_layout.scss */
+/* line 263, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog .section-container-blog a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 264, ../sass/_layout.scss */
+/* line 270, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #year {
   width: 100%;
   float: right;
@@ -1684,7 +1693,7 @@ body.dotcom {
   display: inline;
   text-align: center;
 }
-/* line 270, ../sass/_layout.scss */
+/* line 276, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #year .section-container-year {
   transform: scale(1.5, 1.2);
   -ms-transform: scale(1.5, 1.2);
@@ -1693,14 +1702,14 @@ body.dotcom {
   /* Safari and Chrome */
   margin-top: .5em;
 }
-/* line 275, ../sass/_layout.scss */
+/* line 281, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #year .section-container-year .title {
   font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   color: white;
   text-transform: uppercase;
 }
-/* line 284, ../sass/_layout.scss */
+/* line 290, ../sass/_layout.scss */
 .outer .container #email {
   width: 100%;
   float: right;
@@ -1711,7 +1720,7 @@ body.dotcom {
   position: relative;
   text-align: center;
 }
-/* line 292, ../sass/_layout.scss */
+/* line 298, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz {
   transform: scale(2, 1.2);
   -ms-transform: scale(2, 1.2);
@@ -1719,11 +1728,11 @@ body.dotcom {
   -webkit-transform: scale(2, 1.2);
   /* Safari and Chrome */
 }
-/* line 296, ../sass/_layout.scss */
+/* line 302, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz a {
   text-decoration: none;
 }
-/* line 298, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz a .title {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30;
@@ -1731,7 +1740,7 @@ body.dotcom {
   text-transform: uppercase;
 }
 @media (min-width: 40em) {
-  /* line 72, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .outer .container {
     max-width: 55.95em;
     padding-left: 0em;
@@ -1748,20 +1757,20 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 316, ../sass/_layout.scss */
+  /* line 322, ../sass/_layout.scss */
   .outer .container #top {
     width: 100%;
     float: right;
     margin-right: 0;
     height: 35%;
   }
-  /* line 320, ../sass/_layout.scss */
+  /* line 326, ../sass/_layout.scss */
   .outer .container #top #name {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 323, ../sass/_layout.scss */
+  /* line 329, ../sass/_layout.scss */
   .outer .container #top #name #olga {
     width: 100%;
     float: right;
@@ -1778,9 +1787,8 @@ body.dotcom {
     -webkit-transform: scale(1, 1);
     /* Safari and Chrome */
     display: block;
-    margin: -0.1em 0 -0.05em 0;
   }
-  /* line 332, ../sass/_layout.scss */
+  /* line 337, ../sass/_layout.scss */
   .outer .container #top #name #romanova {
     width: 100%;
     float: right;
@@ -1799,7 +1807,7 @@ body.dotcom {
     display: block;
     margin: -.6em 0.1em -.25em 0;
   }
-  /* line 342, ../sass/_layout.scss */
+  /* line 347, ../sass/_layout.scss */
   .outer .container #content {
     width: 100%;
     float: right;
@@ -1811,7 +1819,7 @@ body.dotcom {
     border-top: 0.45em solid white;
     border-bottom: 0.45em solid white;
   }
-  /* line 353, ../sass/_layout.scss */
+  /* line 358, ../sass/_layout.scss */
   .outer .container #content .section {
     height: 100%;
     padding: 0em 0em 0em 0em;
@@ -1819,19 +1827,19 @@ body.dotcom {
     position: static;
     text-align: left;
   }
-  /* line 362, ../sass/_layout.scss */
+  /* line 367, ../sass/_layout.scss */
   .outer .container #content .section .section-container {
     height: 100%;
     margin-top: 0em;
   }
-  /* line 367, ../sass/_layout.scss */
+  /* line 372, ../sass/_layout.scss */
   .outer .container #content .section .section-container a {
     z-index: 10;
     position: absolute;
     bottom: 0em;
     margin: 0 auto;
   }
-  /* line 373, ../sass/_layout.scss */
+  /* line 378, ../sass/_layout.scss */
   .outer .container #content .section .section-container a .title {
     -webkit-transform: scale(1.25, 1);
     transform: rotate(270deg);
@@ -1843,13 +1851,13 @@ body.dotcom {
     margin: 0 auto;
     position: absolute;
   }
-  /* line 384, ../sass/_layout.scss */
+  /* line 389, ../sass/_layout.scss */
   .outer .container #content #github {
     width: 17.98034%;
     float: left;
     margin-right: 0.94727%;
   }
-  /* line 387, ../sass/_layout.scss */
+  /* line 392, ../sass/_layout.scss */
   .outer .container #content #github .section-container {
     transform: scale(1.5, 0.9);
     -ms-transform: scale(1.5, 0.9);
@@ -1857,25 +1865,25 @@ body.dotcom {
     -webkit-transform: scale(1.5, 0.9);
     /* Safari and Chrome */
   }
-  /* line 390, ../sass/_layout.scss */
+  /* line 395, ../sass/_layout.scss */
   .outer .container #content #github .section-container a {
     margin: 0em 0em -1em .75em;
   }
-  /* line 394, ../sass/_layout.scss */
+  /* line 399, ../sass/_layout.scss */
   .outer .container #content #github .section-container a .title {
     font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
     font-size: 30;
     color: white;
     text-transform: uppercase;
   }
-  /* line 401, ../sass/_layout.scss */
+  /* line 406, ../sass/_layout.scss */
   .outer .container #content #twitter {
     width: 17.98034%;
     float: left;
     margin-right: 0.94727%;
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 405, ../sass/_layout.scss */
+  /* line 410, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container {
     transform: scale(1.4, 1);
     -ms-transform: scale(1.4, 1);
@@ -1883,25 +1891,25 @@ body.dotcom {
     -webkit-transform: scale(1.4, 1);
     /* Safari and Chrome */
   }
-  /* line 408, ../sass/_layout.scss */
+  /* line 413, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container a {
     margin: 0em 0em 0em -.5em;
   }
-  /* line 412, ../sass/_layout.scss */
+  /* line 417, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container a .title {
     font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
     font-size: 30;
     color: white;
     text-transform: uppercase;
   }
-  /* line 419, ../sass/_layout.scss */
+  /* line 424, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
     width: 11.67113%;
     float: left;
     margin-right: 0.94727%;
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 423, ../sass/_layout.scss */
+  /* line 428, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container {
     transform: scale(1.4, 0.8);
     -ms-transform: scale(1.4, 0.8);
@@ -1909,25 +1917,25 @@ body.dotcom {
     -webkit-transform: scale(1.4, 0.8);
     /* Safari and Chrome */
   }
-  /* line 426, ../sass/_layout.scss */
+  /* line 431, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container a {
     margin: 0em 0em -2em .6em;
   }
-  /* line 430, ../sass/_layout.scss */
+  /* line 435, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container a .title {
     font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
     font-size: 30px;
     color: white;
     text-transform: uppercase;
   }
-  /* line 437, ../sass/_layout.scss */
+  /* line 442, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     width: 17.98034%;
     float: left;
     margin-right: 0.94727%;
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 441, ../sass/_layout.scss */
+  /* line 446, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container {
     transform: scale(1.4, 0.85);
     -ms-transform: scale(1.4, 0.85);
@@ -1935,11 +1943,11 @@ body.dotcom {
     -webkit-transform: scale(1.4, 0.85);
     /* Safari and Chrome */
   }
-  /* line 444, ../sass/_layout.scss */
+  /* line 449, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a {
     margin: 0em 0em -1.5em .25em;
   }
-  /* line 451, ../sass/_layout.scss */
+  /* line 456, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a .title #linked {
     font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
     font-size: 30px;
@@ -1947,27 +1955,27 @@ body.dotcom {
     color: white;
     text-transform: uppercase;
   }
-  /* line 455, ../sass/_layout.scss */
+  /* line 460, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a .title #in {
     font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
     font-size: 30px;
     color: white;
     text-transform: uppercase;
   }
-  /* line 463, ../sass/_layout.scss */
+  /* line 468, ../sass/_layout.scss */
   .outer .container #content .one {
     width: 30.59875%;
     float: right;
     margin-right: 0;
   }
-  /* line 471, ../sass/_layout.scss */
+  /* line 476, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description {
     width: 100%;
     float: right;
     margin-right: 0;
     width: 100%;
   }
-  /* line 475, ../sass/_layout.scss */
+  /* line 480, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description p {
     font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
     font-size: 1em;
@@ -1975,7 +1983,7 @@ body.dotcom {
     margin: 1em;
     text-align: justify;
   }
-  /* line 482, ../sass/_layout.scss */
+  /* line 487, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
     width: 100%;
     float: right;
@@ -1984,7 +1992,7 @@ body.dotcom {
     border-bottom: 0.45em solid white;
     text-align: center;
   }
-  /* line 489, ../sass/_layout.scss */
+  /* line 494, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog {
     transform: scale(1.4, 1.3);
     -ms-transform: scale(1.4, 1.3);
@@ -1994,24 +2002,24 @@ body.dotcom {
     position: relative;
     bottom: 0em;
   }
-  /* line 497, ../sass/_layout.scss */
+  /* line 502, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog a {
     text-decoration: none;
   }
-  /* line 500, ../sass/_layout.scss */
+  /* line 505, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog a .title {
     font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
     font-size: 30px;
     color: white;
     text-transform: uppercase;
   }
-  /* line 507, ../sass/_layout.scss */
+  /* line 512, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 512, ../sass/_layout.scss */
+  /* line 517, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year {
     transform: scale(1.1, 1.5);
     -ms-transform: scale(1.1, 1.5);
@@ -2019,7 +2027,7 @@ body.dotcom {
     -webkit-transform: scale(1.1, 1.5);
     /* Safari and Chrome */
   }
-  /* line 518, ../sass/_layout.scss */
+  /* line 523, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year .title {
     width: 100%;
     float: right;
@@ -2029,7 +2037,7 @@ body.dotcom {
     color: white;
     text-transform: uppercase;
   }
-  /* line 529, ../sass/_layout.scss */
+  /* line 534, ../sass/_layout.scss */
   .outer .container #email {
     width: 100%;
     float: right;
@@ -2040,7 +2048,7 @@ body.dotcom {
     padding: 0em 1em 0em 0em;
     margin: -0em -1em 0em 0em;
   }
-  /* line 537, ../sass/_layout.scss */
+  /* line 542, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz {
     width: 100%;
     float: right;
@@ -2052,14 +2060,14 @@ body.dotcom {
     /* Safari and Chrome */
     margin: 0em -0.25em 0em 0em;
   }
-  /* line 542, ../sass/_layout.scss */
+  /* line 547, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a {
     width: 100%;
     float: right;
     margin-right: 0;
     text-align: center;
   }
-  /* line 546, ../sass/_layout.scss */
+  /* line 551, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a .title {
     width: 100%;
     float: right;
@@ -2073,7 +2081,7 @@ body.dotcom {
   }
 }
 @media (min-width: 45em) {
-  /* line 72, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .outer .container {
     max-width: 55.95em;
     padding-left: 0em;
@@ -2088,61 +2096,53 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 568, ../sass/_layout.scss */
-  .outer .container #top #name #olga {
-    margin: -.1em 0 -.1em 0;
-  }
-  /* line 572, ../sass/_layout.scss */
-  .outer .container #top #name #romanova {
-    margin: -.6em 0.1em -.25em 0;
-  }
-  /* line 578, ../sass/_layout.scss */
+  /* line 583, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.45em solid white;
     border-bottom: 0.45em solid white;
   }
-  /* line 586, ../sass/_layout.scss */
+  /* line 591, ../sass/_layout.scss */
   .outer .container #content #github .section-container a {
     margin: 0em 0em -1em .8em;
   }
-  /* line 595, ../sass/_layout.scss */
+  /* line 600, ../sass/_layout.scss */
   .outer .container #content #twitter {
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 600, ../sass/_layout.scss */
+  /* line 605, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container a {
     margin: 0em 0em 0.2em -.5em;
   }
-  /* line 609, ../sass/_layout.scss */
+  /* line 614, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 614, ../sass/_layout.scss */
+  /* line 619, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container a {
     margin: 0em 0em -2em .8em;
   }
-  /* line 623, ../sass/_layout.scss */
+  /* line 628, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     width: 17.98034%;
     float: left;
     margin-right: 0.94727%;
     box-shadow: 0px 0px 0px 0.45em #FFF;
   }
-  /* line 629, ../sass/_layout.scss */
+  /* line 634, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a {
     margin: 0em 0em -2em .25em;
   }
-  /* line 656, ../sass/_layout.scss */
+  /* line 661, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
     border-top: 0.45em solid white;
     border-bottom: 0.45em solid white;
   }
-  /* line 662, ../sass/_layout.scss */
+  /* line 667, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog {
     position: relative;
     left: .25em;
   }
-  /* line 677, ../sass/_layout.scss */
+  /* line 682, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year {
     transform: scale(1.1, 1.2);
     -ms-transform: scale(1.1, 1.2);
@@ -2150,7 +2150,7 @@ body.dotcom {
     -webkit-transform: scale(1.1, 1.2);
     /* Safari and Chrome */
   }
-  /* line 689, ../sass/_layout.scss */
+  /* line 694, ../sass/_layout.scss */
   .outer .container #email {
     height: 9%;
     left: -0.5em;
@@ -2160,7 +2160,7 @@ body.dotcom {
   }
 }
 @media (min-width: 50em) {
-  /* line 72, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .outer .container {
     max-width: 55.95em;
     padding-left: 0em;
@@ -2175,43 +2175,35 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 717, ../sass/_layout.scss */
-  .outer .container #top #name #olga {
-    margin: -.15em 0 -.1em 0;
-  }
-  /* line 721, ../sass/_layout.scss */
-  .outer .container #top #name #romanova {
-    margin: -.7em 0.1em -.25em 0;
-  }
-  /* line 727, ../sass/_layout.scss */
+  /* line 732, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.5em solid white;
     border-bottom: 0.5em solid white;
   }
-  /* line 736, ../sass/_layout.scss */
+  /* line 741, ../sass/_layout.scss */
   .outer .container #content #github .section-container a {
     margin: 0em 0em -1em 1em;
   }
-  /* line 745, ../sass/_layout.scss */
+  /* line 750, ../sass/_layout.scss */
   .outer .container #content #twitter {
     box-shadow: 0px 0px 0px 0.5em #FFF;
   }
-  /* line 758, ../sass/_layout.scss */
+  /* line 763, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
     box-shadow: 0px 0px 0px 0.5em #FFF;
   }
-  /* line 771, ../sass/_layout.scss */
+  /* line 776, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     box-shadow: 0px 0px 0px 0.5em #FFF;
   }
-  /* line 801, ../sass/_layout.scss */
+  /* line 806, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
     border-top: 0.5em solid white;
     border-bottom: 0.5em solid white;
   }
 }
 @media (min-width: 55em) {
-  /* line 72, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .outer .container {
     max-width: 55.95em;
     padding-left: 0em;
@@ -2226,53 +2218,45 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 856, ../sass/_layout.scss */
-  .outer .container #top #name #olga {
-    margin: -.2em 0 -.25em 0;
-  }
-  /* line 860, ../sass/_layout.scss */
-  .outer .container #top #name #romanova {
-    margin: -.55em 0.1em -.25em 0;
-  }
-  /* line 866, ../sass/_layout.scss */
+  /* line 871, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.625em solid white;
     border-bottom: 0.625em solid white;
   }
-  /* line 875, ../sass/_layout.scss */
+  /* line 880, ../sass/_layout.scss */
   .outer .container #content #github .section-container a {
     margin: 0em 0em -1em 1em;
   }
-  /* line 889, ../sass/_layout.scss */
+  /* line 894, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container a {
     margin: 0em 0em 0.2em -.5em;
   }
-  /* line 898, ../sass/_layout.scss */
+  /* line 903, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
     box-shadow: 0px 0px 0px 0.625em #FFF;
   }
-  /* line 903, ../sass/_layout.scss */
+  /* line 908, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container a {
     margin: 0em 0em -2.8em 1em;
   }
-  /* line 912, ../sass/_layout.scss */
+  /* line 917, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     box-shadow: 0px 0px 0px 0.625em #FFF;
   }
-  /* line 917, ../sass/_layout.scss */
+  /* line 922, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a {
     margin: 0em 0em -2em .5em;
   }
-  /* line 938, ../sass/_layout.scss */
+  /* line 943, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description {
     width: 100%;
   }
-  /* line 945, ../sass/_layout.scss */
+  /* line 950, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
     border-top: 0.625em solid white;
     border-bottom: 0.625em solid white;
   }
-  /* line 975, ../sass/_layout.scss */
+  /* line 980, ../sass/_layout.scss */
   .outer .container #email {
     height: 8%;
     left: -0.5em;
@@ -2280,7 +2264,7 @@ body.dotcom {
     padding: 0em 1em 0em 0em;
     margin: 0em -1em 0em 0em;
   }
-  /* line 986, ../sass/_layout.scss */
+  /* line 991, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a .title {
     display: block;
     position: absolute;

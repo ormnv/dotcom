@@ -1,5 +1,9 @@
 /* NOTE: Do not edit style.css directly. Edit the .scss instead! */
 
+//Typography from main site
+
+@import "../../../../assets/sass/variables";
+
 // Imported styles
 @import "mixes"; // Contains all the variables, mixins and MORE!
 @import "reset"; // Contains a sad excuse for a reset

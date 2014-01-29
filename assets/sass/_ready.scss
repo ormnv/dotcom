@@ -1,49 +1,43 @@
-#ready{
-
+#noscripts{
 	z-index:50;
-	display:none;
 	height:100%;
 	width:100%;
 
 	#outer-container{
-	display: table;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    // background-color:blue;
-    z-index:50;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    display:none;
+		display: table;
+	    position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    background-color:black;
+	    z-index:50;
+	    top:0;
+	    bottom:0;
+	    left:0;
+	    right:0;
+
 		#message-container{
-		display: table-cell;
-    	vertical-align: middle;
-    	z-index: 50;
-		// margin:0 auto;
-		// position: absolute;
-		// top: 0;
-		// left: 0;
-		// right: 0;
-		// bottom:0;
-		// width:50%;
+			display: table-cell;
+	    	vertical-align: middle;
+	    	z-index: 50;
 
 			#messages{
 				@include futura(1.5em);
 				margin-left: auto;
     			margin-right: auto;
     			width:75%; 
-   				background-color:blue;
+   				background-color:black;
    				z-index: 50;
 				border:.3em dashed white;
 				text-align: center;
+				display:block;
+
 
 				#message-script{
+					padding:.5em;
 				}
 				#message-firefox{
-				}
-				#message-ie{
+					padding:.5em;
+
 				}
 			}
 		}

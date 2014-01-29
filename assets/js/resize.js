@@ -16,8 +16,8 @@ define([
             //get initial size for text
             function sizeText40(){
                 console.log("size 40");
-                $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
-                $('#romanova span.title').css('font-size',($('#romanova').width()*0.145)+'px');
+                $('#olga ').css('font-size',($('#olga').width()*0.3)+'px');
+                $('#romanova ').css('font-size',($('#romanova').width()*0.145)+'px');
                 // console.log("in resize size is" + $('#github span.title').css('font-size') + " height is "+($('#content').height()*0.5));
 
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
@@ -39,8 +39,8 @@ define([
 
                 // console.log("in resize ");
                 // console.log("in resize size is" + $('#github span.title').css('font-size') + " width is "+($('#content').width()*0.5));
-                $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
-                $('#romanova span.title').css('font-size',($('#romanova').width()*0.145)+'px');    
+                $('#olga ').css('font-size',($('#olga').width()*0.3)+'px');
+                $('#romanova ').css('font-size',($('#romanova').width()*0.145)+'px');    
                 $('#github span.title').css('font-size',($('#content').height()*0.25)+'px');    
                 $('#twitter span.title').css('font-size',($('#content').height()*0.25)+'px');    
                 $('#soundcloud span.title').css('font-size',($('#content').height()*0.15)+'px');    
@@ -57,8 +57,8 @@ define([
             function sizeTextMobile(){
                 console.log("size mobile");
 
-                $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
-                $('#romanova span.title').css('font-size',($('#romanova').width()*0.14)+'px');
+                $('#olga ').css('font-size',($('#olga').width()*0.3)+'px');
+                $('#romanova ').css('font-size',($('#romanova').width()*0.14)+'px');
                 // console.log("in resize size is" + $('#github span.title').css('font-size') + " height is "+($('#content').height()*0.5));
 
                 $('#github span.title').css('font-size',($('#content').width()*0.2)+'px');    
@@ -80,8 +80,8 @@ define([
 
                 // console.log("in resize ");
                 // console.log("in resize size is" + $('#github span.title').css('font-size') + " width is "+($('#content').width()*0.5));
-                $('#olga span.title').css('font-size',($('#olga').width()*0.3)+'px');
-                $('#romanova span.title').css('font-size',($('#romanova').width()*0.14)+'px');    
+                $('#olga ').css('font-size',($('#olga').width()*0.3)+'px');
+                $('#romanova ').css('font-size',($('#romanova').width()*0.14)+'px');    
                 $('#github span.title').css('font-size',($('#content').width()*0.2)+'px');    
                 $('#twitter span.title').css('font-size',($('#content').width()*0.25)+'px');    
                 $('#soundcloud span.title').css('font-size',($('#content').width()*0.1)+'px');    

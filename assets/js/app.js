@@ -32,10 +32,6 @@ define([
             if(widthEms<40){
                 shared.signals.setSizeMobile.dispatch();
             }
-            // //under 40em, mobile
-            // if(widthEms<40){
-            //     shared.signals.setSize40.dispatch();
-            // }
         });
         $(".section").hover(
           function() {
@@ -91,13 +87,6 @@ define([
                 shared.signals.resizeMobile.dispatch();
             }
         });
-        // $('#olga').fitText();
-        // $('#github-title').fitVert(0.9);
-        // $("#contact-submit").click(
-        //   function() {
-        //         console.log("send clicked");
-        //         shared.signals.validateForm.dispatch();
-        // });
 
         }
 

@@ -45,16 +45,16 @@ module.exports = function(grunt) {
       //   }
       // },
       compass: {
-        dist: {
-          options: {
-            sassDir: 'assets/sass',
-            cssDir: 'assets/css',
-            environment: 'production',
-            relativeAssets: true,
-            outputStyle: 'expanded',
-            specify: 'assets/sass/dotcom.scss'
-          }
-        },
+        // dist: {
+        //   options: {
+        //     sassDir: 'assets/sass',
+        //     cssDir: 'assets/css',
+        //     environment: 'production',
+        //     relativeAssets: true,
+        //     outputStyle: 'expanded',
+        //     specify: 'assets/sass/dotcom.scss'
+        //   }
+        // },
         blog: {
           options: {
             sassDir: 'blog/themes/dotcom/sass',
@@ -70,7 +70,10 @@ module.exports = function(grunt) {
         scss: {
           files: [
             'assets/sass/*.scss',
-            'assets/sass/*.sass'
+            'assets/sass/*.sass',
+            'blog/themes/dotcom/sass/*.scss',
+            'blog/themes/dotcom/sass/*.sass'
+
           ],
           tasks: ['compass']
         },

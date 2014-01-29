@@ -69,7 +69,6 @@
 	font-size:$px;
 	color:white;
 	text-transform:uppercase;
-
 }
 
 @mixin courier($px){
@@ -84,4 +83,76 @@
 	color:white;
 }
 
+//black variants 
+//////////////////////////////////
 
+@mixin futuraBlk($px){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-size:$px;
+	color:black;
+	text-transform:uppercase;
+
+}
+
+@mixin futura-BoldBlk($px){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-size:$px;
+	font-weight: bold;
+	color:black;
+	text-transform:uppercase;
+
+}
+
+@mixin futura-BoldItalicBlk($px){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size:$px;
+	color:black;
+	text-transform:uppercase;
+
+}
+
+@mixin futura-ExtraBoldBlk($px){
+	font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+	// font-weight: bold;
+	font-size:$px;
+	color:black;
+	text-transform:uppercase;
+
+}
+
+// @mixin futura-ExtraBoldBlk(){
+// 	font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+// 	// font-weight: bold;
+// 	color:black;
+// 	text-transform:uppercase;
+// }
+
+@mixin extraBoldObliqueBlk($px){
+	// font-family: "Futura-ExtaBoldOblique", "Trebuchet MS", Arial, sans-serif;
+	font-family: "Futura-ExtaBoldOblique";
+	font-style: italic;
+	font-weight: bold;
+	font-size:$px;
+	color:black;
+	text-transform:uppercase;
+}
+
+@mixin courierblk($px){
+	font-family: "Courier New";
+	font-size:$px;
+	color:black;
+}
+
+@mixin futura-pblk($px){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-size:$px;
+	color:black;
+}
+
+
+@mixin futura-blog(){
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	color:black;
+}

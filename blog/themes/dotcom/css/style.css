@@ -1,4 +1,10 @@
 /* NOTE: Do not edit style.css directly. Edit the .scss instead! */
+/* line 2, ../../../../assets/sass/_variables.scss */
+.outer {
+  font-family: "Arial";
+  color: black;
+}
+
 @font-face {
   font-family: 'FontomasCustomRegular';
   src: url("../fonts/search-webfont.eot");
@@ -49,14 +55,25 @@ html {
 
 /* line 31, ../sass/reset.scss */
 html, button, input, select, textarea {
-  font-family: sans-serif;
-  color: #2b2b2b;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
 }
 
-/* line 35, ../sass/reset.scss */
+/* line 36, ../sass/reset.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
+}
+
+/* line 41, ../sass/reset.scss */
+.wrap {
+  min-width: 280px;
+  max-width: 750px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* line 155, ../sass/mixes.scss */
@@ -347,7 +364,7 @@ form#search input {
 
 /* line 17, ../sass/main.scss */
 #main, #main ul, #main ul li {
-  display: inline-block;
+  display: block;
 }
 /* line 20, ../sass/main.scss */
 #main ul, #main ul li ul {
@@ -375,57 +392,58 @@ span#s:before {
   left: 0;
   width: 25px;
   height: 22px;
-  font-family: "FontomasCustomRegular", Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 1em;
+  color: white;
   line-height: 22px;
   color: #999999;
   text-indent: 0;
   text-align: center;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 span#s.close:before {
   content: "x";
 }
 
-/* line 65, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 ul.items {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 70, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 ul.items a {
   text-decoration: none;
 }
-/* line 73, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 ul.items a time {
   font-size: 12px;
 }
-/* line 76, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 ul.items a h2 {
   max-width: 80%;
 }
-/* line 79, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 ul.items a time, ul.items a h2 {
   display: inline-block;
 }
 
-/* line 89, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 #bottom ul {
   padding: 0;
   margin: 0;
   font-size: 0;
   list-style: none;
 }
-/* line 95, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 #bottom ul li {
   display: inline-block;
 }
-/* line 98, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 #bottom ul li a {
   font-size: 13px;
 }
-/* line 103, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 #bottom #attribution {
   display: block;
   width: 24px;
@@ -434,7 +452,7 @@ ul.items a time, ul.items a h2 {
   background: url(../images/attribution.gif);
 }
 
-/* line 115, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 h1 {
   padding: 80px 0 40px;
   font-size: 40px;
@@ -442,13 +460,13 @@ h1 {
   color: #505762;
 }
 
-/* line 122, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .search h1 {
   padding: 60px 0;
 }
 
 /* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
-/* line 127, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .slidey {
   overflow: hidden;
   padding: 30px 0;
@@ -456,14 +474,14 @@ h1 {
   border-bottom: 1px solid #e5e8ed;
 }
 
-/* line 134, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .js-enabled .slidey {
   -webkit-transition: margin-top .2s;
   -moz-transition: margin-top .2s;
   transition: margin-top .2s;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .slidey b, .slidey label {
   display: block;
   font-weight: 500;
@@ -472,82 +490,85 @@ h1 {
   font-weight: 500;
 }
 
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .slidey form, .slidey aside {
   float: left;
   width: 50%;
 }
 
-/* line 151, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .slidey form input {
   padding: 20px;
   width: 75%;
 }
 
-/* line 155, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .slidey li {
   list-style: none;
 }
 
-/* line 158, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .slidey a {
   display: block;
   text-decoration: none;
   color: #717985;
 }
 
-/* line 164, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .slidey a:hover {
   color: #414b59;
 }
 
-/* line 167, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .slidey li span {
   float: right;
   opacity: .6;
 }
 
-/* line 172, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 #top {
   overflow: hidden;
-  padding: 20px 35px;
+  padding: 1.25em 2em;
   background: #fff;
   border-bottom: 1px solid rgba(22, 36, 54, 0.1);
 }
 
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #top a {
   float: left;
-  font-size: 13px;
-  font-weight: 500;
+  font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+  color: black;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #8895a7;
-}
-
-/* line 188, ../sass/main.scss */
-#top #logo:hover, #top ul a:hover, #top ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
-  color: #4171b1;
 }
 
 /* line 191, ../sass/main.scss */
+#top #logo:hover, #top ul a:hover, #top ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
+  font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+}
+
+/* line 199, ../sass/main.scss */
 #top ul {
   list-style: none;
   float: right;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 #top ul li {
   float: left;
   padding-left: 40px;
 }
 
-/* line 199, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 #top ul a {
   display: inline-block;
   color: #555f6d;
 }
 
-/* line 203, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 #top ul img {
   display: inline-block;
   vertical-align: middle;
@@ -558,12 +579,12 @@ h1 {
   opacity: .4;
 }
 
-/* line 215, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 #top ul a:hover img {
   opacity: .7;
 }
 
-/* line 218, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #top ul a.active img {
   opacity: 1;
 }
@@ -571,46 +592,46 @@ h1 {
 /**
  *   Index page listing, category listing, search page results
  */
-/* line 225, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .items {
   list-style: none;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .items > li {
   padding: 70px 0 60px;
   color: #97aec9;
   background: #3c4552;
 }
 
-/* line 234, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .posts .items > li:first-child {
   background: #fff !important;
   padding: 110px 0;
 }
 
-/* line 238, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .items li h1 a, .posts .items > li:first-child h2 a {
   color: #3d4551;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 .items h1 {
   padding: 0 0 8px;
 }
 
-/* line 244, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 .items h1 a {
   text-decoration: none;
 }
 
-/* line 247, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .items h2 {
   font-size: 32px;
   line-height: 41px;
 }
 
-/* line 251, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 .items h2 a {
   display: block;
   padding-bottom: 12px;
@@ -619,17 +640,17 @@ h1 {
   text-decoration: none;
 }
 
-/* line 260, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .items h2 a:hover {
   color: #fff;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .items .content {
   padding: 10px 0 0;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .items .content p {
   padding-bottom: 15px;
 }
@@ -637,7 +658,7 @@ h1 {
 /**
  *   Pagination
  */
-/* line 273, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .pagination {
   overflow: hidden;
   padding: 30px 0;
@@ -646,12 +667,12 @@ h1 {
   border-bottom: 1px solid rgba(22, 36, 54, 0.1);
 }
 
-/* line 281, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 .pagination:empty {
   display: none;
 }
 
-/* line 284, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .pagination a {
   float: left;
   text-decoration: none;
@@ -660,12 +681,12 @@ h1 {
   color: #6f7b8b;
 }
 
-/* line 293, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 .pagination a:hover {
   color: #3c4857;
 }
 
-/* line 296, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .pagination a.next {
   float: right;
 }
@@ -673,17 +694,17 @@ h1 {
 /**
  *   Give some extra space to single-page wrappers
  */
-/* line 303, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .content.wrap {
   padding-bottom: 50px;
 }
 
-/* line 306, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 .content.wrap ul, .content.wrap ol, .items li ul {
   padding: 20px 30px;
 }
 
-/* line 309, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 .content.wrap ul ul, .content.wrap ol ol, .items li ul ul {
   padding: 0 20px;
 }
@@ -691,7 +712,7 @@ h1 {
 /**
  *   Footnotes and straplines
  */
-/* line 316, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .footnote, .commentlist time, .items footer {
   display: block;
   padding: 5px 0 15px;
@@ -701,7 +722,7 @@ h1 {
   white-space: nowrap;
 }
 
-/* line 326, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .footnote {
   padding: 20px 0 40px;
 }
@@ -709,36 +730,36 @@ h1 {
 /**
  *   Comment form
  */
-/* line 333, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 ul.commentlist {
   margin-bottom: 40px;
   list-style: none;
   border-top: 1px solid rgba(22, 36, 54, 0.1);
 }
 
-/* line 339, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 ul.commentlist .wrap {
   position: relative;
 }
 
-/* line 342, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 ul.commentlist li {
   padding: 40px 0;
   border-bottom: 1px solid rgba(22, 36, 54, 0.1);
 }
 
-/* line 346, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 ul.commentlist time {
   font-size: 13px;
 }
 
-/* line 349, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 ul.commentlist h2 {
   font-size: 25px;
   line-height: 33px;
 }
 
-/* line 353, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 ul.commentlist .counter {
   position: absolute;
   right: 0;
@@ -748,17 +769,17 @@ ul.commentlist .counter {
   color: #cdd2da;
 }
 
-/* line 363, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 #comment {
   overflow: hidden;
 }
 
-/* line 366, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 #comment label[for] {
   display: none;
 }
 
-/* line 369, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 #comment p {
   float: left;
   width: 48%;
@@ -767,18 +788,18 @@ ul.commentlist .counter {
   text-indent: 0;
 }
 
-/* line 377, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 #comment p + p {
   margin-right: 0;
 }
 
-/* line 380, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 #comment p.textarea {
   float: none;
   width: 100%;
 }
 
-/* line 384, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 #comment input, #comment textarea {
   width: 100%;
   padding: 10px 15px;
@@ -788,20 +809,20 @@ ul.commentlist .counter {
   border-radius: 4px;
 }
 
-/* line 394, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 #comment input:focus, #comment textarea:focus {
   outline: none;
   background: #f7f9fc;
 }
 
-/* line 398, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 #comment textarea {
   min-height: 150px;
   max-height: 800px;
   resize: vertical;
 }
 
-/* line 403, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 #comment button {
   display: inline-block;
   padding: 9px 18px;
@@ -814,7 +835,7 @@ ul.commentlist .counter {
   font-weight: 500;
 }
 
-/* line 417, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 #comment button:hover {
   background: #3c6eb7;
 }
@@ -822,25 +843,25 @@ ul.commentlist .counter {
 /**
  *   Footer
  */
-/* line 424, ../sass/main.scss */
+/* line 432, ../sass/main.scss */
 #bottom {
   padding: 30px 0 40px;
 }
 
-/* line 427, ../sass/main.scss */
+/* line 435, ../sass/main.scss */
 #bottom ul {
   float: right;
   list-style: none;
 }
 
-/* line 431, ../sass/main.scss */
+/* line 439, ../sass/main.scss */
 #bottom li {
   float: left;
   padding-left: 35px;
   font-size: 14px;
 }
 
-/* line 437, ../sass/main.scss */
+/* line 445, ../sass/main.scss */
 #bottom a {
   text-decoration: none;
 }

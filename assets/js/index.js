@@ -10,16 +10,8 @@ requirejs.config(
 		paths: {
 			'jquery': 'lib/jquery-1.10.2.min',
 			'signals': 'lib/signals'
-			// 'fittext' : 'lib/jquery.fittext'
-			// 'underscore': 'lib/underscore-min',
-			// 'backbone': 'lib/backbone-min'
 		},
 		shim: {
-			// underscore: { exports: '_'},
-	  //       fittext: {
-	  //           deps: ['jquery'],
-	  // //           exports: 'backbone'
-	  //       }
 		}
 	}
 );
@@ -29,21 +21,14 @@ require(
 		'signals'
 		,'jquery'
 		,'app'
-		// ,'validate'
-		// ,'fittext'
 		,'resize'
-		// ,'backbone'
 		,'hover'
-		// ,'layout'
 
 	],
 	function(
 		Signal
 		,$
 		,app
-		// ,validate
-		// ,fitext
-		// ,backbone
 		,resize
 		,hover
 		,layout
@@ -53,9 +38,7 @@ require(
 
 		function init()
 		{
-			// sk: shared object that all modules can access
-			// the signals are used for communication between
-			// all modules
+
 			var shared = {
 				signals: {
 					'hoverStart'       : new Signal(),
