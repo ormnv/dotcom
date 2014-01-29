@@ -30,7 +30,7 @@ html {
 }
 html, button, input, select, textarea {
 	// font-family: $sans;
-	@include futura-BoldBlk(1.25em);
+	@include futura-Bold(1.25em, black);
 	// color: $color-1;
 }
 body {
@@ -41,6 +41,6 @@ body {
 .wrap {
 	min-width: 280px;
 	max-width: 750px;
-	width: 60%;
+	width: 75%;
 	margin: 0 auto;
 }

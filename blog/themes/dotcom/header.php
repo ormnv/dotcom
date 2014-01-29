@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="<?php echo theme_url('/css/small.css'); ?>" media="(max-width: 400px)">
 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
+		<link rel="shortcut icon" href="<?php echo theme_url('img/peace.ico'); ?>">
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,7 +45,7 @@
 				<div class="wrap">
 					<form id="search" action="<?php echo search_url(); ?>" method="post">
 						<label for="term">Search my blog:</label>
-						<input type="search" id="term" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
+						<input type="search" id="term" name="term" placeholder="Type and hit enter&hellip;" value="<?php echo search_term(); ?>">
 					</form>
 
 					<aside>
@@ -70,7 +70,7 @@
 				<nav id="main" role="navigation">
 					<ul>
 						<?php while(menu_items()): ?>
-						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+						<li class="menu-item" <?php echo (menu_active() ? 'class="active"' : ''); ?>>
 							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
 								<?php echo menu_name(); ?>
 							</a>
@@ -78,7 +78,7 @@
 						<?php endwhile; ?>
 
 						<li class="tray">
-							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="View my posts by category"></a>
+							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/hamburger.png'); ?>" alt="Categories" title="View my posts by category"></a>
 						</li>
 					</ul>
 				</nav>

@@ -92,7 +92,7 @@ body.dotcom{
 
         #olga{
           @include span-columns(3 omega,3); 
-          @include futura-BoldItalic(100px);
+          @include futura-BoldItalic(100px, white);
           // @include scale(1.1,1.3);
           display:block;
           // margin:-0em 0 -.25em 0;
@@ -102,7 +102,7 @@ body.dotcom{
 
         #romanova{
           @include span-columns(3 omega,3); 
-          @include futura-BoldItalic(75px);
+          @include futura-BoldItalic(75px, white);
           // @include scale(1.5,0.9);
           display:block;
         }
@@ -115,15 +115,11 @@ body.dotcom{
       width: 100%;
       position: relative;
       display:block;
-      // padding:0em 1em 0em 0.5em;
       border-top: 0.3em solid white;
       border-bottom: 0.3em solid white;
-      // left:.5em;
 
       .section{
         height:100%;
-        // padding: 0em .5em 0em .5em;
-        // left: 1em;
         position: relative;
         text-align: center;
 
@@ -133,17 +129,14 @@ body.dotcom{
 
           a{
             z-index: 10;         
-            // position: relative;
             bottom: 0em;
             margin: 0 auto;
             text-decoration: none;
-
 
             .title{
                height:100%;
                width:100%;
                margin: 0 auto;
-               // position: relative;
             }
           }
         }
@@ -158,10 +151,9 @@ body.dotcom{
           @include scale(1.15,1);
 
           a{
-            // margin:0em 0em -1em 1em;
 
             .title{
-              @include futura-ExtraBold(30);
+              @include futura-ExtraBold(30, white);
             }
           }
         }      
@@ -174,10 +166,9 @@ body.dotcom{
           @include scale(1,1.3);
 
           a{
-            // margin:0em 0em 0em .5em;
 
             .title{
-              @include futura(30);
+              @include futura(30, white);
             }
           }
         }
@@ -191,10 +182,9 @@ body.dotcom{
           @include scale(1.25,.9);
 
           a{
-            // margin:0em 0em -2.8em 1em;
 
             .title{
-              @include futura-ExtraBold(30px);
+              @include futura-ExtraBold(30px, white);
             }
           }
         }
@@ -207,17 +197,16 @@ body.dotcom{
           @include scale(1.25,1.3);
 
           a{
-            // margin:0em 0em -2em .5em;
 
             .title 
             {
 
               #linked{
-                @include futura-Bold(30px);
+                @include futura-Bold(30px, white);
               }
 
               #in{
-                @include futura(30px);
+                @include futura(30px, white);
               }
             }
           }
@@ -230,15 +219,13 @@ body.dotcom{
       #desc-blog{
         text-align: center;
 
-        // width:107%;
-
         #description{
           @include span-columns(3 omega,3);
           width:100%;
           text-decoration: none;
 
           p{
-            @include futura-p(1em);
+            @include futura-p(1em, white);
             margin:1em;
             text-align:justify;
           }
@@ -249,11 +236,8 @@ body.dotcom{
           border-top: 0.3em solid white;
           border-bottom: 0.3em solid white;
 
-          // width:102%;
-
           .section-container-blog{
             @include scale(1.8,1.3);
-            // margin:0em 0em 0em 3.5em;
             position: relative;
             bottom:0em;
             
@@ -261,25 +245,22 @@ body.dotcom{
               text-decoration: none;
             
               .title{
-                @include futura(30px);
+                @include futura(30px, white);
               }
             }
           }
         }
 
         #year{ 
-            @include span-columns(3 omega, 3); 
-            // border-top: 0.625em solid white;
-            // padding:0em 0em 0em 0.5em;            
+            @include span-columns(3 omega, 3);            
             text-align: center;
 
             .section-container-year{
               @include scale(1.5,1.2);
               margin-top: .5em;
-              // margin:1em 0em 0em 1.5em;
 
               .title{
-                @include futura-ExtraBold(30px);
+                @include futura-ExtraBold(30px, white);
               }
             }
           }
@@ -290,19 +271,16 @@ body.dotcom{
     #email { 
       @include span-columns(3 omega,3); 
       height:8%;
-      // left: -0.5em;
       position: relative;
-      // padding:0em 1em 0em 0em;
       text-align: center;
 
       .section-container-horiz{
       @include scale(2,1.2);
-      // margin:-0.25em 0em 0em 18.75em;
 
         a{
           text-decoration: none;
           .title{
-            @include futura(30);
+            @include futura(30, white);
           }
         }
       }
@@ -328,15 +306,12 @@ body.dotcom{
 
         #olga{
           @include span-columns(16 omega,16); 
-          @include futura-BoldItalic(100px);
           @include scale(1,1);
           display:block;
-          // margin:-0.1em 0 -0.05em 0;
         }
 
         #romanova{
           @include span-columns(16 omega,16); 
-          @include futura-BoldItalic(75px);
           @include scale(1,1);
           display:block;
           margin:-.6em 0.1em -.25em 0;
@@ -350,10 +325,8 @@ body.dotcom{
       width: 100%;
       position: relative;
       display:block;
-      // padding:0em 1em 0em 0.5em;
       border-top: 0.45em solid white;
       border-bottom: 0.45em solid white;
-      // left:.5em;
 
       .section{
         height:100%;
@@ -397,7 +370,6 @@ body.dotcom{
             margin: 0em 0em -1em .75em;
             //
             .title{
-              @include futura-ExtraBold(30);
             }
           }
         }      
@@ -415,7 +387,6 @@ body.dotcom{
             margin:0em 0em 0em -.5em;
             //
             .title{
-              @include futura(30);
             }
           }
         }
@@ -433,7 +404,7 @@ body.dotcom{
             margin:0em 0em -2em .6em;
             //
             .title{
-              @include futura-ExtraBold(30px);
+              // @include futura-ExtraBold(30px);
             }
           }
         }
@@ -454,11 +425,9 @@ body.dotcom{
             {
 
               #linked{
-                @include futura-Bold(30px);
               }
 
               #in{
-                @include futura(30px);
               }
             }
           }
@@ -469,16 +438,12 @@ body.dotcom{
       @include span-columns(5 omega,16); 
 
       #desc-blog{
-        //
-        // width:109%;
-        //
 
         #description {
           @include span-columns(5 omega,5);
           width:100%;
 
           p{
-            @include futura-p(1em);
             margin:1em;
             text-align:justify;
           }
@@ -489,13 +454,9 @@ body.dotcom{
           border-top: 0.45em solid white;
           border-bottom: 0.45em solid white;
           text-align: center;
-          // width:102%;
 
           .section-container-blog{
             @include scale(1.4,1.3);
-            //
-            // margin:0em 0em 0em 2.4em;
-            //
             position: relative;
             bottom:0em;
             
@@ -503,27 +464,20 @@ body.dotcom{
               text-decoration: none;
             
               .title{
-                @include futura(30px);
               }
             }
           }
         }
 
         #year{ 
-            @include span-columns(5 omega, 5); 
-            // border-top: 0.625em solid white;
-            // padding:0em 0em 0em 0.5em;            
+            @include span-columns(5 omega, 5);            
 
             .section-container-year{
               @include scale(1.1,1.5);
-              //
-              // margin:-.25em 0em 0em 1.25em;
-              //
 
               .title{
                 @include span-columns(5 omega, 5); 
 
-                @include futura-ExtraBold(30px);
               }
             }
           }
@@ -550,7 +504,6 @@ body.dotcom{
 
           .title{
             @include span-columns(16 omega,16); 
-            @include futura(30);
             display:block;
             position:absolute;
           }
@@ -571,11 +524,9 @@ body.dotcom{
       #name { 
 
         #olga{
-          // margin:-.1em 0 -.1em 0;
         }
 
         #romanova{
-          // margin:-.6em 0.1em -.25em 0;
         }
       }
     }
@@ -650,7 +601,6 @@ body.dotcom{
     .one{
 
       #desc-blog{
-        // width:108%;
 
         #description {
 
@@ -662,10 +612,7 @@ body.dotcom{
           border-top: 0.45em solid white;
           border-bottom: 0.45em solid white;
 
-          // width:102%;
-
           .section-container-blog{
-            // margin:0em 0em 0em 2.5em;
             position: relative;
             left:.25em;
             
@@ -681,7 +628,6 @@ body.dotcom{
 
             .section-container-year{
               @include scale(1.1,1.2);
-              // margin:0em 0em 0em 1.25em;
 
               .title{
               }
@@ -720,17 +666,14 @@ body.dotcom{
       #name { 
 
         #olga{
-          // margin:-.15em 0 -.1em 0;
         }
 
         #romanova{
-          // margin:-.7em 0.1em -.25em 0;
         }
       }
     }
 
     #content {
-      // padding:0em 1em 0em 0.5em;
       border-top: 0.5em solid white;
       border-bottom: 0.5em solid white;
 
@@ -809,7 +752,6 @@ body.dotcom{
 
 
           .section-container-blog{
-            // margin:0em 0em 0em 2.75em;
             
             a{
             
@@ -859,17 +801,14 @@ body.dotcom{
       #name { 
 
         #olga{
-          // margin:-.2em 0 -.25em 0;
         }
 
         #romanova{
-          // margin:-.55em 0.1em -.25em 0;
         }
       }
     }
 
     #content {
-      // padding:0em 1em 0em 0.5em;
       border-top: 0.625em solid white;
       border-bottom: 0.625em solid white;
 
@@ -887,7 +826,6 @@ body.dotcom{
       }
 
       #twitter { 
-        // outline: 0.625em solid white;
 
         .section-container{
 
@@ -938,7 +876,6 @@ body.dotcom{
     .one{
 
       #desc-blog{
-        // width:107%;
 
         #description {
           width:100%;
@@ -951,11 +888,7 @@ body.dotcom{
           border-top: 0.625em solid white;
           border-bottom: 0.625em solid white;
 
-          // width:102%;
-
           .section-container-blog{
-            // margin:0em 0em 0em 3em;
-
             
             a{
             

@@ -1,14 +1,15 @@
 // =Search Form
 form#search {
-	background: $bg-color-4;
-	padding: 18px 0;
+	// background: $bg-color-4;
+	// padding: 18px 0;
 
 	input{
 		padding: 8px 15px;
 		width: 100%;
-		color: $color-1;
+		color: black;
 		border: none;
 		outline: none;
+		@include futura-Bold(20px,Black);
 	}
 }
 
@@ -26,6 +27,10 @@ form#search {
 			
 			a {
 				font-size: 13px;
+			}
+			a:hover {
+				font-size: 13px;
+				background-color: white;
 			}
 		}
 	}
@@ -49,9 +54,9 @@ span {
 
 			// font-family: $symbol;
 			// font-size: 16px;
-			@include futura-p(1em);
+			@include futura-p(1em, black);
 			line-height: 22px;
-			color: $color-3;
+			// color: $color-3;
 			text-indent: 0;
 			text-align: center;
 		}
@@ -87,8 +92,9 @@ ul {
 
 // =Footer
 #bottom {
+	text-align:center;
 	ul {
-		padding: 0;
+		padding: .5em;
 		margin: 0;
 		font-size: 0;
 		list-style: none;
@@ -97,7 +103,13 @@ ul {
 			display: inline-block;
 
 			a {
-				font-size: 13px;
+				font-size: 14px;
+				color:black;
+				padding:.25em;
+			}
+			a:hover{
+				color:white;
+				background-color:black;
 			}
 		}
 	}
@@ -107,6 +119,9 @@ ul {
 		height: 22px;
 		text-indent: -9999px;
 		background: url(../images/attribution.gif); //Set sail!
+	}
+	small#footer-text{
+		font-weight: normal; 	
 	}
 }
 
@@ -129,8 +144,9 @@ h1 {
 	overflow: hidden;
 	padding: 30px 0;
 
-	background: #f3f5f8;
-	border-bottom: 1px solid #e5e8ed;
+	// background: #f3f5f8;
+	background-color:white;
+	border-bottom: .15em dashed black;
 }
 	.js-enabled .slidey {
 		-webkit-transition: margin-top .2s;
@@ -141,7 +157,8 @@ h1 {
 		display: block;
 		font-weight: 500;
 		padding-bottom: 15px;
-
+		margin-bottom:15px;
+		text-align: center;
 		font-size: 15px;
 		font-weight: 500;
 	}
@@ -159,11 +176,12 @@ h1 {
 		.slidey a {
 			display: block;
 			text-decoration: none;
-
-			color: #717985;
+			font-size: 20px;
+			color: black;
 		}
 			.slidey a:hover {
-				color: #414b59;
+				color: white;
+				background-color:black;
 			}
 		.slidey li span {
 			float: right;
@@ -175,23 +193,26 @@ h1 {
 	padding: 1.25em 2em;
 
 	background: #fff;
-	border-bottom: 1px solid rgba(22,36,54,.1);
+	border-bottom: .15em dashed black;
 }
 	#top a {
 		float: left;
-		font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
-		color:black;
-		text-transform:uppercase;
+		@include futura-ExtraBold(1em, black);
 		// font-size: 13px;
 		// font-weight: 500;
 		text-decoration: none;
 
 		// color: #8895a7;
 	}
-		#top #logo:hover, #top ul a:hover, #top ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
-		font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
-		text-transform:uppercase;
-		color:white;
+		#top #logo:hover{
+			@include futura-ExtraBold(1em, white);
+			// color: #4171b1;
+			background-color: black;
+		}
+
+
+		#top ul a:hover, #top ul .active .menu-item a, .posts .items li:first-child h2 a:hover, p a:hover {
+			@include futura-ExtraBold(13px, white);
 			// color: #4171b1;
 			background-color: black;
 		}
@@ -204,9 +225,13 @@ h1 {
 			float: left;
 			padding-left: 40px;
 		}
+		#top ul li #tray a:hover{
+			background-color: none;
+		}
 		#top ul a {
 			display: inline-block;
 			color: black;
+			font-size:13px;
 		}
 		#top ul img {
 			display: inline-block;
@@ -244,7 +269,8 @@ h1 {
 			padding: 110px 0;
 		}
 			.items li h1 a, .posts .items > li:first-child h2 a {
-				color: #3d4551;
+				@include futura-Bold(1em, black)
+				// color: #3d4551;
 			}
 	.items h1 {
 		padding: 0 0 8px;
@@ -272,7 +298,10 @@ h1 {
 		padding: 10px 0 0;
 	}
 		.items .content p {
+			@include futura-low(.75em, black);
 			padding-bottom: 15px;
+			text-transform: none;
+			font-weight: normal;
 		}
 
 /**
@@ -325,7 +354,8 @@ h1 {
 	display: block;
 	padding: 5px 0 15px;
 
-	color: #98a2b1;
+	background-color: white;
+	color:black;
 	font-size: 14px;
 	font-style: italic;
 	
@@ -433,11 +463,11 @@ ul.commentlist {
 	padding: 30px 0 40px;
 }
 	#bottom ul {
-		float: right;
+		// float: right;
 		list-style: none;
 	}
 		#bottom li {
-			float: left;
+			// float: left;
 			padding-left: 35px;
 
 			font-size: 14px;

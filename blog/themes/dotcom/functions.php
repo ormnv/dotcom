@@ -63,6 +63,18 @@ function twitter_url() {
 	return 'https://twitter.com/' . twitter_account();
 }
 
+function github_url() {
+	return 'http://github.com/ormnv';
+}
+
+function soundcloud_url() {
+	return 'http://soundcloud.com/technotropes';
+}
+
+function linkedin_url() {
+	return 'http://linkedin.com/olgaromanova';
+}
+
 function total_articles() {
 	return Post::where(Base::table('posts.status'), '=', 'published')->count();
 }
