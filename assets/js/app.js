@@ -7,7 +7,6 @@ define([
     // ,'soundcloud'
     'hover'
     ,'jquery'
-    ,'fittext'
     ,'signals'
     ], function (Layout, Hover) {
   var app = (function(){
@@ -18,6 +17,8 @@ define([
         this.shared = shared;
 
         $( document ).ready(function(){
+
+            $('#ready').fadeIn(400);
 
             //get viewport size
             var width = $(window).width();

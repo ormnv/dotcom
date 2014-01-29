@@ -52,194 +52,10 @@ body.dotcom{
 }
 
 .outer {
-  // page acts as a container for our grid.
-  //960 px square 
-    // @include container;
-
-//     outline: 5px solid black;
-
-//   // header and footer are full-width by default.
-//   header, footer { clear: both; }
-
-//    //mobile 
-//    @include container;
-//    max-width:50em;
-//    height:60em;
-//     // outline: 0.625em solid black;
-
-
-//     #top{
-//       height:30%;
-//       outline: 5px solid blue;
-//       @include span-columns(4 omega,4); 
-
-//       #name { 
-//         @include span-columns(4 omega,4); 
-//         outline: 1px solid purple;
-//         #olga{
-//           @include span-columns(4 omega,4); 
-//           //   font-family: "Futura-ExtraBoldOblique";
-//           //   font-size: 10em;
-//           //   // @include scale(4,1);
-//           //   margin:0em;
-//           // // #olga2{
-//           //   font-family: "Futura";
-//           //   font-size: 7em;
-//           //   font-weight: bold;
-//           // }
-//           // #olga3{
-//           //   font-family: "Futura-ExtraBoldOblique";
-//           //   font-size: 7em;
-
-//           // }
-//           // #olga4{
-//           //   font-family: "Futura-ExtraBold";
-//           //   font-size: 7em;
-//           // }
-
-//         }
-//         #romanova{
-//           @include span-columns(4 omega,4); 
-//         }
-//         margin-bottom: 2em;
-//       }
-//     }
-
-//     .content {
-//       height:60%;
-//       @include span-columns(4 omega,4); 
-
-//       // content spans the final (omega) 9 columns of 4.
-//       // @include span-columns(9 omega,4);
-//       outline: 5px solid pink;
-//       // main content spans 6 of those 9 columns.
-//       .section{
-//         // height:100%;
-//         a{
-//           // margin-left:-5em;
-//         }
-//         .section-container{
-//                 // @include vertical();
-//                 position:relative;
-//                 top:50%;
-//               }
-//             }
-
-//             #github { 
-//               @include span-columns(4,4); 
-//               outline: 1px solid purple;
-//               a{
-
-//               }      
-//               h1{
-//                 outline: 1px solid red;
-//                 // font-size:1em;
-//               }
-
-//             }
-//             #twitter { 
-//               @include span-columns(4,4); 
-//               outline: 1px solid purple;
-//               a{
-//               }
-//               h1{
-//                 outline: 1px solid red;
-//               }
-
-//             }
-//             #soundcloud { 
-//               @include span-columns(4,4); 
-//               outline: 1px solid purple;
-
-//               a{
-//             //pulse effect 
-//           }
-//           h1{ 
-//             outline: 1px solid red;
-//           }
-//         }
-//         #linkedin { 
-//           @include span-columns(4,4); 
-
-//           outline: 1px solid purple;
-//           a{
-//             //pulse effect 
-//           }
-//           h1{
-//             outline: 1px solid red;
-
-//           }
-
-//         }
-//         #year { 
-//           @include span-columns(2 omega,4); 
-//           outline: 1px solid purple;
-
-//         }
-//         .one{
-//           @include span-columns(4,4);
-//         // height:100%; 
-//         z-index: -10;
-//         // position: absolute;
-
-//         .desc-blog{
-//           #description { 
-//               // @include span-columns(3 omega,4); 
-//               outline: 1px solid purple;
-//               h1{
-//                 outline: 1px solid red;
-//               }
-
-//             }
-//             #blog { 
-//               @include span-columns(2, 4); 
-//               outline: 1px solid purple;
-//               // height:100%; 
-//               position: absolute;
-
-//               // position: relative;
-//               bottom: 7em;
-//               h1{
-//                 outline: 1px solid red;
-//               }
-//             }
-
-//           }
-//         }
-//         #email { 
-//           @include span-columns(4,4); 
-//           outline: 1px solid purple;
-//           h1{
-//             outline: 1px solid red;
-//           }
-
-//         }
-
-//       // #instagram { 
-//       //  // @include span-columns(6,9); 
-//       //    outline: 1px solid purple;
-//       //   h1{
-//       //       outline: 1px solid red;
-//       //   }
-
-//       // }
-//       // #logo { 
-//       //  // @include span-columns(6,9); 
-//       //    outline: 1px solid purple;
-
-//       // }
-//       // // secondary content spans the final 3 (omega) of 9 columns.
-//       // .secondary {
-//       //    outline: 1px solid cyan;
-
-//       //  // @include span-columns(3 omega,9); 
-//       // }
-//     } //content
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   //square for 40em+
   @include at-breakpoint($break40){
@@ -328,7 +144,7 @@ body.dotcom{
 
       #github { 
         @include span-columns(4 omega,4); 
-        outline: 0.3em solid white;
+        box-shadow: 0px 0px 0px 0.3em #FFF;
 
         .section-container{
           @include span-columns(4 omega,4); 
@@ -346,7 +162,7 @@ body.dotcom{
 
       #twitter { 
         @include span-columns(4 omega,4);          
-        outline: 0.3em solid white;
+        box-shadow: 0px 0px 0px 0.3em #FFF;
 
         .section-container{
           @include scale(1,1.3);
@@ -363,7 +179,7 @@ body.dotcom{
 
       #soundcloud { 
         @include span-columns(4 omega,4); 
-        outline: 0.3em solid white;
+        box-shadow: 0px 0px 0px 0.3em #FFF;
 
         .section-container{
           @include scale(1.25,.9);
@@ -380,7 +196,6 @@ body.dotcom{
 
       #linkedin { 
         @include span-columns(4 omega,4); 
-        outline: 0.3em solid white;
 
         .section-container{
           @include scale(1.25,1.3);
@@ -511,6 +326,7 @@ body.dotcom{
           @include scale(1,1);
           display:block;
           margin:-0.1em 0 -0.05em 0;
+
         }
 
         #romanova{
@@ -584,7 +400,7 @@ body.dotcom{
 
       #twitter { 
         @include span-columns(3,16);          
-        outline: 0.45em solid white;
+        box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
           @include scale(1.4,1);
@@ -602,7 +418,7 @@ body.dotcom{
 
       #soundcloud { 
         @include span-columns(2,16); 
-        outline: 0.45em solid white;
+        box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
           @include scale(1.4,0.8);
@@ -620,7 +436,7 @@ body.dotcom{
 
       #linkedin { 
         @include span-columns(3,16); 
-        outline: 0.45em solid white;
+        box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
           @include scale(1.4,0.85);
@@ -777,7 +593,7 @@ body.dotcom{
       }
 
       #twitter { 
-        outline: 0.45em solid white;
+      box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
 
@@ -791,7 +607,7 @@ body.dotcom{
       }
 
       #soundcloud { 
-        outline: 0.45em solid white;
+        box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
 
@@ -806,7 +622,7 @@ body.dotcom{
 
       #linkedin { 
         @include span-columns(3,16); 
-        outline: 0.45em solid white;
+        box-shadow: 0px 0px 0px 0.45em #FFF;
 
         .section-container{
 
@@ -927,7 +743,7 @@ body.dotcom{
       }
 
       #twitter { 
-        outline: 0.5em solid white;
+        box-shadow: 0px 0px 0px 0.5em #FFF;
 
         .section-container{
 
@@ -940,7 +756,7 @@ body.dotcom{
       }
 
       #soundcloud { 
-        outline: 0.5em solid white;
+        box-shadow: 0px 0px 0px 0.5em #FFF;
 
         .section-container{
 
@@ -953,7 +769,7 @@ body.dotcom{
       }
 
       #linkedin { 
-        outline: 0.5em solid white;
+        box-shadow: 0px 0px 0px 0.5em #FFF;
 
         .section-container{
 
@@ -1066,7 +882,7 @@ body.dotcom{
       }
 
       #twitter { 
-        outline: 0.625em solid white;
+        // outline: 0.625em solid white;
 
         .section-container{
 
@@ -1080,7 +896,7 @@ body.dotcom{
       }
 
       #soundcloud { 
-        outline: 0.625em solid white;
+        box-shadow: 0px 0px 0px 0.625em #FFF;
 
         .section-container{
 
@@ -1094,7 +910,7 @@ body.dotcom{
       }
 
       #linkedin { 
-        outline: 0.625em solid white;
+        box-shadow: 0px 0px 0px 0.625em #FFF;
 
         .section-container{
 
@@ -1147,7 +963,6 @@ body.dotcom{
         #year{ 
 
             .section-container-year{
-              // margin:0em 0em 0em 1.5em;
 
               .title{
               }

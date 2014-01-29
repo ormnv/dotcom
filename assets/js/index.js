@@ -9,17 +9,17 @@ requirejs.config(
 		urlArgs:'',
 		paths: {
 			'jquery': 'lib/jquery-1.10.2.min',
-			'signals': 'lib/signals',
-			'fittext' : 'lib/jquery.fittext'
+			'signals': 'lib/signals'
+			// 'fittext' : 'lib/jquery.fittext'
 			// 'underscore': 'lib/underscore-min',
 			// 'backbone': 'lib/backbone-min'
 		},
 		shim: {
 			// underscore: { exports: '_'},
-	        fittext: {
-	            deps: ['jquery'],
-	  //           exports: 'backbone'
-	        }
+	  //       fittext: {
+	  //           deps: ['jquery'],
+	  // //           exports: 'backbone'
+	  //       }
 		}
 	}
 );
@@ -30,7 +30,7 @@ require(
 		,'jquery'
 		,'app'
 		// ,'validate'
-		,'fittext'
+		// ,'fittext'
 		,'resize'
 		// ,'backbone'
 		,'hover'
@@ -42,7 +42,7 @@ require(
 		,$
 		,app
 		// ,validate
-		,fitext
+		// ,fitext
 		// ,backbone
 		,resize
 		,hover
@@ -58,15 +58,12 @@ require(
 			// all modules
 			var shared = {
 				signals: {
-					'openContact'       : new Signal(),
-					'closeContact'       : new Signal(),
 					'hoverStart'       : new Signal(),
 					'hoverStop'        : new Signal(),
 					'setSizeMobile'        : new Signal(),
 					'setSize40'        : new Signal(),
 					'resizeMobile'        : new Signal(),
 					'resize40'        : new Signal(),
-					'click'             : new Signal()
 				}
 			};
 		app.init(shared);
