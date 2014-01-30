@@ -21,7 +21,7 @@
 	    	z-index: 50;
 
 			#messages{
-				@include futura(1.5em);
+				@include futura(1.5em, white);
 				margin-left: auto;
     			margin-right: auto;
     			width:75%; 

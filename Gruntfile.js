@@ -19,14 +19,6 @@ module.exports = function(grunt) {
         }
       },
       requirejs: {
-        // layout: {
-        //   options: {
-        //     name: 'layout',
-        //     baseUrl: "assets/js",
-        //     mainConfigFile: 'assets/js/layout.js',
-        //     out: '../assets/js/layout.min.js'
-        //   }
-        // }
         compile: {
           options: {
             baseUrl: "assets/js",
@@ -37,24 +29,17 @@ module.exports = function(grunt) {
             }
         }
       },
-      // uglify: {
-      //   dist: {
-      //     files: {
-      //       'assets/<%= pkg.name %>.min.js': ['build/<%= concat.dist.dest %>']
-      //     }
-      //   }
-      // },
       compass: {
-        // dist: {
-        //   options: {
-        //     sassDir: 'assets/sass',
-        //     cssDir: 'assets/css',
-        //     environment: 'production',
-        //     relativeAssets: true,
-        //     outputStyle: 'expanded',
-        //     specify: 'assets/sass/dotcom.scss'
-        //   }
-        // },
+        dist: {
+          options: {
+            sassDir: 'assets/sass',
+            cssDir: 'assets/css',
+            environment: 'production',
+            relativeAssets: true,
+            outputStyle: 'expanded',
+            specify: 'assets/sass/dotcom.scss'
+          }
+        },
         blog: {
           options: {
             sassDir: 'blog/themes/dotcom/sass',
@@ -73,7 +58,6 @@ module.exports = function(grunt) {
             'assets/sass/*.sass',
             'blog/themes/dotcom/sass/*.scss',
             'blog/themes/dotcom/sass/*.sass'
-
           ],
           tasks: ['compass']
         },
@@ -84,25 +68,13 @@ module.exports = function(grunt) {
           tasks: ['jshint', 'requirejs'] 
         }
       }
-      // concat: {
-      //   options: {
-      //     separator: ';',
-      //   },
-      //   dist: {
-      //     src: ['assets/**/*.js'],
-      //     dest: 'assets/<%= pkg.name %>.js'
-      //   },
-      // }
       });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  // grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'requirejs', 'watch', 'compass']);

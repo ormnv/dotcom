@@ -78,7 +78,7 @@ body.dotcom{
   .container{  
     //mobile
     @include container;
-    border: 0.3em solid orange;
+    border: 0.3em solid white;
     margin: auto;
     height:100%;
 
@@ -293,7 +293,7 @@ body.dotcom{
 
     @include at-breakpoint($break40) {
     @include container;
-    border: 0.45em solid blue;
+    border: 0.45em solid white;
     margin: auto;
     height:100%;
 
@@ -488,15 +488,15 @@ body.dotcom{
     #email { 
       @include span-columns(16 omega,16); 
       height:8%;
-      left: -0.5em;
+      left: -0.75em;
       position: relative;
-      padding:0em 1em 0em 0em;
+      padding:0em .5em 0em 0em;
       margin:-0em -1em 0em 0em;
 
       .section-container-horiz{
       @include span-columns(16 omega,16); 
       @include scale(2.1,0.6);
-      margin:0em -0.25em 0em 0em;
+      margin:0em 0em 0em 0em;
 
         a{
           @include span-columns(16 omega,16); 
@@ -517,7 +517,7 @@ body.dotcom{
     //desktom or 45em to 50em
     @include at-breakpoint($break45) {
     @include container;
-    border: 0.45em solid pink;
+    border: 0.45em solid white;
 
     #top{
 
@@ -639,9 +639,9 @@ body.dotcom{
 
     #email { 
       height:9%;
-      left: -0.5em;
+      // left: -0.5em;
       position: relative;
-      padding:0em 1em 0em .5em;
+      // padding:0em 1em 0em .5em;
       margin:-0em -1.25em 0em 0em;
 
       .section-container-horiz{
@@ -659,7 +659,7 @@ body.dotcom{
 
 @include at-breakpoint($break50) {
     @include container;
-    border: 0.5em solid yellow;
+    border: 0.5em solid white;
 
     #top{
 
@@ -912,9 +912,9 @@ body.dotcom{
 
     #email { 
       height:8%;
-      left: -0.5em;
+      // left: -0.5em;
       position: relative;
-      padding:0em 1em 0em 0em;
+      // padding:0em 1em 0em 0em;
       margin:0em -1em 0em 0em;
 
       .section-container-horiz{
