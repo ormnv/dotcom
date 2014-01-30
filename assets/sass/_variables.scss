@@ -53,8 +53,10 @@
 }
 
 @mixin futura-ExtraBold($px, $color){
-	font-family: "Futura-ExtraBold", "Trebuchet MS", Arial, sans-serif;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
 	// font-weight: bold;
+	font-weight:800;
+	font-style:normal;
 	font-size:$px;
 	color:$color;
 	text-transform:uppercase;

@@ -14,6 +14,7 @@
 
 html {
   box-sizing:border-box;
+  overflow-x: hidden;
 }
 
 body.dotcom{
@@ -36,13 +37,16 @@ body.dotcom{
 .box{
   height:100%;
   width:100%;
-  outline:3px soild lavender;
-  //square for 40em+
-  @include at-breakpoint($break40) {
-    display:block;
-    position:relative;
-    width:95%;
-    margin:2em auto;
+
+  // border:3px soild white;
+  //square for 50em+
+  @media only screen and (min-device-width : 641px) {
+    @include at-breakpoint($break40) {
+      display:block;
+      position:relative;
+      width:95%;
+      margin:2em auto;
+    }
   }
 }
 
@@ -50,10 +54,12 @@ body.dotcom{
 .box:before{
 
   //square for 40em+
-  @include at-breakpoint($break40) {
-    display:block;
-    padding-top:100%;
-    content: "";
+  @media only screen and (min-device-width : 641px) {
+    @include at-breakpoint($break40) {
+      display:block;
+      padding-top:100%;
+      content: "";
+    }
   }
 }
 
@@ -64,35 +70,41 @@ body.dotcom{
   right: 0;
 
   //square for 40em+
-  @include at-breakpoint($break40){
-    position:  absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 60em;
-    max-width: 60em;
-    margin:0 auto;
+  @media only screen and (min-device-width : 641px) {
+
+    @include at-breakpoint($break40){
+      position:  absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-height: 60em;
+      max-width: 60em;
+      margin:0 auto;
+    }
   }
 
   .container{  
     //mobile
     @include container;
-    border: 0.3em solid white;
+    // border: 0.3em solid purple;
+    box-shadow: 0px 0px 0px 0.3em #FFF;
     margin: auto;
     height:100%;
 
     #top{
-      @include span-columns(3 omega,3); 
+      @include span-columns(10 omega,10); 
       height:35%;
 
       #name {
         text-align:center; 
-        @include span-columns(3 omega,3); 
+        @include span-columns(10 omega,10); 
 
         #olga{
-          @include span-columns(3 omega,3); 
-          @include futura-BoldItalic(100px, white);
+          @include span-columns(10 omega,10); 
+          // @include futura-BoldItalic(100px, white);
+          @include futura-ExtraBold(100px, white);
+          font-style: italic;
           // @include scale(1.1,1.3);
           display:block;
           // margin:-0em 0 -.25em 0;
@@ -101,8 +113,9 @@ body.dotcom{
         }
 
         #romanova{
-          @include span-columns(3 omega,3); 
-          @include futura-BoldItalic(75px, white);
+          @include span-columns(10 omega,10); 
+          @include futura-ExtraBold(75px, white);
+          // @include futura-BoldItalic(75px, white);
           // @include scale(1.5,0.9);
           display:block;
         }
@@ -110,7 +123,7 @@ body.dotcom{
     }
 
     #content {
-      @include span-columns(3 omega,3); 
+      @include span-columns(10 omega,10); 
       height:55%;
       width: 100%;
       position: relative;
@@ -132,6 +145,7 @@ body.dotcom{
             bottom: 0em;
             margin: 0 auto;
             text-decoration: none;
+            color:white;
 
             .title{
                height:100%;
@@ -143,24 +157,26 @@ body.dotcom{
       } //section      
 
       #github { 
-        @include span-columns(3 omega,3); 
+        @include span-columns(10 omega,10); 
         box-shadow: 0px 0px 0px 0.3em #FFF;
+        @include futura-ExtraBold(30, white);
 
         .section-container{
-          @include span-columns(3 omega,3); 
+          @include span-columns(10 omega,10); 
           @include scale(1.15,1);
 
           a{
 
             .title{
-              @include futura-ExtraBold(30, white);
             }
           }
         }      
       }
 
       #twitter { 
-        @include span-columns(3 omega,3);          
+        @include span-columns(10 omega,10);          
+        box-shadow: 0px 0px 0px 0.3em #FFF;
+        @include futura(30, white);
 
         .section-container{
           @include scale(1,1.3);
@@ -168,15 +184,15 @@ body.dotcom{
           a{
 
             .title{
-              @include futura(30, white);
             }
           }
         }
       }
 
       #soundcloud { 
-        @include span-columns(3 omega,3); 
+        @include span-columns(10 omega,10); 
         box-shadow: 0px 0px 0px 0.3em #FFF;
+        @include futura-ExtraBold(30px, white);
 
         .section-container{
           @include scale(1.25,.9);
@@ -184,14 +200,14 @@ body.dotcom{
           a{
 
             .title{
-              @include futura-ExtraBold(30px, white);
             }
           }
         }
       }
 
       #linkedin { 
-        @include span-columns(3 omega,3); 
+        @include span-columns(10 omega,10); 
+        box-shadow: 0px 0px 0px 0.3em #FFF;
 
         .section-container{
           @include scale(1.25,1.3);
@@ -214,25 +230,27 @@ body.dotcom{
       }
 
     .one{
-      @include span-columns(3 omega,3); 
+      @include span-columns(10 omega,10); 
 
       #desc-blog{
         text-align: center;
 
         #description{
-          @include span-columns(3 omega,3);
+          @include span-columns(10 omega,10);
           width:100%;
           text-decoration: none;
+          @include futura-p(1em, white);
+
 
           p{
-            @include futura-p(1em, white);
             margin:1em;
             text-align:justify;
           }
         }
 
         #blog { 
-          @include span-columns(3 omega, 3);
+          @include span-columns(10 omega, 10);
+          @include futura(30px, white);
           border-top: 0.3em solid white;
           border-bottom: 0.3em solid white;
 
@@ -243,24 +261,25 @@ body.dotcom{
             
             a{
               text-decoration: none;
-            
+              color:white;
+
               .title{
-                @include futura(30px, white);
               }
             }
           }
         }
 
         #year{ 
-            @include span-columns(3 omega, 3);            
+            @include span-columns(10 omega, 10);
+            @include futura-ExtraBold(30px, white);
             text-align: center;
+            border-bottom: 0.3em solid white;
 
             .section-container-year{
               @include scale(1.5,1.2);
               margin-top: .5em;
 
               .title{
-                @include futura-ExtraBold(30px, white);
               }
             }
           }
@@ -269,7 +288,8 @@ body.dotcom{
     } //content
 
     #email { 
-      @include span-columns(3 omega,3); 
+      @include span-columns(10 omega,10); 
+      @include futura(30, white);
       height:8%;
       position: relative;
       text-align: center;
@@ -279,8 +299,9 @@ body.dotcom{
 
         a{
           text-decoration: none;
+          color:white;
+
           .title{
-            @include futura(30, white);
           }
         }
       }
@@ -290,10 +311,12 @@ body.dotcom{
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //tablet or 40em-45em
     //change outline size, margins for olga, github, twitter, sc, ln
-
+@media only screen and (min-device-width : 641px) {
     @include at-breakpoint($break40) {
     @include container;
-    border: 0.45em solid white;
+    // border: 0.45em solid white;
+    box-shadow: 0px 0px 0px 0.45em #FFF;
+
     margin: auto;
     height:100%;
 
@@ -339,8 +362,7 @@ body.dotcom{
 
         .section-container{
           height: 100%;
-          margin-top:0em;
-
+          margin:0em 1.5em 0em 0.5em;
 
           a{
             z-index: 10;         
@@ -360,10 +382,12 @@ body.dotcom{
       } //section      
 
       #github { 
-        @include span-columns(3,16); 
+        @include span-columns(3,16);
+        box-shadow: 0px 0px 0px 0.225em #FFF;
 
         .section-container{
           @include scale(1.5,0.9);
+          margin:0em -0.7em 0em 0em;
 
           a{
             //
@@ -377,7 +401,7 @@ body.dotcom{
 
       #twitter { 
         @include span-columns(3,16);          
-        box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.225em #FFF;
 
         .section-container{
           @include scale(1.4,1);
@@ -394,14 +418,14 @@ body.dotcom{
 
       #soundcloud { 
         @include span-columns(2,16); 
-        box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.225em #FFF;
 
         .section-container{
           @include scale(1.4,0.8);
 
           a{
             //
-            margin:0em 0em -2em .6em;
+            margin:0em 0em -1em -0.25em;
             //
             .title{
               // @include futura-ExtraBold(30px);
@@ -412,14 +436,14 @@ body.dotcom{
 
       #linkedin { 
         @include span-columns(3,16); 
-        box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.225em #FFF;
 
         .section-container{
           @include scale(1.4,0.85);
 
           a{
             //
-            margin:0em 0em -1.5em .25em;
+            margin:0em 0em -1.5em -.2em;
             //
             .title 
             {
@@ -435,7 +459,9 @@ body.dotcom{
       }
 
     .one{
-      @include span-columns(5 omega,16); 
+      @include span-columns(5 omega,16);
+      height:100%; 
+      box-shadow: 0px 0px 0px 0.225em #FFF;
 
       #desc-blog{
 
@@ -471,6 +497,7 @@ body.dotcom{
 
         #year{ 
             @include span-columns(5 omega, 5);            
+            border-bottom: none;
 
             .section-container-year{
               @include scale(1.1,1.5);
@@ -512,12 +539,15 @@ body.dotcom{
     }
     
    } //break
-
-   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//}
+//    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //desktom or 45em to 50em
-    @include at-breakpoint($break45) {
+    // @media only screen and (min-device-width : 801px) {
+    @include at-breakpoint($break50) {
     @include container;
-    border: 0.45em solid white;
+    // border: 0.5em solid white;
+    box-shadow: 0px 0px 0px 0.5em #FFF;
+
 
     #top{
 
@@ -532,10 +562,11 @@ body.dotcom{
     }
 
     #content {
-      border-top: 0.45em solid white;
-      border-bottom: 0.45em solid white;
+      border-top: 0.5em solid white;
+      border-bottom: 0.5em solid white;
 
       #github { 
+        box-shadow: 0px 0px 0px 0.25em #FFF;
 
         .section-container{
 
@@ -549,7 +580,7 @@ body.dotcom{
       }
 
       #twitter { 
-      box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.25em #FFF;
 
         .section-container{
 
@@ -563,12 +594,12 @@ body.dotcom{
       }
 
       #soundcloud { 
-        box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.25em #FFF;
 
         .section-container{
 
           a{
-            margin:0em 0em -2em .8em;
+            margin:0em 0em -1em 0em;
 
             .title{
             }
@@ -578,7 +609,7 @@ body.dotcom{
 
       #linkedin { 
         @include span-columns(3,16); 
-        box-shadow: 0px 0px 0px 0.45em #FFF;
+        box-shadow: 0px 0px 0px 0.25em #FFF;
 
         .section-container{
 
@@ -609,8 +640,8 @@ body.dotcom{
         }
 
         #blog { 
-          border-top: 0.45em solid white;
-          border-bottom: 0.45em solid white;
+          border-top: 0.25em solid white;
+          // border-bottom: 0.25em solid white;
 
           .section-container-blog{
             position: relative;
@@ -656,10 +687,12 @@ body.dotcom{
    } //break
 
 /////////////////////////////////////////////////////////////////////////////////
-
-@include at-breakpoint($break50) {
+// @media only screen and (min-device-width : 881px) {
+@include at-breakpoint($break55) {
     @include container;
-    border: 0.5em solid white;
+    // border: 0.55em solid white;
+    box-shadow: 0px 0px 0px 0.55em #FFF;
+
 
     #top{
 
@@ -674,10 +707,11 @@ body.dotcom{
     }
 
     #content {
-      border-top: 0.5em solid white;
-      border-bottom: 0.5em solid white;
+      border-top: 0.55em solid white;
+      border-bottom: 0.55em solid white;
 
       #github { 
+        box-shadow: 0px 0px 0px 0.2525em #FFF;
 
         .section-container{
 
@@ -691,7 +725,7 @@ body.dotcom{
       }
 
       #twitter { 
-        box-shadow: 0px 0px 0px 0.5em #FFF;
+        box-shadow: 0px 0px 0px 0.2525em #FFF;
 
         .section-container{
 
@@ -704,7 +738,7 @@ body.dotcom{
       }
 
       #soundcloud { 
-        box-shadow: 0px 0px 0px 0.5em #FFF;
+        box-shadow: 0px 0px 0px 0.2525em #FFF;
 
         .section-container{
 
@@ -717,7 +751,7 @@ body.dotcom{
       }
 
       #linkedin { 
-        box-shadow: 0px 0px 0px 0.5em #FFF;
+        box-shadow: 0px 0px 0px 0.2525em #FFF;
 
         .section-container{
 
@@ -747,8 +781,8 @@ body.dotcom{
         }
 
         #blog { 
-          border-top: 0.5em solid white;
-          border-bottom: 0.5em solid white;
+          border-top: 0.55em solid white;
+          border-bottom: 0.55em solid white;
 
 
           .section-container-blog{
@@ -792,7 +826,7 @@ body.dotcom{
 
 /////////////////////////////////////////////////////////////////////////////////
   //50em to 60em
-@include at-breakpoint($break55) {
+@include at-breakpoint($break60) {
     @include container;
     border: 0.625em solid white;
 
@@ -813,6 +847,7 @@ body.dotcom{
       border-bottom: 0.625em solid white;
 
       #github { 
+        box-shadow: 0px 0px 0px 0.3125em #FFF;
 
         .section-container{
 
@@ -826,6 +861,7 @@ body.dotcom{
       }
 
       #twitter { 
+        box-shadow: 0px 0px 0px 0.3125em #FFF;
 
         .section-container{
 
@@ -839,12 +875,12 @@ body.dotcom{
       }
 
       #soundcloud { 
-        box-shadow: 0px 0px 0px 0.625em #FFF;
+        box-shadow: 0px 0px 0px 0.3125em #FFF;
 
         .section-container{
 
           a{
-            margin:0em 0em -2.8em 1em;
+            margin:0em 0em -1.5em 1em;
 
             .title{
             }
@@ -853,7 +889,7 @@ body.dotcom{
       }
 
       #linkedin { 
-        box-shadow: 0px 0px 0px 0.625em #FFF;
+        box-shadow: 0px 0px 0px 0.3125em #FFF;
 
         .section-container{
 
@@ -874,6 +910,7 @@ body.dotcom{
       }
 
     .one{
+        box-shadow: 0px 0px 0px 0.3125em #FFF;
 
       #desc-blog{
 
@@ -912,9 +949,7 @@ body.dotcom{
 
     #email { 
       height:8%;
-      // left: -0.5em;
       position: relative;
-      // padding:0em 1em 0em 0em;
       margin:0em -1em 0em 0em;
 
       .section-container-horiz{
@@ -930,7 +965,7 @@ body.dotcom{
     }
     
    } //break
-
+  }
   }
  } //outer
 

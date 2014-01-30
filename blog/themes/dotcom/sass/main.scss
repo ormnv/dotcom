@@ -366,6 +366,27 @@ x
  */
 .content.wrap {
 	padding-bottom: 50px;
+
+	p{
+		font-size: 1em;
+		text-transform: none;
+		font-weight: normal;
+	}
+
+	a{
+		font-size: 1em;
+		font-weight: bold;
+		text-transform: none;
+		text-decoration: none;
+		color:black;
+	}
+
+	a:hover{
+		font-size: 1em;
+		font-weight: bold;
+		text-transform: none;
+		color:white;
+	}
 }
 	.content.wrap ul, .content.wrap ol, .items li ul {
 		padding: 20px 30px;

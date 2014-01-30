@@ -11,7 +11,7 @@
 	                   	<li><a href="<?php echo linkedin_url(); ?>">LinkedIn</a></li>
 	                    <li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin</a></li>
 
-	                    <li><a href="/" title="Return to my website.">Home</a></li>
+	                    <li><a href="/~or393/" title="Back.">Home</a></li>
 	                </ul>
 	            </footer>
 

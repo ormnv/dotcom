@@ -6,9 +6,9 @@
 // ---------------------------------------------------------------------------
 // Basic Grid
 
-$total-columns  : 13;
-$column-width   : 3em;
-$gutter-width   : .53em;
+$total-columns  : 10;
+$column-width   : 4em;
+$gutter-width   : 0em;
 $grid-padding   : 0em;
 
 $show-grid-backgrounds  : false;
@@ -20,3 +20,4 @@ $break40			: 40em 16;
 //sub-breaks for individual elements 
 $break55			: 55em 16;
 $break45			: 45em 16;
+$break60			: 60em 16;

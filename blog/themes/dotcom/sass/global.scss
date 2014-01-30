@@ -8,13 +8,14 @@ body {
 
 // =Links
 a{
-	color: $a-color-1;
+	color: black;
 
 	&:visited {
-		color: $a-color-3;
+		color: lightgrey;
 	}
 	&:hover {
-		color: $a-color-2;
+		color: white;
+		background:black;
 	}
 	&:focus {
 		outline: thin dotted;
