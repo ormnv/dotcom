@@ -126,9 +126,10 @@ html {
 
 /* line 31, ../sass/reset.scss */
 html, button, input, select, textarea {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 700;
   font-size: 1.25em;
-  font-weight: bold;
+  font-style: normal;
   color: black;
   text-transform: uppercase;
 }
@@ -145,7 +146,9 @@ body {
   max-width: 750px;
   width: 75%;
   margin: 0 auto;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: black;
 }
 
@@ -429,9 +432,10 @@ form#search input {
   color: black;
   border: none;
   outline: none;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 700;
   font-size: 20px;
-  font-weight: bold;
+  font-style: normal;
   color: black;
   text-transform: uppercase;
 }
@@ -471,8 +475,10 @@ span#s:before {
   left: 0;
   width: 25px;
   height: 22px;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
   font-size: 1em;
+  font-style: normal;
   color: black;
   line-height: 22px;
   text-indent: 0;
@@ -642,8 +648,8 @@ article p {
   float: left;
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 1em;
+  font-style: normal;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -653,8 +659,8 @@ article p {
 #top #logo:hover {
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 1em;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
   background-color: black;
@@ -665,8 +671,8 @@ x
 #top ul a:hover, #top ul .active .menu-item a, .posts .items li:first-child h2 a:hover, p a:hover {
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 13px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
   background-color: black;
@@ -746,9 +752,10 @@ x
 
 /* line 288, ../sass/main.scss */
 .items li h1 a, .posts .items > li:first-child h2 a {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 700;
   font-size: 1em;
-  font-weight: bold;
+  font-style: normal;
   color: black;
   text-transform: uppercase;
 }
@@ -807,9 +814,11 @@ x
 
 /* line 327, ../sass/main.scss */
 .items .content p {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  color: black;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
   font-size: 0.75em;
+  font-style: normal;
+  color: black;
   padding-bottom: 15px;
   text-transform: none;
   font-weight: normal;

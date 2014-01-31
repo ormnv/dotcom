@@ -26,27 +26,69 @@
 //typography 
 
 @mixin futura($px, $color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:400;
 	font-size:$px;
+	font-style: normal;
 	color:$color;
 	text-transform:uppercase;
 
 }
 
-@mixin futura-Bold($px, $color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+@mixin futura-p($px, $color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:400;
 	font-size:$px;
-	font-weight: bold;
+	font-style: normal;
+	color:$color;
+}
+
+@mixin futura-low($px, $color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:400;
+	font-size:$px;
+	font-style: normal;
+	color:$color;
+}
+
+@mixin futura-blog($color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color:$color;
+}
+
+@mixin futura-Book($px, $color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:400;
+	font-size:$px;
+	font-style:normal;
+	color:$color;
+}
+
+@mixin futura-Medium($px, $color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight:500;
+	font-size:$px;
+	font-style:normal;
+	color:$color;
+}
+
+@mixin futura-Bold($px, $color){
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight: 700;
+	font-size:$px;
+	font-style:normal;
 	color:$color;
 	text-transform:uppercase;
 
 }
 
 @mixin futura-BoldItalic($px, $color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-	font-style: italic;
-	font-weight: bold;
+	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+	font-weight: 700;
 	font-size:$px;
+	font-style: italic;
 	color:$color;
 	text-transform:uppercase;
 
@@ -54,20 +96,19 @@
 
 @mixin futura-ExtraBold($px, $color){
 	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
-	// font-weight: bold;
 	font-weight:800;
-	font-style:normal;
 	font-size:$px;
+	font-style:normal;
 	color:$color;
 	text-transform:uppercase;
 }
 
-@mixin extraBoldOblique($px, $color){
+@mixin futura-ExtraBoldItalic($px, $color){
 	// font-family: "Futura-ExtaBoldOblique", "Trebuchet MS", Arial, sans-serif;
-	font-family: "Futura-ExtaBoldOblique";
-	font-style: italic;
-	font-weight: bold;
+	font-family: "futura-pt";
+	font-weight: 800;
 	font-size:$px;
+	font-style: italic;
 	color:$color;
 	text-transform:uppercase;
 }
@@ -78,19 +119,4 @@
 	color:$color;
 }
 
-@mixin futura-p($px, $color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-	font-size:$px;
-	color:$color;
-}
 
-@mixin futura-low($px, $color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-	color:$color;
-	font-size:$px;
-}
-
-@mixin futura-blog($color){
-	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-	color:$color;
-}

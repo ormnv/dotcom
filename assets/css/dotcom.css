@@ -36,8 +36,10 @@
 }
 /* line 23, ../sass/_ready.scss */
 #noscripts #outer-container #message-container #messages {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
   margin-left: auto;
@@ -134,8 +136,8 @@
 /* line 10, ../sass/_layout.scss */
 .container {
   *zoom: 1;
-  max-width: 40em;
-  _width: 40em;
+  max-width: 20em;
+  _width: 20em;
   padding-left: 0em;
   padding-right: 0em;
   margin-left: auto;
@@ -228,8 +230,8 @@ body.dotcom {
 /* line 87, ../sass/_layout.scss */
 .outer .container {
   *zoom: 1;
-  max-width: 40em;
-  _width: 40em;
+  max-width: 20em;
+  _width: 20em;
   padding-left: 0em;
   padding-right: 0em;
   margin-left: auto;
@@ -269,15 +271,15 @@ body.dotcom {
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt";
   font-weight: 800;
-  font-style: normal;
   font-size: 100px;
+  font-style: italic;
   color: white;
   text-transform: uppercase;
   font-style: italic;
   display: block;
-  margin: -0.05em 0em 0em 0em;
+  margin: -0.25em 0em 0em 0em;
 }
 /* line 115, ../sass/_layout.scss */
 .outer .container #top #name #romanova {
@@ -286,10 +288,10 @@ body.dotcom {
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt";
   font-weight: 800;
-  font-style: normal;
   font-size: 75px;
+  font-style: italic;
   color: white;
   text-transform: uppercase;
   display: block;
@@ -301,7 +303,6 @@ body.dotcom {
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  height: 55%;
   width: 100%;
   position: relative;
   display: block;
@@ -340,11 +341,11 @@ body.dotcom {
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  box-shadow: 0px 0px 0px 0.3em #FFF;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 30;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
 }
@@ -368,13 +369,15 @@ body.dotcom {
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  box-shadow: 0px 0px 0px 0.3em #FFF;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size: 30;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
 }
-/* line 181, ../sass/_layout.scss */
+/* line 182, ../sass/_layout.scss */
 .outer .container #content #twitter .section-container {
   transform: scale(1, 1.3);
   -ms-transform: scale(1, 1.3);
@@ -382,22 +385,22 @@ body.dotcom {
   -webkit-transform: scale(1, 1.3);
   /* Safari and Chrome */
 }
-/* line 192, ../sass/_layout.scss */
+/* line 193, ../sass/_layout.scss */
 .outer .container #content #soundcloud {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  box-shadow: 0px 0px 0px 0.3em #FFF;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 30px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
 }
-/* line 197, ../sass/_layout.scss */
+/* line 198, ../sass/_layout.scss */
 .outer .container #content #soundcloud .section-container {
   transform: scale(1.25, 0.9);
   -ms-transform: scale(1.25, 0.9);
@@ -405,16 +408,16 @@ body.dotcom {
   -webkit-transform: scale(1.25, 0.9);
   /* Safari and Chrome */
 }
-/* line 208, ../sass/_layout.scss */
+/* line 209, ../sass/_layout.scss */
 .outer .container #content #linkedin {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  box-shadow: 0px 0px 0px 0.3em #FFF;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
 }
-/* line 212, ../sass/_layout.scss */
+/* line 213, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container {
   transform: scale(1.25, 1.3);
   -ms-transform: scale(1.25, 1.3);
@@ -422,22 +425,25 @@ body.dotcom {
   -webkit-transform: scale(1.25, 1.3);
   /* Safari and Chrome */
 }
-/* line 220, ../sass/_layout.scss */
+/* line 221, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #linked {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  font-weight: bold;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
 }
-/* line 224, ../sass/_layout.scss */
+/* line 225, ../sass/_layout.scss */
 .outer .container #content #linkedin .section-container a .title #in {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 500;
   font-size: 30px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
 }
-/* line 232, ../sass/_layout.scss */
+/* line 234, ../sass/_layout.scss */
 .outer .container #content .one {
   width: 100%;
   float: right;
@@ -445,43 +451,46 @@ body.dotcom {
   *margin-left: 0em;
   display: inline;
 }
-/* line 235, ../sass/_layout.scss */
+/* line 237, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog {
   text-align: center;
 }
-/* line 238, ../sass/_layout.scss */
+/* line 240, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #description {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  color: white;
   width: 100%;
   text-decoration: none;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size: 1em;
-  color: white;
 }
-/* line 245, ../sass/_layout.scss */
+/* line 248, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #description p {
   margin: 1em;
   text-align: justify;
 }
-/* line 251, ../sass/_layout.scss */
+/* line 254, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
   font-size: 30px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
-  border-top: 0.3em solid white;
-  border-bottom: 0.3em solid white;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
 }
-/* line 257, ../sass/_layout.scss */
+/* line 261, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog .section-container-blog {
   transform: scale(1.8, 1.3);
   -ms-transform: scale(1.8, 1.3);
@@ -491,12 +500,12 @@ body.dotcom {
   position: relative;
   bottom: 0em;
 }
-/* line 262, ../sass/_layout.scss */
+/* line 266, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #blog .section-container-blog a {
   text-decoration: none;
   color: white;
 }
-/* line 272, ../sass/_layout.scss */
+/* line 276, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #year {
   width: 100%;
   float: right;
@@ -505,14 +514,14 @@ body.dotcom {
   display: inline;
   font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 30px;
+  font-style: normal;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 0.3em solid white;
+  box-shadow: 0px 0px 0px 0.15em #FFF;
 }
-/* line 278, ../sass/_layout.scss */
+/* line 283, ../sass/_layout.scss */
 .outer .container #content .one #desc-blog #year .section-container-year {
   transform: scale(1.5, 1.2);
   -ms-transform: scale(1.5, 1.2);
@@ -521,22 +530,25 @@ body.dotcom {
   /* Safari and Chrome */
   margin-top: .5em;
 }
-/* line 290, ../sass/_layout.scss */
+/* line 295, ../sass/_layout.scss */
 .outer .container #email {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: 0em;
   display: inline;
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
+  font-weight: 500;
   font-size: 30;
+  font-style: normal;
   color: white;
+  box-shadow: 0px 0px 0px 0.3em #FFF;
   text-transform: uppercase;
   height: 8%;
   position: relative;
   text-align: center;
 }
-/* line 297, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz {
   transform: scale(2, 1.2);
   -ms-transform: scale(2, 1.2);
@@ -544,7 +556,7 @@ body.dotcom {
   -webkit-transform: scale(2, 1.2);
   /* Safari and Chrome */
 }
-/* line 300, ../sass/_layout.scss */
+/* line 307, ../sass/_layout.scss */
 .outer .container #email .section-container-horiz a {
   text-decoration: none;
   color: white;
@@ -552,7 +564,7 @@ body.dotcom {
 @media only screen and (min-device-width: 641px) and (min-width: 40em) {
   /* line 87, ../sass/_layout.scss */
   .outer .container {
-    max-width: 64em;
+    max-width: 32em;
     padding-left: 0em;
     padding-right: 0em;
     margin-left: auto;
@@ -567,45 +579,45 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 323, ../sass/_layout.scss */
+  /* line 330, ../sass/_layout.scss */
   .outer .container #top {
     width: 100%;
     float: right;
     margin-right: 0;
     height: 35%;
   }
-  /* line 327, ../sass/_layout.scss */
+  /* line 334, ../sass/_layout.scss */
   .outer .container #top #name {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 330, ../sass/_layout.scss */
+  /* line 337, ../sass/_layout.scss */
   .outer .container #top #name #olga {
     width: 100%;
     float: right;
     margin-right: 0;
-    transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
+    transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
     /* IE 9 */
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1.15, 1.15);
     /* Safari and Chrome */
     display: block;
   }
-  /* line 336, ../sass/_layout.scss */
+  /* line 343, ../sass/_layout.scss */
   .outer .container #top #name #romanova {
     width: 100%;
     float: right;
     margin-right: 0;
-    transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
+    transform: scale(1.1, 1);
+    -ms-transform: scale(1.1, 1);
     /* IE 9 */
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1.1, 1);
     /* Safari and Chrome */
     display: block;
-    margin: -.6em 0.1em -.25em 0;
+    margin: -.75em 0em -.25em 0;
   }
-  /* line 345, ../sass/_layout.scss */
+  /* line 352, ../sass/_layout.scss */
   .outer .container #content {
     width: 100%;
     float: right;
@@ -617,7 +629,7 @@ body.dotcom {
     border-top: 0.45em solid white;
     border-bottom: 0.45em solid white;
   }
-  /* line 354, ../sass/_layout.scss */
+  /* line 361, ../sass/_layout.scss */
   .outer .container #content .section {
     height: 100%;
     padding: 0em 0em 0em 0em;
@@ -625,19 +637,19 @@ body.dotcom {
     position: static;
     text-align: left;
   }
-  /* line 363, ../sass/_layout.scss */
+  /* line 370, ../sass/_layout.scss */
   .outer .container #content .section .section-container {
     height: 100%;
-    margin: 0em 1.5em 0em 0.5em;
+    margin: -.5em .5em 0em 0.5em;
   }
-  /* line 367, ../sass/_layout.scss */
+  /* line 376, ../sass/_layout.scss */
   .outer .container #content .section .section-container a {
     z-index: 10;
     position: absolute;
     bottom: 0em;
     margin: 0 auto;
   }
-  /* line 373, ../sass/_layout.scss */
+  /* line 382, ../sass/_layout.scss */
   .outer .container #content .section .section-container a .title {
     -webkit-transform: scale(1.25, 1);
     transform: rotate(270deg);
@@ -649,34 +661,29 @@ body.dotcom {
     margin: 0 auto;
     position: absolute;
   }
-  /* line 384, ../sass/_layout.scss */
+  /* line 393, ../sass/_layout.scss */
   .outer .container #content #github {
     width: 18.75%;
     float: left;
     margin-right: 0%;
     box-shadow: 0px 0px 0px 0.225em #FFF;
   }
-  /* line 388, ../sass/_layout.scss */
+  /* line 397, ../sass/_layout.scss */
   .outer .container #content #github .section-container {
-    transform: scale(1.5, 0.9);
-    -ms-transform: scale(1.5, 0.9);
+    transform: scale(1.6, 1);
+    -ms-transform: scale(1.6, 1);
     /* IE 9 */
-    -webkit-transform: scale(1.5, 0.9);
+    -webkit-transform: scale(1.6, 1);
     /* Safari and Chrome */
-    margin: 0em -0.7em 0em 0em;
   }
-  /* line 392, ../sass/_layout.scss */
-  .outer .container #content #github .section-container a {
-    margin: 0em 0em -1em .75em;
-  }
-  /* line 402, ../sass/_layout.scss */
+  /* line 408, ../sass/_layout.scss */
   .outer .container #content #twitter {
     width: 18.75%;
     float: left;
     margin-right: 0%;
-    box-shadow: 0px 0px 0px 0.225em #FFF;
+    box-shadow: 0px 0px 0px 0.12125em #FFF;
   }
-  /* line 406, ../sass/_layout.scss */
+  /* line 412, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container {
     transform: scale(1.4, 1);
     -ms-transform: scale(1.4, 1);
@@ -684,49 +691,45 @@ body.dotcom {
     -webkit-transform: scale(1.4, 1);
     /* Safari and Chrome */
   }
-  /* line 409, ../sass/_layout.scss */
+  /* line 415, ../sass/_layout.scss */
   .outer .container #content #twitter .section-container a {
-    margin: 0em 0em 0em -.5em;
+    margin: 0em 0em 0.35em -.5em;
   }
-  /* line 419, ../sass/_layout.scss */
+  /* line 425, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
     width: 12.5%;
     float: left;
     margin-right: 0%;
-    box-shadow: 0px 0px 0px 0.225em #FFF;
+    box-shadow: 0px 0px 0px 0.12125em #FFF;
   }
-  /* line 423, ../sass/_layout.scss */
+  /* line 429, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container {
-    transform: scale(1.4, 0.8);
-    -ms-transform: scale(1.4, 0.8);
+    transform: scale(1.4, 0.9);
+    -ms-transform: scale(1.4, 0.9);
     /* IE 9 */
-    -webkit-transform: scale(1.4, 0.8);
+    -webkit-transform: scale(1.4, 0.9);
     /* Safari and Chrome */
   }
-  /* line 426, ../sass/_layout.scss */
+  /* line 432, ../sass/_layout.scss */
   .outer .container #content #soundcloud .section-container a {
     margin: 0em 0em -1em -0.25em;
   }
-  /* line 437, ../sass/_layout.scss */
+  /* line 442, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     width: 18.75%;
     float: left;
     margin-right: 0%;
     box-shadow: 0px 0px 0px 0.225em #FFF;
   }
-  /* line 441, ../sass/_layout.scss */
+  /* line 446, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container {
-    transform: scale(1.4, 0.85);
-    -ms-transform: scale(1.4, 0.85);
+    transform: scale(1.4, 1);
+    -ms-transform: scale(1.4, 1);
     /* IE 9 */
-    -webkit-transform: scale(1.4, 0.85);
+    -webkit-transform: scale(1.4, 1);
     /* Safari and Chrome */
   }
-  /* line 444, ../sass/_layout.scss */
-  .outer .container #content #linkedin .section-container a {
-    margin: 0em 0em -1.5em -.2em;
-  }
-  /* line 461, ../sass/_layout.scss */
+  /* line 466, ../sass/_layout.scss */
   .outer .container #content .one {
     width: 31.25%;
     float: right;
@@ -734,28 +737,28 @@ body.dotcom {
     height: 100%;
     box-shadow: 0px 0px 0px 0.225em #FFF;
   }
-  /* line 468, ../sass/_layout.scss */
+  /* line 473, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description {
     width: 100%;
     float: right;
     margin-right: 0;
     width: 100%;
   }
-  /* line 472, ../sass/_layout.scss */
+  /* line 477, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description p {
     margin: 1em;
     text-align: justify;
   }
-  /* line 478, ../sass/_layout.scss */
+  /* line 483, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
     width: 100%;
     float: right;
     margin-right: 0;
-    border-top: 0.45em solid white;
-    border-bottom: 0.45em solid white;
+    border-top: 0.225em solid white;
+    border-bottom: 0.225em solid white;
     text-align: center;
   }
-  /* line 484, ../sass/_layout.scss */
+  /* line 489, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog {
     transform: scale(1.4, 1.3);
     -ms-transform: scale(1.4, 1.3);
@@ -765,62 +768,64 @@ body.dotcom {
     position: relative;
     bottom: 0em;
   }
-  /* line 489, ../sass/_layout.scss */
+  /* line 494, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog a {
     text-decoration: none;
   }
-  /* line 498, ../sass/_layout.scss */
+  /* line 503, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year {
     width: 100%;
     float: right;
     margin-right: 0;
     border-bottom: none;
   }
-  /* line 502, ../sass/_layout.scss */
+  /* line 507, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year {
-    transform: scale(1.1, 1.5);
-    -ms-transform: scale(1.1, 1.5);
+    transform: scale(1.25, 1.5);
+    -ms-transform: scale(1.25, 1.5);
     /* IE 9 */
-    -webkit-transform: scale(1.1, 1.5);
+    -webkit-transform: scale(1.25, 1.5);
     /* Safari and Chrome */
+    margin-top: 0em;
   }
-  /* line 505, ../sass/_layout.scss */
+  /* line 511, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year .title {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 515, ../sass/_layout.scss */
+  /* line 521, ../sass/_layout.scss */
   .outer .container #email {
     width: 100%;
     float: right;
     margin-right: 0;
+    box-shadow: none;
     height: 8%;
     left: -0.75em;
     position: relative;
-    padding: 0em .5em 0em 0em;
+    padding: 0.2em .5em 0em 0em;
     margin: -0em -1em 0em 0em;
   }
-  /* line 523, ../sass/_layout.scss */
+  /* line 530, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz {
     width: 100%;
     float: right;
     margin-right: 0;
-    transform: scale(2.1, 0.6);
-    -ms-transform: scale(2.1, 0.6);
+    transform: scale(2.3, 0.6);
+    -ms-transform: scale(2.3, 0.6);
     /* IE 9 */
-    -webkit-transform: scale(2.1, 0.6);
+    -webkit-transform: scale(2.3, 0.6);
     /* Safari and Chrome */
     margin: 0em 0em 0em 0em;
   }
-  /* line 528, ../sass/_layout.scss */
+  /* line 535, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a {
     width: 100%;
     float: right;
     margin-right: 0;
     text-align: center;
   }
-  /* line 532, ../sass/_layout.scss */
+  /* line 539, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a .title {
     width: 100%;
     float: right;
@@ -832,7 +837,7 @@ body.dotcom {
 @media only screen and (min-device-width: 641px) and (min-width: 50em) {
   /* line 87, ../sass/_layout.scss */
   .outer .container {
-    max-width: 64em;
+    max-width: 32em;
     padding-left: 0em;
     padding-right: 0em;
     margin-left: auto;
@@ -845,64 +850,50 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 564, ../sass/_layout.scss */
+  /* line 571, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.5em solid white;
     border-bottom: 0.5em solid white;
   }
-  /* line 568, ../sass/_layout.scss */
+  /* line 575, ../sass/_layout.scss */
   .outer .container #content #github {
     box-shadow: 0px 0px 0px 0.25em #FFF;
   }
-  /* line 573, ../sass/_layout.scss */
-  .outer .container #content #github .section-container a {
-    margin: 0em 0em -1em .8em;
-  }
-  /* line 582, ../sass/_layout.scss */
+  /* line 588, ../sass/_layout.scss */
   .outer .container #content #twitter {
-    box-shadow: 0px 0px 0px 0.25em #FFF;
-  }
-  /* line 587, ../sass/_layout.scss */
-  .outer .container #content #twitter .section-container a {
-    margin: 0em 0em 0.2em -.5em;
-  }
-  /* line 596, ../sass/_layout.scss */
-  .outer .container #content #soundcloud {
-    box-shadow: 0px 0px 0px 0.25em #FFF;
+    box-shadow: 0px 0px 0px 0.125em #FFF;
   }
   /* line 601, ../sass/_layout.scss */
-  .outer .container #content #soundcloud .section-container a {
-    margin: 0em 0em -1em 0em;
+  .outer .container #content #soundcloud {
+    box-shadow: 0px 0px 0px 0.125em #FFF;
   }
-  /* line 610, ../sass/_layout.scss */
+  /* line 614, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     width: 18.75%;
     float: left;
     margin-right: 0%;
     box-shadow: 0px 0px 0px 0.25em #FFF;
   }
-  /* line 616, ../sass/_layout.scss */
-  .outer .container #content #linkedin .section-container a {
-    margin: 0em 0em -2em .25em;
-  }
-  /* line 642, ../sass/_layout.scss */
+  /* line 645, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
-    border-top: 0.25em solid white;
+    border-top: 0.125em solid white;
+    border-bottom: 0.125em solid white;
   }
-  /* line 646, ../sass/_layout.scss */
+  /* line 649, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog .section-container-blog {
     position: relative;
     left: .25em;
   }
-  /* line 660, ../sass/_layout.scss */
+  /* line 663, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #year .section-container-year {
-    transform: scale(1.1, 1.2);
-    -ms-transform: scale(1.1, 1.2);
+    transform: scale(1.3, 2);
+    -ms-transform: scale(1.3, 2);
     /* IE 9 */
-    -webkit-transform: scale(1.1, 1.2);
+    -webkit-transform: scale(1.3, 2);
     /* Safari and Chrome */
+    margin-top: 0em;
   }
-  /* line 671, ../sass/_layout.scss */
+  /* line 675, ../sass/_layout.scss */
   .outer .container #email {
     height: 9%;
     position: relative;
@@ -912,7 +903,7 @@ body.dotcom {
 @media only screen and (min-device-width: 641px) and (min-width: 55em) {
   /* line 87, ../sass/_layout.scss */
   .outer .container {
-    max-width: 64em;
+    max-width: 32em;
     padding-left: 0em;
     padding-right: 0em;
     margin-left: auto;
@@ -925,41 +916,41 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 709, ../sass/_layout.scss */
+  /* line 711, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.55em solid white;
     border-bottom: 0.55em solid white;
   }
-  /* line 713, ../sass/_layout.scss */
+  /* line 715, ../sass/_layout.scss */
   .outer .container #content #github {
     box-shadow: 0px 0px 0px 0.2525em #FFF;
   }
-  /* line 718, ../sass/_layout.scss */
-  .outer .container #content #github .section-container a {
-    margin: 0em 0em -1em 1em;
-  }
-  /* line 727, ../sass/_layout.scss */
+  /* line 728, ../sass/_layout.scss */
   .outer .container #content #twitter {
-    box-shadow: 0px 0px 0px 0.2525em #FFF;
+    box-shadow: 0px 0px 0px 0.12625em #FFF;
   }
-  /* line 740, ../sass/_layout.scss */
+  /* line 741, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
-    box-shadow: 0px 0px 0px 0.2525em #FFF;
+    box-shadow: 0px 0px 0px 0.12625em #FFF;
   }
-  /* line 753, ../sass/_layout.scss */
+  /* line 754, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     box-shadow: 0px 0px 0px 0.2525em #FFF;
   }
-  /* line 783, ../sass/_layout.scss */
+  /* line 784, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
-    border-top: 0.55em solid white;
-    border-bottom: 0.55em solid white;
+    border-top: 0.2525em solid white;
+    border-bottom: 0.2525em solid white;
+  }
+  /* line 802, ../sass/_layout.scss */
+  .outer .container #content .one #desc-blog #year .section-container-year {
+    margin-top: 0em;
   }
 }
 @media only screen and (min-device-width: 641px) and (min-width: 60em) {
   /* line 87, ../sass/_layout.scss */
   .outer .container {
-    max-width: 64em;
+    max-width: 32em;
     padding-left: 0em;
     padding-right: 0em;
     margin-left: auto;
@@ -972,63 +963,55 @@ body.dotcom {
     display: table;
     clear: both;
   }
-  /* line 845, ../sass/_layout.scss */
+  /* line 848, ../sass/_layout.scss */
   .outer .container #content {
     border-top: 0.625em solid white;
     border-bottom: 0.625em solid white;
   }
-  /* line 849, ../sass/_layout.scss */
+  /* line 852, ../sass/_layout.scss */
   .outer .container #content #github {
     box-shadow: 0px 0px 0px 0.3125em #FFF;
   }
-  /* line 854, ../sass/_layout.scss */
-  .outer .container #content #github .section-container a {
-    margin: 0em 0em -1em 1em;
-  }
-  /* line 863, ../sass/_layout.scss */
+  /* line 866, ../sass/_layout.scss */
   .outer .container #content #twitter {
-    box-shadow: 0px 0px 0px 0.3125em #FFF;
+    box-shadow: 0px 0px 0px 0.15625em #FFF;
   }
-  /* line 868, ../sass/_layout.scss */
-  .outer .container #content #twitter .section-container a {
-    margin: 0em 0em 0.2em -.5em;
-  }
-  /* line 877, ../sass/_layout.scss */
+  /* line 880, ../sass/_layout.scss */
   .outer .container #content #soundcloud {
-    box-shadow: 0px 0px 0px 0.3125em #FFF;
+    box-shadow: 0px 0px 0px 0.15625em #FFF;
   }
-  /* line 882, ../sass/_layout.scss */
-  .outer .container #content #soundcloud .section-container a {
-    margin: 0em 0em -1.5em 1em;
-  }
-  /* line 891, ../sass/_layout.scss */
+  /* line 894, ../sass/_layout.scss */
   .outer .container #content #linkedin {
     box-shadow: 0px 0px 0px 0.3125em #FFF;
   }
-  /* line 896, ../sass/_layout.scss */
+  /* line 899, ../sass/_layout.scss */
   .outer .container #content #linkedin .section-container a {
-    margin: 0em 0em -2em .5em;
+    margin: 0em 0em 0em .5em;
   }
-  /* line 912, ../sass/_layout.scss */
+  /* line 915, ../sass/_layout.scss */
   .outer .container #content .one {
     box-shadow: 0px 0px 0px 0.3125em #FFF;
   }
-  /* line 917, ../sass/_layout.scss */
+  /* line 920, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #description {
     width: 100%;
   }
-  /* line 924, ../sass/_layout.scss */
+  /* line 927, ../sass/_layout.scss */
   .outer .container #content .one #desc-blog #blog {
-    border-top: 0.625em solid white;
-    border-bottom: 0.625em solid white;
+    border-top: 0.15625em solid white;
+    border-bottom: 0.15625em solid white;
   }
-  /* line 950, ../sass/_layout.scss */
+  /* line 943, ../sass/_layout.scss */
+  .outer .container #content .one #desc-blog #year .section-container-year {
+    margin-top: 0em;
+  }
+  /* line 954, ../sass/_layout.scss */
   .outer .container #email {
     height: 8%;
     position: relative;
     margin: 0em -1em 0em 0em;
   }
-  /* line 959, ../sass/_layout.scss */
+  /* line 963, ../sass/_layout.scss */
   .outer .container #email .section-container-horiz a .title {
     display: block;
     position: absolute;
