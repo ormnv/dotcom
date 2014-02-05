@@ -34,6 +34,11 @@ body.dotcom{
   width:100%;
 }
 
+#form{
+  text-align: center;
+  border: 5px dashed black;
+}
+
 .box{
   height:100%;
   width:100%;
@@ -102,7 +107,6 @@ body.dotcom{
 
         #olga{
           @include span-columns(10 omega,10); 
-          // @include futura-BoldItalic(100px, white);
           @include futura-ExtraBoldItalic(100px, white);
           font-style: italic;
           // @include scale(1.1,1.3);
@@ -115,7 +119,6 @@ body.dotcom{
         #romanova{
           @include span-columns(10 omega,10); 
           @include futura-ExtraBoldItalic(75px, white);
-          // @include futura-BoldItalic(75px, white);
           // @include scale(1.5,0.9);
           display:block;
         }
@@ -259,7 +262,7 @@ body.dotcom{
 
 
           .section-container-blog{
-            @include scale(1.8,1.3);
+            @include scale(1.4,1.5);
             position: relative;
             bottom:0em;
             
@@ -318,7 +321,7 @@ body.dotcom{
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //tablet or 40em-45em
     //change outline size, margins for olga, github, twitter, sc, ln
-@media only screen and (min-device-width : 641px) {
+@media only screen and (min-device-width : 641px)  {
     @include at-breakpoint($break40) {
     @include container;
     // border: 0.45em solid white;
@@ -370,7 +373,7 @@ body.dotcom{
         .section-container{
           height: 100%;
           // margin:0em 1.5em 0em 0.5em;
-          margin:-.5em .5em 0em 0.5em;
+          margin:-.5em 1em 0em 0.5em;
 
 
           a{
@@ -398,6 +401,7 @@ body.dotcom{
           @include scale(1.6,1);
 
           a{
+            margin:0em 0em 0em .1em;
 
             .title{
             }
@@ -410,7 +414,7 @@ body.dotcom{
         box-shadow: 0px 0px 0px 0.12125em #FFF;
 
         .section-container{
-          @include scale(1.4,1);
+          @include scale(1.4,1.1);
 
           a{
             //
@@ -431,7 +435,7 @@ body.dotcom{
 
           a{
             //
-            margin:0em 0em -1em -0.25em;
+            margin:0em 0em -1em -0.35em;
             //
             .title{
             }
@@ -444,7 +448,7 @@ body.dotcom{
         box-shadow: 0px 0px 0px 0.225em #FFF;
 
         .section-container{
-          @include scale(1.4,1);
+          @include scale(1.75,1);
 
           a{
             //
@@ -485,9 +489,10 @@ body.dotcom{
           border-top: 0.225em solid white;
           border-bottom: 0.225em solid white;
           text-align: center;
+          box-shadow: none;
 
           .section-container-blog{
-            @include scale(1.4,1.3);
+            @include scale(1.1,1.5);
             position: relative;
             bottom:0em;
             
@@ -503,6 +508,7 @@ body.dotcom{
         #year{ 
             @include span-columns(5 omega, 5);            
             border-bottom: none;
+            box-shadow:none;
 
             .section-container-year{
               @include scale(1.25,1.5);
@@ -578,6 +584,7 @@ body.dotcom{
         .section-container{
 
           a{
+            margin:0em 0em 0em .15em;
 
             .title{
             }
@@ -591,6 +598,7 @@ body.dotcom{
         .section-container{
 
           a{
+            margin:0em 0em 0.6em -.5em;
 
             .title{
             }
@@ -618,6 +626,7 @@ body.dotcom{
         .section-container{
 
           a{
+            margin:0em 0em 0em .25em;
 
             .title 
             {
@@ -643,12 +652,12 @@ body.dotcom{
         }
 
         #blog { 
-          border-top: 0.125em solid white;
-          border-bottom: 0.125em solid white;
+          border-top: 0.25em solid white;
+          border-bottom: 0.25em solid white;
 
           .section-container-blog{
             position: relative;
-            left:.25em;
+            // left:.25em;
             
             a{
             
@@ -662,7 +671,7 @@ body.dotcom{
 
             .section-container-year{
               @include scale(1.3,2);
-              margin-top: 0em;
+              margin-top: -.5em;
 
               .title{
               }
@@ -731,6 +740,7 @@ body.dotcom{
         .section-container{
 
           a{
+            margin:0em 0em 0.7em -.5em;
 
             .title{
             }
@@ -800,7 +810,7 @@ body.dotcom{
           
 
             .section-container-year{
-              margin-top: 0em;
+              margin-top: -.5em;
 
 
               .title{
@@ -897,7 +907,7 @@ body.dotcom{
         .section-container{
 
           a{
-            margin:0em 0em 0em .5em;
+            margin:0em 0em 0em 0.25em;
 
             .title 
             {
@@ -925,8 +935,8 @@ body.dotcom{
         }
 
         #blog { 
-          border-top: 0.15625em solid white;
-          border-bottom: 0.15625em solid white;
+          border-top: 0.3125em solid white;
+          border-bottom: 0.3125em solid white;
 
           .section-container-blog{
             
@@ -941,7 +951,7 @@ body.dotcom{
         #year{ 
 
             .section-container-year{
-              margin-top: 0em;
+              margin-top: -.5em;
 
               .title{
               }

@@ -84,16 +84,6 @@
 
 }
 
-@mixin futura-BoldItalic($px, $color){
-	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
-	font-weight: 700;
-	font-size:$px;
-	font-style: italic;
-	color:$color;
-	text-transform:uppercase;
-
-}
-
 @mixin futura-ExtraBold($px, $color){
 	font-family: "futura-pt", "Trebuchet MS", Arial, sans-serif;
 	font-weight:800;
