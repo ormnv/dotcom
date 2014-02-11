@@ -29,3 +29,7 @@ node_modules
   -grunt-contrib-watch
 index.html 
 
+
+Afterthoughts 
+
+As the project was a great learning experience, I am confident now in doing solo development from scratch. After working in teams with other developers and other diciplines, there were aspects of development which I did not have to give much consideration. For example, figuring out typekit and subtle positioning of elements were usually the roles of the producer and designer respectively. Thinking about UX and breakpoints certainly took more time than I expected since I ran into situations where elements looked especially awkward. Although I had a design, executing in practice required many incremental design decisions. I quickly reached a point where the website was largely done, but getting the details right actually took some significant reorganization of the sass code. I am happy with the result and learned a lot in the process. 
